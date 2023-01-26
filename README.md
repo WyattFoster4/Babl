@@ -11,15 +11,15 @@ Currently working on it! Here's our task board. Feel free to update based on you
 
 |Task|Status|People|
 |---|---|---|
-|CSS & HTML Basic Site Setup:|COMPLETED | LUKE|
-|Input for words:| COMPLETED |LUKE & WYATT|
-|Language Proximity Calculator:| COMPLETED |LÉO & WYATT|
-|Fonts and graphics:| IN PROGRESS |LUKE|
-|Guess boxes:| IN PROGRESS |LUKE & WYATT|
-|Time sensors:| NOT STARTED |WYATT|
-|How-to Modal:| NOT STARTED |LUKE & WYATT|
-|Move files to Git:|COMPLETED |LÉO|
-|Final hosting:| ON HOLD UNTIL COMPLETION OF PROJECT |WYATT & LÉO|
+|CSS & HTML Basic Site Setup|COMPLETED|LUKE|
+|Input for words|COMPLETED|LUKE & WYATT|
+|Language Proximity Calculator|COMPLETED|LÉO & WYATT|
+|Fonts and graphics|IN PROGRESS|LUKE|
+|Guess boxes|IN PROGRESS|LUKE & WYATT|
+|Time sensors|NOT STARTED|WYATT|
+|How-to Modal|NOT STARTED|LUKE & WYATT|
+|Move files to Git|COMPLETED|LÉO|
+|Final hosting|ON HOLD UNTIL COMPLETION OF PROJECT|WYATT & LÉO|
 ## What we're using
 We're hosting our code on Replit and GitHub. We've been programming with HTML, CSS, and JS. We're also using an external json file to calculate language proximity.
 
