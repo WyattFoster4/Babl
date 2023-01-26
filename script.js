@@ -14,6 +14,9 @@ const modal = document.querySelector('#modal');
 const helpButton = document.querySelector(".howto");
 const closeModal = document.querySelector('.close-button');
 
+// Fetches data.json
+let validLangs = ["Abkhaz", "Adyghe", "Afar", "Afrikaans", "Ainu", "Gheg Albanian", "Tosk Albanian", "Aleut", "Altai", "Amharic", "Arabic", "Armaic", "Arbanaski", "Armenian", "Eastern Albanian", "Assamese", "Avar", "Azeri", "Balochi", "Basaa", "Bashkir", "Basque", "Belarusian", "Bemba", "Bengali", "Bihari", "Bole", "Brahui", "Brazilian", "Breton", "Bulgarian", "Burmese", "Burushaski", "Buryat", "Buyang", "Catalan", "Cebuano", "Chechen", "Cantonese", "Mandarin", "Chuvash", "Comorian", "Cornish", "Croatian", "Czech", "Danish", "Dargwa", "Dhivehi", "Digor Ossetic", "Dizi", "Douala", "Dutch", "English", "Estonian", "Even", "Faroese", "Finnish", "Flemish", "French", "Frisian", "Friulian", "Fula", "Galician", "Gelao", "Georgian", "German", "Greek", "Eastern Greenlandic", "Western Greenlandic", "Gujarati", "Gypsy Romani", "Hausa", "Hebrew", "Hindi", "Hungarian", "Icelandic", "Igbo", "Indonesian", "Irish", "Iron Ossetic", "Ishkashimi", "Istro-Romanian", "Italian", "Japanese", "Javanese", "Kabardian", "Kabylian", "Kalasha", "Kalmyk", "Kannada", "Karelian", "Kashmiri", "Kazakh", "Ket", "Khanti", "Khmer", "Khowar", "Kivalliq", "Komi", "Korean", "Kurdish", "Kurukh", "Kyrgyz", "Labrador Inuttut", "Ladin", "Lahnda", "Lak", "Lao", "Latvian", "Letzebuergesch", "Lezgian", "Lithuanian", "Macedonian", "Magahi", "Malagasy", "Malayalam", "Maltese", "Mansi", "Maori", "Marathi", "Mari", "Marwari", "Mon", "Mongolian", "Nayi", "Nenets", "Nepali", "Norwegian Bokmal", "Norwegian Nynorsk", "Oriya", "Oromo", "Oroqen", "Pashto", "Pennsylvania Dutch", "Persian", "Polish", "Portuguese", "Provencal", "Punjabi", "Romanian", "Romansch", "Russian", "Sami", "Samoan", "Sardinian Logudorese", "Sardinian Nuorese", "Sariqoli", "Schwyzerduetsch", "Scots", "Scottish Gaelic", "Serbian", "Shan", "Sheko", "Sindhi", "Sinhalese", "Slovak", "Slovene", "Somali", "Spanish", "Sranan", "Swahili", "Swedish", "Tagalog", "Tahitian", "Tajik", "Tamasheq", "Tamil", "Tashelhit", "Tatar", "Tausug", "Telugu", "Thai", "Tibetan", "Tigrigna", "Tmazight", "Tsakonian", "Turkish", "Turkmen", "Tuvan", "Ukrainian", "Urdu", "Uyghur", "Uzbek", "Veps", "Vietnamese", "Vlach", "Wakhi", "Walloon", "Warji", "Waziri", "Welsh", "Wolof", "Yakut", "Yiddish", "Yoruba", "Yupik", "Zazaki", "Zulu"];
+
 // Guessing box variable setup
 let guessingBox = document.getElementById("guessingBox");
 let guessingButton = document.getElementById("guessingButton");
@@ -58,7 +61,8 @@ document.getElementById("guess-6").innerHTML = "";
 async function calculateProx(arrInput,lang) {
   return compareLanguages(arrInput, lang)
       .then(distance => {
-          let proximity = (100 - distance) + "%";
+          let result = (100 - distance);
+          let proximity = result + "%";
           printPercent(proximity);
       })
       .catch(error => console.error(error)); 
@@ -83,6 +87,8 @@ function printGuess(guesses) {
 
 // Function sends % to HTML
 function printPercent(proximity) {
+  let colorPossibilities = [f0250e, ];
+  let color = 
   if (guesses.length === 1) {
     document.getElementById("percent-1").innerHTML = proximity;
   } else if (guesses.length === 2) {
@@ -107,7 +113,7 @@ modal.showModal();
 function guessingFunction() {
   let arrInput = guessingBox.value;
   if (arrInput !== "" && arrInput !== " ") {
-    if (data.hasOwnProperty(arrInput)) {
+    if (validLangs.includes(arrInput)) {
       if (guesses.length < 6 && won === false) {
         guesses.push(arrInput);
         printGuess(guesses);

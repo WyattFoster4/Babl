@@ -1,5 +1,6 @@
 body {
-  background: #3e3d3d;
+  background: #454545;
+
   /*overflow: hidden;*/
 }
 
@@ -39,7 +40,7 @@ body {
   right: 35px;
   top: 0%;
   color: black;
-  background-color: #4c90ae;
+  background-color: #a8a800;
   padding-top: 0px;
   margin-top: 22px;
   font-size: 45px;
@@ -146,7 +147,7 @@ body {
 
 
 .input-button:hover {
-  background: #616161;
+  background: #575757;
   border-color: black;
   cursor: pointer;
 }
@@ -221,6 +222,7 @@ body {
   border-width: 3px;
   border-color: #212121;
   width: 40%;
+  font-family: sans-serif;
 }
 
 .modal::backdrop {
@@ -230,7 +232,7 @@ body {
 
 .close-button {
   height: 25px;
-  width: 25px;
+  width: 27px;
   border-radius: 3px;
   border-style: solid;
   border-width: 1px;
@@ -241,6 +243,7 @@ body {
   position: absolute;
   top: 5%;
   right: 2%;
+  line-height: 23.5px;
 }
 
 .close-button:hover {
@@ -471,6 +474,18 @@ body {
   font-family: sans-serif;
 }
 
+/*adds a small amount of margin at the bottom of the screen*/
+.test {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 125%;
+}
+
+
+
+
+
 
 
 
@@ -510,7 +525,7 @@ body {
     right: 25px;
     top: 0.3%;
     color: black;
-    background-color: #4c90ae;
+    background-color: #a8a800;
     padding-top: 0px;
     margin-top: 22px;
     font-size: 55px;
