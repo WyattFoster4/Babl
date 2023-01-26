@@ -1,0 +1,833 @@
+body {
+  background: #3e3d3d;
+  /*overflow: hidden;*/
+}
+
+.top-bar {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0%;
+  right: .01%;
+  background: #141414;
+  border-style: solid;
+  border-width: 0px;
+  border-color: black;
+  font-size: 4vw;
+  border-top-width: 0px;
+  z-index: 50;
+}
+
+
+
+.title {
+  position: fixed;
+  left: 25px;
+  padding-left: 90px;
+  top: 0%;
+  padding-top: 0px;
+  margin-top: 22px;
+  color: white;
+  font-size: 45px;
+  z-index: 100;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.howto {
+  position: fixed;
+  right: 35px;
+  top: 0%;
+  color: white;
+  padding-top: 0px;
+  margin-top: 22px;
+  font-size: 45px;
+  z-index: 100;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.word-title {
+  width: 40%;
+  /*height: 30px;*/
+  background: #1a1919;
+  text-align: center;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  position: absolute;
+  
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  border-radius: 5px;
+  z-index: 10;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  font-size: 50px;
+  /*box-shadow: 4px 4px 3px gray;*/
+  top: 135px;
+  margin-top: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.placeholder {
+  width: 60%;
+  height: 100px;
+  background: #2b2b2b;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #a8a800;
+  border-radius: 5px;
+  position: absolute;
+  top: 135px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  vertical-align: middle;
+  padding-top: 55px;
+  font-family: sans-serif;
+}
+
+
+
+.input-box {
+  width: 34.7%;
+  height: 57px;
+  position: absolute;
+  top: 445px;
+  right: 41%;
+  background: #a1a1a1;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  font-size: 18px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.input-box:focus {
+  outline: none;
+}
+
+.input-button {
+  padding-top: 14px;
+  padding-bottom: 15px;
+  width: 17.5%;
+  /*height: 48px;*/
+  position: absolute;
+  top: 443px;
+  right: 23.5%;
+  font-size: 26px;
+  text-align: center;
+  background: #1a1919;
+  color: white;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #1a1919;
+  transition: background 0.15s, border-color 0.15s, opacity 0.15s;
+  margin-top: 2px;
+  z-index: 10;
+  font-family: sans-serif;
+}
+
+
+.input-button:hover {
+  background: #616161;
+  border-color: black;
+  cursor: pointer;
+}
+
+.input-button:active {
+  opacity: 0.4;
+}
+
+.logo {
+  width: 70px;
+  height: 80px;
+  border-radius: 50%;
+  background: #a1a1a1;
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  z-index: 100;
+  line-height: 70px;
+  padding-left: 10px
+}
+
+.babel2 {
+  width: 500px;
+  height: 665px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqQEt7pqh9RkuJWErOOF6GRUEPQ4tT1ejlWg&usqp=CAU");
+  mix-blend-mode: darken;
+  position: fixed;
+  z-index: -1;
+  right: -58px;
+  bottom: -17px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/*.babel {
+  width: 580px;
+  height: 645px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVzBoSz7JjG__0fDWuhyUXZTzcNAyuACydcg&usqp=CAU");
+  mix-blend-mode: darken;
+  position: absolute;
+  z-index: -10;
+  right: -100px;
+  bottom: -10%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;*/
+}
+
+
+.back {
+  width: 101%;
+  height: 101%;
+  background: #3e3d3d;
+}
+
+.container {
+  width: 630px;
+  height: 660px;
+
+  border-color: #1a1919;
+  position: fixed;
+  right: 0px;
+  bottom: 2px;
+  overflow: hidden;
+  z-index: -30;
+}
+
+
+.modal {
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #212121;
+}
+
+.modal::backdrop {
+  background: black;
+  opacity: 0.4;
+}
+
+.close-button {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  background: #2b2b2b;
+  color: white;
+  transition: background 0.15s, opacity 0.15s;
+}
+
+.close-button:hover {
+  background: #7d7d7d;
+}
+
+.close-button:active {
+  opacity: 0.4;
+}
+
+.contain {
+  width: 500px;
+  height: 665px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+/*this is just for testing how to scrolls*/
+.example-scroll {
+  width: 10px;
+  height: 2000px;
+}
+
+
+
+/* this is me messing around with what the guess would look like on the screen*/
+.ex-guess {
+  width: 32%;
+  /*height: 60px;*/
+  background: #828282;
+  position: absolute;
+  top: 540px;
+  right: 41%;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-family: sans-serif;
+}
+
+.wrong {
+  width: 14.5%;
+  /*height: 60px;*/
+  background: gray;
+  position: absolute;
+  top: 540px;
+  right: 26.3%;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-family: sans-serif;
+}
+
+.ex-guess2 {
+  width: 32%;
+  /*height: 60px;*/
+  background: #828282;
+  position: absolute;
+  top: 620px;
+  right: 41%;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-family: sans-serif;
+}
+
+.ex-guess3 {
+  width: 32%;
+  background: #828282;
+  position: absolute;
+  top: 700px;
+  right: 41%;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-family: sans-serif;
+}
+
+.wrong2 {
+  width: 14.5%;
+  /*height: 60px;*/
+  background: gray;
+  position: absolute;
+  top: 700px;
+  right: 26.3%;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-family: sans-serif;
+}
+
+.ex-guess4 {
+  width: 32%;
+  background: #828282;
+  position: absolute;
+  top: 780px;
+  right: 41%;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-family: sans-serif;
+}
+
+.wrong3 {
+  width: 14.5%;
+  /*height: 60px;*/
+  background: gray;
+  position: absolute;
+  top: 780px;
+  right: 26.3%;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-family: sans-serif;
+}
+
+.ex-guess5 {
+  width: 32%;
+  background: #828282;
+  position: absolute;
+  top: 860px;
+  right: 41%;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-family: sans-serif;
+}
+
+.wrong4 {
+  width: 14.5%;
+  /*height: 60px;*/
+  background: gray;
+  position: absolute;
+  top: 860px;
+  right: 26.3%;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-family: sans-serif;
+}
+
+.ex-guess6 {
+  width: 32%;
+  background: #828282;
+  position: absolute;
+  top: 940px;
+  right: 41%;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-family: sans-serif;
+}
+
+.wrong5 {
+  width: 14.5%;
+  /*height: 60px;*/
+  background: gray;
+  position: absolute;
+  top: 940px;
+  right: 26.3%;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-family: sans-serif;
+}
+
+.right {
+  width: 14.5%;
+  height: 59px;
+  background: gray;
+  position: absolute;
+  top: 620px;
+  right: 26.3%;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  font-size: 30px;
+  text-align: center;
+  line-height: 59px;
+  font-family: sans-serif;
+}
+
+
+
+
+/*mobile css goes here*/
+@media screen and (max-width: 1080px) {
+  .top-bar {
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    top: 0%;
+    right: .01%;
+    background: #141414;
+    border-style: solid;
+    border-width: 0px;
+    border-color: black;
+    font-size: 4vw;
+    border-top-width: 0px;
+    z-index: 50;
+  }
+
+  .title {
+    position: fixed;
+    left: 25px;
+    padding-left: 90px;
+    top: 0%;
+    padding-top: 0px;
+    margin-top: 22px;
+    color: white;
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight: bold;
+    z-index: 100;
+  }
+
+  .howto {
+    position: fixed;
+    right: 35px;
+    top: 0%;
+    color: white;
+    padding-top: 0px;
+    margin-top: 22px;
+    font-size: 60px;
+    z-index: 100;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+
+  .logo {
+    width: 70px;
+    height: 80px;
+    border-radius: 50%;
+    background: #a1a1a1;
+    position: fixed;
+    top: 22px;
+    left: 20px;
+    z-index: 100;
+    line-height: 70px;
+    padding-left: 10px
+  }
+  
+  .ex-guess {
+    width: 46.6%;
+    height: 46px;
+    background: #828282;
+    position: absolute;
+    top: 560px;
+    right: 38.5%;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    font-size: 35px;
+    text-align: center;
+    line-height: 46px;
+    font-family: sans-serif;
+  }
+  
+  .wrong {
+    width: 23.7%;
+    height: 46px;
+    background: red;
+    position: absolute;
+    top: 560px;
+    right: 14.6%;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    font-size: 35px;
+    text-align: center;
+    line-height: 46px;
+    font-family: sans-serif;
+  }
+  
+  .ex-guess2 {
+    width: 46.6%;
+    height: 46px;
+    background: #828282;
+    position: absolute;
+    top: 650px;
+    right: 38.5%;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    font-size: 35px;
+    text-align: center;
+    line-height: 46px;
+    font-family: sans-serif;
+  }
+  
+  .right {
+    width: 23.7%;
+    height: 70px;
+    background: green;
+    position: absolute;
+    top: 650px;
+    right: 14.6%;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    font-size: 35px;
+    text-align: center;
+    line-height: 70px;
+    font-family: sans-serif;
+  }
+
+  .ex-guess3 {
+    width: 46.6%;
+    height: 46px;
+    background: #828282;
+    position: absolute;
+    top: 740px;
+    right: 38.5%;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    font-size: 35px;
+    text-align: center;
+    line-height: 46px;
+    font-family: sans-serif;
+  }
+
+  .wrong2 {
+    width: 23.7%;
+    height: 46px;
+    background: red;
+    position: absolute;
+    top: 740px;
+    right: 14.6%;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    font-size: 35px;
+    text-align: center;
+    line-height: 46px;
+    font-family: sans-serif;
+  }
+
+  .ex-guess4 {
+    width: 46.6%;
+    height: 46px;
+    background: #828282;
+    position: absolute;
+    top: 830px;
+    right: 38.5%;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    font-size: 35px;
+    text-align: center;
+    line-height: 46px;
+    font-family: sans-serif;
+  }
+
+  .wrong3 {
+    width: 23.7%;
+    height: 46px;
+    background: red;
+    position: absolute;
+    top: 830px;
+    right: 14.6%;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    font-size: 35px;
+    text-align: center;
+    line-height: 46px;
+    font-family: sans-serif;
+  }
+  
+  .ex-guess5 {
+    width: 46.6%;
+    height: 46px;
+    background: #828282;
+    position: absolute;
+    top: 920px;
+    right: 38.5%;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    font-size: 35px;
+    text-align: center;
+    line-height: 46px;
+    font-family: sans-serif;
+  }
+  
+  .wrong4 {
+    width: 23.7%;
+    height: 46px;
+    background: red;
+    position: absolute;
+    top: 920px;
+    right: 14.6%;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    font-size: 35px;
+    text-align: center;
+    line-height: 46px;
+    font-family: sans-serif;
+  }
+  
+  .ex-guess6 {
+    width: 46.6%;
+    height: 46px;
+    background: #828282;
+    position: absolute;
+    top: 1010px;
+    right: 38.5%;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    font-size: 35px;
+    text-align: center;
+    line-height: 46px;
+    font-family: sans-serif;
+  }
+  
+  .wrong5 {
+    width: 23.7%;
+    height: 46px;
+    background: red;
+    position: absolute;
+    top: 1010px;
+    right: 14.6%;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    font-size: 35px;
+    text-align: center;
+    line-height: 46px;
+    font-family: sans-serif;
+    
+  }
+
+  .input-box {
+    width: 47.8%;
+    height: 60px;
+    position: absolute;
+    top: 465px;
+    right: 38.5%;
+    background: #a1a1a1;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    font-size: 18px;
+    text-align: center;
+    font-family: sans-serif;
+  }
+
+  .input-box:focus {
+    outline: none;
+  }
+  
+  .input-button {
+    width: 26.8%;
+    height: 73px;
+    position: absolute;
+    top: 463px;
+    right: 11.7%;
+    font-size: 36px;
+    text-align: center;
+    background: #1a1919;
+    color: white;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #1a1919;
+    transition: background 0.15s, border-color 0.15s, opacity 0.15s;
+    margin-top: 2px;
+    z-index: 10;
+    line-height: 12px;
+    font-family: sans-serif;    
+  }
+  .word-title {
+    width: 50%;
+    /*height: 30px;*/
+    background: #1a1919;
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    position: absolute;
+    
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 5px;
+    z-index: 10;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    font-size: 55px;
+    /*box-shadow: 4px 4px 3px gray;*/
+    top: 155px;
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  
+  .placeholder {
+    width: 80%;
+    /*height: 100px;*/
+    background: #2b2b2b;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #a8a800;
+    border-radius: 5px;
+    position: absolute;
+    top: 140px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    vertical-align: middle;
+    padding-top: 65px;
+    padding-bottom: 35px;
+    font-family: sans-serif;
+  }
+}
