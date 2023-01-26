@@ -140,10 +140,4 @@ helpButton.addEventListener('click', () => {
   modal.showModal();
 });
 
-guessing = true;
-while (guessing) {
-  guessingFunction();
-  if (guesses.length > 7) {
-    guessing = false;
-  }
-}
+guessingFunction();
