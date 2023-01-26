@@ -24,7 +24,7 @@ function guess() {
 
 // Enter key = clicking "guess"
 guessingBox.addEventListener("keyup", function(event) {
-  guessingButton.addEventListener("click", () => guess());
+  guessingButton.addEventListener("click", () => guessingFunction());
   if (event.keyCode === 13) {
     guessingButton.click();
   }
@@ -73,17 +73,17 @@ function calculateProx(arrInput,lang) {
 // Function sends guess to HTML
 function printGuess(guesses) {
   if (guesses.length === 1) {
-    document.getElementById("guess-1").innerHTML = guesses[1];
+    document.getElementById("guess-1").innerHTML = guesses[0];
   } else if (guesses.length === 2) {
-    document.getElementById("guess-2").innerHTML = guesses[2];
+    document.getElementById("guess-2").innerHTML = guesses[1];
   } else if (guesses.length === 3) {
-    document.getElementById("guess-3").innerHTML = guesses[3];
+    document.getElementById("guess-3").innerHTML = guesses[2];
   } else if (guesses.length === 4) {
-    document.getElementById("guess-4").innerHTML = guesses[4];
+    document.getElementById("guess-4").innerHTML = guesses[3];
   } else if (guesses.length === 5) {
-    document.getElementById("guess-5").innerHTML = guesses[5];
+    document.getElementById("guess-5").innerHTML = guesses[4];
   } else if (guesses.length === 6) {
-    document.getElementById("guess-6").innerHTML = guesses[6];
+    document.getElementById("guess-6").innerHTML = guesses[5];
   } 
 }
 
