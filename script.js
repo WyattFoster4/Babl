@@ -62,7 +62,7 @@ function calculateProx(arrInput,lang) {
       .then(distance => {
           return (100 - distance) + "%";
       })
-      .catch(error => console.error(error));
+      .catch(error => console.error(error)); 
 }
 
 // Function sends guess to HTML
