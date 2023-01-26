@@ -267,11 +267,16 @@ body {
 
 
 
+
+.guess-contain {
+  
+}
 /* this is me messing around with what the guess would look like on the screen*/
 .ex-guess {
   width: 32%;
   height: 58px;
-  background: #828282;
+  /*background: #828282;*/
+  background: var(--main-color);
   position: absolute;
   top: 540px;
   right: 41%;
