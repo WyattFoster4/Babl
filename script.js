@@ -18,9 +18,13 @@ const closeModal = document.querySelector('.close-button');
 let guessingBox = document.getElementById("guessingBox");
 let guessingButton = document.getElementById("guessingButton");
 
+function guess() {
+  alert("guessed!");
+}
+
 // Enter key = clicking "guess"
 guessingBox.addEventListener("keyup", function(event) {
-  guessingButton.addEventListener("click", () => guessingFunction());
+  guessingButton.addEventListener("click", () => guess());
   if (event.keyCode === 13) {
     guessingButton.click();
   }
