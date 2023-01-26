@@ -21,6 +21,10 @@ let validLangs = ["Abkhaz", "Adyghe", "Afar", "Afrikaans", "Ainu", "Gheg Albania
 let guessingBox = document.getElementById("guessingBox");
 let guessingButton = document.getElementById("guessingButton");
 
+function guess() {
+  alert("guessed!");
+}
+
 // Enter key = clicking "guess"
 guessingBox.addEventListener("keyup", function(event) {
   guessingButton.addEventListener("click", () => guessingFunction());
@@ -142,9 +146,10 @@ function guessingFunction() {
 closeModal.addEventListener('click', () => {
   modal.close();
 });
-
 helpButton.addEventListener('click', () => {
   document.getElementById("popHeading").innerHTML = "Welcome to Babl!";
   document.getElementById("popText").innerHTML = "A twist on the traditional Wordle, you'll test out your linguistic skills through a daily guessing puzzle. Here's how to play: Every day, a new phrase in a foreign language will appear on Babl. You have to guess what language the phrase is written in (it doesn't matter what the phrase actually says). If your guess is right, you'll win! If your guess is wrong, we'll tell you how close you got. You only get 6 tries. Good luck!";
   modal.showModal();
 });
+
+guessingFunction();
