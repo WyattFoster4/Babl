@@ -20,7 +20,7 @@ let guessingButton = document.getElementById("guessingButton");
 
 // Enter key = clicking "guess"
 guessingBox.addEventListener("keyup", function(event) {
-  guessingButton.addEventListener("click", () => guess());
+  guessingButton.addEventListener("click", () => guessingFunction());
   if (event.keyCode === 13) {
     guessingButton.click();
   }
