@@ -38,13 +38,15 @@ body {
   position: fixed;
   right: 35px;
   top: 0%;
-  color: white;
+  color: black;
+  background-color: #4c90ae;
   padding-top: 0px;
   margin-top: 22px;
   font-size: 45px;
   z-index: 100;
   font-family: sans-serif;
   font-weight: bold;
+  border-radius: 5px;
 }
 
 .word-title {
@@ -155,18 +157,18 @@ body {
 
 .logo {
   width: 70px;
-  height: 80px;
+  height: 70px;
   border-radius: 50%;
-  background: #a1a1a1;
+  /*background: #a1a1a1;*/
   position: fixed;
-  top: 10px;
+  top: 18px;
   left: 20px;
   z-index: 100;
   line-height: 70px;
-  padding-left: 10px
+  padding-left: 0px
 }
 
-.babel2 {
+/*.babel2 {
   width: 500px;
   height: 665px;
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqQEt7pqh9RkuJWErOOF6GRUEPQ4tT1ejlWg&usqp=CAU");
@@ -177,7 +179,7 @@ body {
   bottom: -17px;
   background-repeat: no-repeat;
   background-size: contain;
-}
+}*/
 
 /*.babel {
   width: 580px;
@@ -190,8 +192,8 @@ body {
   bottom: -10%;
   background-repeat: no-repeat;
   background-size: contain;
-  overflow: hidden;*/
-}
+  overflow: hidden;
+}*/
 
 
 .back {
@@ -218,6 +220,7 @@ body {
   border-style: solid;
   border-width: 3px;
   border-color: #212121;
+  width: 40%;
 }
 
 .modal::backdrop {
@@ -226,8 +229,8 @@ body {
 }
 
 .close-button {
-  padding-top: 3px;
-  padding-bottom: 3px;
+  height: 25px;
+  width: 25px;
   border-radius: 3px;
   border-style: solid;
   border-width: 1px;
@@ -235,6 +238,9 @@ body {
   background: #2b2b2b;
   color: white;
   transition: background 0.15s, opacity 0.15s;
+  position: absolute;
+  top: 5%;
+  right: 2%;
 }
 
 .close-button:hover {
@@ -254,18 +260,14 @@ body {
   overflow: hidden;
 }
 
-/*this is just for testing how to scrolls*/
-.example-scroll {
-  width: 10px;
-  height: 2000px;
-}
+
 
 
 
 /* this is me messing around with what the guess would look like on the screen*/
 .ex-guess {
   width: 32%;
-  /*height: 60px;*/
+  height: 58px;
   background: #828282;
   position: absolute;
   top: 540px;
@@ -276,14 +278,13 @@ body {
   border-color: black;
   font-size: 30px;
   text-align: center;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  line-height: 58px;
   font-family: sans-serif;
 }
 
 .wrong {
   width: 14.5%;
-  /*height: 60px;*/
+  height: 58px;
   background: gray;
   position: absolute;
   top: 540px;
@@ -294,14 +295,13 @@ body {
   border-color: black;
   font-size: 30px;
   text-align: center;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  line-height: 58px;
   font-family: sans-serif;
 }
 
 .ex-guess2 {
   width: 32%;
-  /*height: 60px;*/
+  height: 58px;
   background: #828282;
   position: absolute;
   top: 620px;
@@ -312,13 +312,13 @@ body {
   border-color: black;
   font-size: 30px;
   text-align: center;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  line-height: 58px;
   font-family: sans-serif;
 }
 
 .ex-guess3 {
   width: 32%;
+  height: 58px;
   background: #828282;
   position: absolute;
   top: 700px;
@@ -329,14 +329,13 @@ body {
   border-color: black;
   font-size: 30px;
   text-align: center;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  line-height: 58px;
   font-family: sans-serif;
 }
 
 .wrong2 {
   width: 14.5%;
-  /*height: 60px;*/
+  height: 58px;
   background: gray;
   position: absolute;
   top: 700px;
@@ -347,13 +346,13 @@ body {
   border-color: black;
   font-size: 30px;
   text-align: center;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  line-height: 58px;
   font-family: sans-serif;
 }
 
 .ex-guess4 {
   width: 32%;
+  height: 58px;
   background: #828282;
   position: absolute;
   top: 780px;
@@ -364,14 +363,13 @@ body {
   border-color: black;
   font-size: 30px;
   text-align: center;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  line-height: 58px;
   font-family: sans-serif;
 }
 
 .wrong3 {
   width: 14.5%;
-  /*height: 60px;*/
+  height: 58px;
   background: gray;
   position: absolute;
   top: 780px;
@@ -382,13 +380,13 @@ body {
   border-color: black;
   font-size: 30px;
   text-align: center;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  line-height: 58px;
   font-family: sans-serif;
 }
 
 .ex-guess5 {
   width: 32%;
+  height: 58px;
   background: #828282;
   position: absolute;
   top: 860px;
@@ -399,14 +397,13 @@ body {
   border-color: black;
   font-size: 30px;
   text-align: center;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  line-height: 58px;
   font-family: sans-serif;
 }
 
 .wrong4 {
   width: 14.5%;
-  /*height: 60px;*/
+  height: 58px;
   background: gray;
   position: absolute;
   top: 860px;
@@ -417,13 +414,13 @@ body {
   border-color: black;
   font-size: 30px;
   text-align: center;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  line-height: 58px;
   font-family: sans-serif;
 }
 
 .ex-guess6 {
   width: 32%;
+  height: 58px;
   background: #828282;
   position: absolute;
   top: 940px;
@@ -434,14 +431,14 @@ body {
   border-color: black;
   font-size: 30px;
   text-align: center;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  line-height: 58px;
   font-family: sans-serif;
+  margin-bottom: 40px;
 }
 
 .wrong5 {
   width: 14.5%;
-  /*height: 60px;*/
+  height: 58px;
   background: gray;
   position: absolute;
   top: 940px;
@@ -452,14 +449,14 @@ body {
   border-color: black;
   font-size: 30px;
   text-align: center;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  line-height: 58px;
   font-family: sans-serif;
+  margin-bottom: 40px;
 }
 
 .right {
   width: 14.5%;
-  height: 59px;
+  height: 58px;
   background: gray;
   position: absolute;
   top: 620px;
@@ -470,7 +467,7 @@ body {
   border-color: black;
   font-size: 30px;
   text-align: center;
-  line-height: 59px;
+  line-height: 58px;
   font-family: sans-serif;
 }
 
@@ -510,33 +507,35 @@ body {
 
   .howto {
     position: fixed;
-    right: 35px;
-    top: 0%;
-    color: white;
+    right: 25px;
+    top: 0.3%;
+    color: black;
+    background-color: #4c90ae;
     padding-top: 0px;
     margin-top: 22px;
-    font-size: 60px;
+    font-size: 55px;
     z-index: 100;
     font-family: sans-serif;
     font-weight: bold;
+    border-radius: 5px;
   }
 
   .logo {
     width: 70px;
-    height: 80px;
+    height: 70px;
     border-radius: 50%;
-    background: #a1a1a1;
+    /*background: #a1a1a1;*/
     position: fixed;
-    top: 22px;
+    top: 30px;
     left: 20px;
     z-index: 100;
     line-height: 70px;
-    padding-left: 10px
+    padding-left: 0px
   }
   
   .ex-guess {
     width: 46.6%;
-    height: 46px;
+    height: 70px;
     background: #828282;
     position: absolute;
     top: 560px;
@@ -547,14 +546,14 @@ body {
     border-color: black;
     font-size: 35px;
     text-align: center;
-    line-height: 46px;
+    line-height: 70px;
     font-family: sans-serif;
   }
   
   .wrong {
     width: 23.7%;
-    height: 46px;
-    background: red;
+    height: 70px;
+    background: #828282;
     position: absolute;
     top: 560px;
     right: 14.6%;
@@ -564,13 +563,13 @@ body {
     border-color: black;
     font-size: 35px;
     text-align: center;
-    line-height: 46px;
+    line-height: 70px;
     font-family: sans-serif;
   }
   
   .ex-guess2 {
     width: 46.6%;
-    height: 46px;
+    height: 70px;
     background: #828282;
     position: absolute;
     top: 650px;
@@ -581,14 +580,14 @@ body {
     border-color: black;
     font-size: 35px;
     text-align: center;
-    line-height: 46px;
+    line-height: 70px;
     font-family: sans-serif;
   }
   
   .right {
     width: 23.7%;
     height: 70px;
-    background: green;
+    background: #828282;
     position: absolute;
     top: 650px;
     right: 14.6%;
@@ -604,7 +603,7 @@ body {
 
   .ex-guess3 {
     width: 46.6%;
-    height: 46px;
+    height: 70px;
     background: #828282;
     position: absolute;
     top: 740px;
@@ -615,14 +614,14 @@ body {
     border-color: black;
     font-size: 35px;
     text-align: center;
-    line-height: 46px;
+    line-height: 70px;
     font-family: sans-serif;
   }
 
   .wrong2 {
     width: 23.7%;
-    height: 46px;
-    background: red;
+    height: 70px;
+    background: #828282;
     position: absolute;
     top: 740px;
     right: 14.6%;
@@ -632,13 +631,13 @@ body {
     border-color: black;
     font-size: 35px;
     text-align: center;
-    line-height: 46px;
+    line-height: 70px;
     font-family: sans-serif;
   }
 
   .ex-guess4 {
     width: 46.6%;
-    height: 46px;
+    height: 70px;
     background: #828282;
     position: absolute;
     top: 830px;
@@ -649,14 +648,14 @@ body {
     border-color: black;
     font-size: 35px;
     text-align: center;
-    line-height: 46px;
+    line-height: 70px;
     font-family: sans-serif;
   }
 
   .wrong3 {
     width: 23.7%;
-    height: 46px;
-    background: red;
+    height: 70px;
+    background: #828282;
     position: absolute;
     top: 830px;
     right: 14.6%;
@@ -666,13 +665,13 @@ body {
     border-color: black;
     font-size: 35px;
     text-align: center;
-    line-height: 46px;
+    line-height: 70px;
     font-family: sans-serif;
   }
   
   .ex-guess5 {
     width: 46.6%;
-    height: 46px;
+    height: 70px;
     background: #828282;
     position: absolute;
     top: 920px;
@@ -683,14 +682,14 @@ body {
     border-color: black;
     font-size: 35px;
     text-align: center;
-    line-height: 46px;
+    line-height: 70px;
     font-family: sans-serif;
   }
   
   .wrong4 {
     width: 23.7%;
-    height: 46px;
-    background: red;
+    height: 70px;
+    background: #828282;
     position: absolute;
     top: 920px;
     right: 14.6%;
@@ -700,13 +699,13 @@ body {
     border-color: black;
     font-size: 35px;
     text-align: center;
-    line-height: 46px;
+    line-height: 70px;
     font-family: sans-serif;
   }
   
   .ex-guess6 {
     width: 46.6%;
-    height: 46px;
+    height: 70px;
     background: #828282;
     position: absolute;
     top: 1010px;
@@ -717,14 +716,14 @@ body {
     border-color: black;
     font-size: 35px;
     text-align: center;
-    line-height: 46px;
+    line-height: 70px;
     font-family: sans-serif;
   }
   
   .wrong5 {
     width: 23.7%;
-    height: 46px;
-    background: red;
+    height: 70px;
+    background: #828282;
     position: absolute;
     top: 1010px;
     right: 14.6%;
@@ -734,23 +733,23 @@ body {
     border-color: black;
     font-size: 35px;
     text-align: center;
-    line-height: 46px;
+    line-height: 70px;
     font-family: sans-serif;
     
   }
 
   .input-box {
     width: 47.8%;
-    height: 60px;
+    height: 50px;
     position: absolute;
     top: 465px;
-    right: 38.5%;
+    right: 37.5%;
     background: #a1a1a1;
     border-radius: 5px;
     border-style: solid;
     border-width: 2px;
     border-color: black;
-    font-size: 18px;
+    font-size: 38px;
     text-align: center;
     font-family: sans-serif;
   }
@@ -764,7 +763,7 @@ body {
     height: 73px;
     position: absolute;
     top: 463px;
-    right: 11.7%;
+    right: 10.7%;
     font-size: 36px;
     text-align: center;
     background: #1a1919;
@@ -829,5 +828,40 @@ body {
     padding-top: 65px;
     padding-bottom: 35px;
     font-family: sans-serif;
+  }
+
+  .modal {
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #212121;
+    width: 80%;
+    height: 30%;
+    font-size: 30px;
+  }
+  
+  .modal::backdrop {
+    background: black;
+    opacity: 0.4;
+  }
+  
+  .close-button {
+    height: 55px;
+    /*width: 45px;*/
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    background: #2b2b2b;
+    color: white;
+    transition: background 0.15s, opacity 0.15s;
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    line-height: 55px;
+    font-size: 40px;
+    padding-left: 22px;
+    padding-right: 50px;
+
   }
 }
