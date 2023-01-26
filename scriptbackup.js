@@ -87,21 +87,19 @@ function printGuess(guesses) {
 // Function sends % to HTML
 function printPercent(proximity) {
   let colorPossibilities = [ff4d3d,ff6a3d,ff9b3d,ffcf3d,fff53d,e2ff3d,b5ff3d,e36fd7];
-  if (0 <= proximity <= 15) {
-    // returns 
-  }
+  if proximity
   if (guesses.length === 1) {
-    document.getElementById("percent-1").innerHTML = proximity + "%";
+    document.getElementById("percent-1").innerHTML = proximity;
   } else if (guesses.length === 2) {
-    document.getElementById("percent-2").innerHTML = proximity + "%";
+    document.getElementById("percent-2").innerHTML = proximity;
   } else if (guesses.length === 3) {
-    document.getElementById("percent-3").innerHTML = proximity + "%";
+    document.getElementById("percent-3").innerHTML = proximity;
   } else if (guesses.length === 4) {
-    document.getElementById("percent-4").innerHTML = proximity + "%";
+    document.getElementById("percent-4").innerHTML = proximity;
   } else if (guesses.length === 5) {
-    document.getElementById("percent-5").innerHTML = proximity + "%";
+    document.getElementById("percent-5").innerHTML = proximity;
   } else if (guesses.length === 6) {
-    document.getElementById("percent-6").innerHTML = proximity + "%";
+    document.getElementById("percent-6").innerHTML = proximity;
   } 
 }
 
