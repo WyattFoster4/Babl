@@ -11,6 +11,7 @@ lang = "Spanish";
 
 // Modal variables
 const modal = document.querySelector('#modal');
+const helpButton = document.querySelector(".howto");
 const closeModal = document.querySelector('.close-button');
 
 // Guessing box variable setup
