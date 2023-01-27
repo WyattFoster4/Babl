@@ -6,6 +6,15 @@ Welcome to Babl! We've decided to build a brand new language-guessing game for t
 ## How to play
 Every day, a new phrase in a foreign language will appear on Babl. You have to guess what language the phrase is written in (it doesn't matter what the phrase actually says). If your guess is right, you'll win! If your guess is wrong, we'll tell you how close you got. You only get 6 tries. Good luck!
 
+## List of Broken Things
+Before continuing build, see if you can fix one of these things. We've all been making major logic changes and we all collectively broke it. Yay!
+
+|Thing|What Happened?|Root Ideas|
+|---|---|---|
+|Modals|Welcome, howto, and other modals no longer function.|Could have to do with function updates.|
+|Scrollbar|Would like to always show scrollbar, and style it to be more obvious|Mess around with scrollbar styles (without removing mobile styles)|
+|Inputs|Guesses not accepted.|New logic & reordering or event listener?|
+
 ## Build status
 Currently working on it! Here's our task board. Feel free to update based on your current tasks. 
 
