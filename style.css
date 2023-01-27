@@ -573,7 +573,7 @@ body {
   .wrong {
     width: 23.7%;
     height: 70px;
-    background: #828282;
+    background: var(--main-color);
     position: absolute;
     top: 560px;
     right: 14.6%;
