@@ -501,8 +501,7 @@ body {
     position: fixed;
     top: 0%;
     right: .01%;
-    /*background: #141414;*/
-    background: red;
+    background: #141414;
     border-style: solid;
     border-width: 0px;
     border-color: black;
