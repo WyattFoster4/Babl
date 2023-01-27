@@ -133,7 +133,7 @@ function guessingFunction() {
         guesses.push(arrInput);
         printGuess(guesses);
         printPercent(calculateProx(arrInput,lang));
-        if (arrInput === lang) {
+        if (arrInput == lang) {
           won = true;
           document.getElementById("popHeading").innerHTML = "You won!";
           document.getElementById("popText").innerHTML = "You're a language genius! Come back tomorrow for the next puzzle.";
