@@ -127,30 +127,28 @@ function printPercent(proximity) {
 function popMessage(heading, text) {
   document.getElementById("popHeading").innerHTML = heading;
   document.getElementById("popText").innerHTML = text;
+  modal.showModal();
 }
 popMessage("Welcome to Babl!", "A twist on the traditional Wordle, you'll test out your linguistic skills through a daily guessing puzzle. Here's how to play: Every day, a new phrase in a foreign language will appear on Babl. You have to guess what language the phrase is written in (it doesn't matter what the phrase actually says). If your guess is right, you'll win! If your guess is wrong, we'll tell you how close you got. You only get 6 tries. Good luck!");
-modal.showModal();
 
 // Event listener collects values from guessing box
 function guessingFunction() {
   let arrInput = guessingBox.value;
   if (validLangs.includes(arrInput)) {
-    if (guesses.length < 6 && won === false) {
+    if (guesses.length < 6 && won === false && arrInput != lang) {
       guesses.push(arrInput);
       printGuess(guesses);
       printPercent(calculateProx(arrInput,lang));
-      if (arrInput === lang) {
+    } else if (guesses.length < 6 && won === false && arrInput === lang) {
         won = true;
         popMessage("You won!", "You're a language genius! Come back tomorrow for the next puzzle.");
-      }
-    }
-    if (guesses.length === 6 && won === false) {
+    } else if (guesses.length === 6 && won === false) {
       popMessage("You lost!", "You didn't guess the correct language. Come back tomorrow for the next puzzle.");
     }
-    guessingBox.value = "";
   } else {
     popMessage("Uh-oh!", "You entered a language that doesn't exist. Make sure that the first letter is capitalized. If that doesn't work, check out this list of accepted languages.");
   }
+  guessingBox.value = "";
 }
 
 // Event listener can close modal
