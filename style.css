@@ -292,7 +292,7 @@ body {
 .wrong {
   width: 14.5%;
   height: 58px;
-  background: gray;
+  background: #828282;
   position: absolute;
   top: 540px;
   right: 26.3%;
