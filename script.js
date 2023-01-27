@@ -5,8 +5,8 @@ const guesses = [];
 let won = false;
 let color;
 
-phrase = "Ejemplo"; // Test values
-lang = "Spanish";
+phrase = "Příběh starý jako čas"; // Test values
+lang = "Czech";
 
 const modal = document.querySelector('#modal'); // Modal variables
 const helpButton = document.querySelector(".howto");
@@ -25,8 +25,7 @@ document.getElementById("guess-4").innerHTML = "";
 document.getElementById("guess-5").innerHTML = "";
 document.getElementById("guess-6").innerHTML = "";
 
-let ogColor = "#808080"; // Sets grays
-document.wrong.style.backgroundColor = ogColor;
+document.getElementById("percent-1").style.background = "#808080";
 
 // FUNCTIONS SETUP
 function compareLanguages(guess, correct) { // Compares two languages for similarity
@@ -92,19 +91,24 @@ function printPercent(proximity) { // Sends percent and colors to HTML & CSS
   } else if (proximity === 100) {
     color = "#e36fd7";
   }
-  document.wrong.style.backgroundColor = color;
   if (guesses.length === 1) {
     document.getElementById("percent-1").innerHTML = proximity + "%";
+    document.getElementById("percent-1").style.background = color;
   } else if (guesses.length === 2) {
     document.getElementById("percent-2").innerHTML = proximity + "%";
+    document.getElementById("percent-2").style.background = color;
   } else if (guesses.length === 3) {
     document.getElementById("percent-3").innerHTML = proximity + "%";
+    document.getElementById("percent-3").style.background = color;
   } else if (guesses.length === 4) {
     document.getElementById("percent-4").innerHTML = proximity + "%";
+    document.getElementById("percent-4").style.background = color;
   } else if (guesses.length === 5) {
     document.getElementById("percent-5").innerHTML = proximity + "%";
+    document.getElementById("percent-5").style.background = color;
   } else if (guesses.length === 6) {
     document.getElementById("percent-6").innerHTML = proximity + "%";
+    document.getElementById("percent-6").style.background = color;
   } 
 }
 
@@ -114,16 +118,25 @@ function guessingFunction() {
     guesses.push(arrInput);
     printGuess(guesses);
     printPercent(calculateProx(arrInput,lang));
-  } else if (validLangs.includes(arrInput) && guesses.length < 6 && won === false && arrInput === lang) {
-      won = true;
-      document.getElementById("popHeading").innerHTML = "You won!";
-      document.getElementById("popHeading").innerHTML = "You're a language genius! Come back tomorrow for the next puzzle.";
+  } else if (validLangs.includes(arrInput) && guesses.length <= 6 && won === false && arrInput === lang) {
+    won = true;
+    document.getElementById("popHeading").innerHTML = "You won!";
+    document.getElementById("popText").innerHTML = "You're a language genius! Come back tomorrow for the next puzzle.";
+    modal.showModal();
+    guesses.push(arrInput);
+    printGuess(guesses);
+    printPercent(calculateProx(arrInput,lang));
   } else if (validLangs.includes(arrInput) && guesses.length === 6 && won === false) {
     document.getElementById("popHeading").innerHTML = "You lost!";
-    document.getElementById("popHeading").innerHTML = "You didn't guess the correct language. Come back tomorrow for the next puzzle.";
+    document.getElementById("popText").innerHTML = "You didn't guess the correct language. Come back tomorrow for the next puzzle.";
+    modal.showModal();
+    guesses.push(arrInput);
+    printGuess(guesses);
+    printPercent(calculateProx(arrInput,lang));
   } else {
     document.getElementById("popHeading").innerHTML = "Uh-oh!";
-    document.getElementById("popHeading").innerHTML = "You entered a language that doesn't exist. Make sure that the first letter is capitalized. If that doesn't work, check out this list of accepted languages.";
+    document.getElementById("popText").innerHTML = "You entered a language that doesn't exist. Make sure that the first letter is capitalized. If that doesn't work, check out this list of accepted languages.";
+    modal.showModal();
   }
   guessingBox.value = "";
 }

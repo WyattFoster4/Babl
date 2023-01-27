@@ -11,9 +11,10 @@ Before continuing build, see if you can fix one of these things. We've all been 
 
 |Thing|What Happened?|Root Ideas|
 |---|---|---|
-|Modals|Welcome, howto, and other modals no longer function.|Could have to do with function updates.|
+|Uh-oh Message|Desite printing guesses to the screen, shows modal alerting of a bad guess|Running if & else at the same time? Something's up in the conditional|
+|Passing colors|All guesses display as red|Something to fix in printPercent() function|
+|Rounding %s|When rounding proximity values, fills in all guesses and forces a loss|Literally no way to avoid this yet|
 |Scrollbar|Would like to always show scrollbar, and style it to be more obvious|Mess around with scrollbar styles (without removing mobile styles)|
-|Inputs|Guesses not accepted.|New logic & reordering or event listener?|
 
 ## Build status
 Currently working on it! Here's our task board. Feel free to update based on your current tasks. 
@@ -26,7 +27,8 @@ Currently working on it! Here's our task board. Feel free to update based on you
 |Fonts and graphics|IN PROGRESS|LUKE|
 |Guess boxes|IN PROGRESS|LUKE & WYATT|
 |Time sensors|NOT STARTED|WYATT|
-|Solutions| IN PROGRESS|WYATT & WHOEVER WANTS TO JOIN|
+|Solutions| IN PROGRESS|WYATT|
+|Troubleshooting|IN PROGRESS|EVERYONE|
 |How-to Modal|COMPLETED|BY SOMEONE|
 |Move files to Git|COMPLETED|LÉO|
 |Final hosting|ON HOLD UNTIL COMPLETION OF PROJECT|WYATT & LÉO|
