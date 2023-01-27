@@ -1,5 +1,5 @@
 {
-  "Early week": {
+  "Early-Week": {
     "Los pasteles son caros aquí": "Spanish",
     "Ich habe einen Elch gegessen": "German",
     "Há muitos museus no meu porão": "Portuguese",
@@ -12,5 +12,12 @@
     "Ya snova ograbil dva banka": "Russian",
     "Naneun gam-og-e issda": "Korean",
     "Min historielærer er sej": "Danish",
+    "Tôi muốn một máy tính": "Vietnamese",
+  },
+  "End-Week": {
+    "El meu instructor és escombraries": "Catalan",
+    "Minii tsetserleg khuurai baina": "Mongolian",
+    "Ypárchei éna vounó kontá": "Greek",
+    "Við hin erum svöng": "Icelandic",
   }
 }
