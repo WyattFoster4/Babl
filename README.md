@@ -17,6 +17,7 @@ Currently working on it! Here's our task board. Feel free to update based on you
 |Fonts and graphics|IN PROGRESS|LUKE|
 |Guess boxes|IN PROGRESS|LUKE & WYATT|
 |Time sensors|NOT STARTED|WYATT|
+|Solutions| IN PROGRESS|WYATT & WHOEVER WANTS TO JOIN|
 |How-to Modal|COMPLETED|BY SOMEONE|
 |Move files to Git|COMPLETED|LÉO|
 |Final hosting|ON HOLD UNTIL COMPLETION OF PROJECT|WYATT & LÉO|
