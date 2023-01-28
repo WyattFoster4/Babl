@@ -11,9 +11,12 @@ Before continuing build, see if you can fix one of these things. We've all been 
 
 |Thing|What Happened?|Root Ideas|
 |---|---|---|
-|Modals|Welcome, howto, and other modals no longer function.|Could have to do with function updates.|
+|Uh-oh Message|Desite printing guesses to the screen, shows modal alerting of a bad guess|FIXED|
+|Passing colors|All guesses display as red|Something to fix in printPercent() function|
+|Percent delay|Find a faster way to get value|Scan json faster? Promises? Fetch?|
+|Rounding %s|When rounding proximity values, fills in all guesses and forces a loss|Literally no way to avoid this yet|
 |Scrollbar|Would like to always show scrollbar, and style it to be more obvious|Mess around with scrollbar styles (without removing mobile styles)|
-|Inputs|Guesses not accepted.|New logic & reordering or event listener?|
+|Footer padding|On some devices, no footer padding|div?|
 
 ## Build status
 Currently working on it! Here's our task board. Feel free to update based on your current tasks. 
@@ -22,11 +25,13 @@ Currently working on it! Here's our task board. Feel free to update based on you
 |---|---|---|
 |CSS & HTML Basic Site Setup|COMPLETED|LUKE|
 |Input for words|COMPLETED|LUKE & WYATT|
-|Language Proximity Calculator|COMPLETED|LÉO & WYATT|
+|Language Proximity Calculator|COMPLETED|LÉO|
 |Fonts and graphics|IN PROGRESS|LUKE|
 |Guess boxes|IN PROGRESS|LUKE & WYATT|
 |Time sensors|NOT STARTED|WYATT|
-|Solutions| IN PROGRESS|WYATT & WHOEVER WANTS TO JOIN|
+|Case senstitivity|NOT STARTED|?|
+|Solutions| IN PROGRESS|WYATT|
+|Troubleshooting|IN PROGRESS|EVERYONE|
 |How-to Modal|COMPLETED|BY SOMEONE|
 |Move files to Git|COMPLETED|LÉO|
 |Final hosting|ON HOLD UNTIL COMPLETION OF PROJECT|WYATT & LÉO|
@@ -36,6 +41,7 @@ We're hosting our code on Replit and GitHub. We've been programming with HTML, C
 
 ## Contributors
 Luke Dreyfuss, Wyatt Foster, and Léo Fitzpatrick: Original creators and programmers
+Abe Kirschner & Danica Stout: Troubleshooting
 Abe Kirschner & Ryder Something: Inspiration and logistical setup
 Josh Wardle: For being a legend and making Wordle
 Open AI's ChatGPT for helping us debug

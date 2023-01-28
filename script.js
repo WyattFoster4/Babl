@@ -5,8 +5,8 @@ const guesses = [];
 let won = false;
 let color;
 
-phrase = "Ejemplo"; // Test values
-lang = "Spanish";
+phrase = "Příběh starý jako čas"; // Test values
+lang = "Czech";
 
 const modal = document.querySelector('#modal'); // Modal variables
 const helpButton = document.querySelector(".howto");
@@ -25,8 +25,7 @@ document.getElementById("guess-4").innerHTML = "";
 document.getElementById("guess-5").innerHTML = "";
 document.getElementById("guess-6").innerHTML = "";
 
-let ogColor = "#808080"; // Sets grays
-document.wrong.style.backgroundColor = ogColor;
+document.getElementById("percent-1").style.background = "#808080";
 
 // FUNCTIONS SETUP
 function compareLanguages(guess, correct) { // Compares two languages for similarity
@@ -92,42 +91,60 @@ function printPercent(proximity) { // Sends percent and colors to HTML & CSS
   } else if (proximity === 100) {
     color = "#e36fd7";
   }
-  document.wrong.style.backgroundColor = color;
+  
   if (guesses.length === 1) {
     document.getElementById("percent-1").innerHTML = proximity + "%";
+    document.getElementById("percent-1").style.background = color;
   } else if (guesses.length === 2) {
     document.getElementById("percent-2").innerHTML = proximity + "%";
+    document.getElementById("percent-2").style.background = color;
   } else if (guesses.length === 3) {
     document.getElementById("percent-3").innerHTML = proximity + "%";
+    document.getElementById("percent-3").style.background = color;
   } else if (guesses.length === 4) {
     document.getElementById("percent-4").innerHTML = proximity + "%";
+    document.getElementById("percent-4").style.background = color;
   } else if (guesses.length === 5) {
     document.getElementById("percent-5").innerHTML = proximity + "%";
+    document.getElementById("percent-5").style.background = color;
   } else if (guesses.length === 6) {
     document.getElementById("percent-6").innerHTML = proximity + "%";
+    document.getElementById("percent-6").style.background = color;
   } 
 }
 
+//Tells you if the answer is right or wrong
 function guessingFunction() {
   let arrInput = guessingBox.value;
-  if (validLangs.includes(arrInput) && guesses.length < 6 && won === false && arrInput != lang) {
-    guesses.push(arrInput);
-    printGuess(guesses);
-    printPercent(calculateProx(arrInput,lang));
-  } else if (validLangs.includes(arrInput) && guesses.length < 6 && won === false && arrInput === lang) {
-      won = true;
-      document.getElementById("popHeading").innerHTML = "You won!";
-      document.getElementById("popHeading").innerHTML = "You're a language genius! Come back tomorrow for the next puzzle.";
-  } else if (validLangs.includes(arrInput) && guesses.length === 6 && won === false) {
-    document.getElementById("popHeading").innerHTML = "You lost!";
-    document.getElementById("popHeading").innerHTML = "You didn't guess the correct language. Come back tomorrow for the next puzzle.";
-  } else {
+  console.log(arrInput)
+  if (!validLangs.includes(arrInput)) {
     document.getElementById("popHeading").innerHTML = "Uh-oh!";
-    document.getElementById("popHeading").innerHTML = "You entered a language that doesn't exist. Make sure that the first letter is capitalized. If that doesn't work, check out this list of accepted languages.";
+    document.getElementById("popText").innerHTML = "You entered a language that doesn't exist. Make sure that the first letter is capitalized. If that doesn't work, check out this list of accepted languages.";
+    modal.showModal();
+    return
+  }
+    if (guesses.length < 5 && won == false && arrInput != lang) {
+      guesses.push(arrInput);
+      printGuess(guesses);
+      printPercent(calculateProx(arrInput,lang));
+    } else if (guesses.length <= 6 && won == false && arrInput == lang) {
+      won = true;
+      guesses.push(arrInput);
+      printGuess(guesses);
+      printPercent(calculateProx(arrInput,lang));
+      document.getElementById("popHeading").innerHTML = "You won!";
+      document.getElementById("popText").innerHTML = "You're a language genius! Come back tomorrow for the next puzzle.";
+      modal.showModal();
+    } else if (guesses.length == 5 && won == false && arrInput != lang) {
+      guesses.push(arrInput);
+      printGuess(guesses);
+      printPercent(calculateProx(arrInput,lang));
+      document.getElementById("popHeading").innerHTML = "You lost!";
+      document.getElementById("popText").innerHTML = "You didn't guess the correct language. Come back tomorrow for the next puzzle.";
+      modal.showModal();
   }
   guessingBox.value = "";
 }
-
 // EVENT LISTENER SETUP
 document.getElementById("popHeading").innerHTML = "Welcome to Babl!"; // Technical not an EL, opens modal
 document.getElementById("popText").innerHTML = "A twist on the traditional Wordle, you'll test out your linguistic skills through a daily guessing puzzle. Here's how to play: Every day, a new phrase in a foreign language will appear on Babl. You have to guess what language the phrase is written in (it doesn't matter what the phrase actually says). If your guess is right, you'll win! If your guess is wrong, we'll tell you how close you got. You only get 6 tries. Good luck!";
@@ -144,8 +161,8 @@ helpButton.addEventListener('click', () => {
 });
 
 guessingBox.addEventListener("keyup", function(event) {
-  guessingButton.addEventListener("click", () => guessingFunction());
   if (event.keyCode === 13) {
     guessingButton.click();
   }
 });
+guessingButton.addEventListener("click", () => guessingFunction());
