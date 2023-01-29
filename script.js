@@ -28,50 +28,35 @@ document.getElementById("guess-6").innerHTML = "";
 document.getElementById("percent-1").style.background = "#808080";
 
 // FUNCTIONS SETUP
-function compareLanguages(guess, correct) { // Compares two languages for similarity
-    return new Promise((resolve, reject) => {
-        // Fetch the JSON data
-        fetch("data.json")
-            .then(response => response.json())
-            .then(data => {
-                // Find the similarity score
-                let similarityScore;
-                let guessCorrect = data.languageData.languages.find(lang => (lang.language1 === guess && lang.language2 === correct) || (lang.language1 === correct && lang.language2 === guess));
-                if (guessCorrect) {
-                    similarityScore = guessCorrect.distance;
-                    return resolve(similarityScore);
-                } else {
-                    reject("Similarity score not found");
-                }
-            })
-            .catch(error => reject(error));
-    });
+function compareLanguages(guess, correct, callback) {
+    fetch("data.json")
+        .then(response => response.json())
+        .then(data => {
+            let similarityScore;
+            let guessCorrect = data.languageData.languages.find(lang => (lang.language1 === guess && lang.language2 === correct) || (lang.language1 === correct && lang.language2 === guess));
+            if (guessCorrect) {
+                similarityScore = guessCorrect.distance;
+                callback(null, similarityScore);
+            } else {
+                callback("Similarity score not found", null);
+            }
+        })
+        .catch(error => callback(error, null));
 }
 
-async function calculateProx(arrInput,lang) { // Calculates the precise proximity between two languages
-  return compareLanguages(arrInput, lang)
-      .then(distance => {
-          let proximity = (100 - distance);
-          printPercent(proximity);
-      })
-      .catch(error => console.error(error)); 
+function calculateProx(arrInput, lang, callback) {
+  compareLanguages(arrInput, lang, (error, distance) => {
+    if (error) {
+      callback(error, null);
+    } else {
+      let proximity = (100 - distance);
+      callback(null, proximity);
+    }
+  });
 }
 
 function printGuess(guesses) { // Sends guess to HTML
-  if (guesses.length === 1) {
-    document.getElementById("guess-1").innerHTML = guesses[0];
-  } else if (guesses.length === 2) {
-    document.getElementById("guess-2").innerHTML = guesses[1];
-  } else if (guesses.length === 3) {
-    document.getElementById("guess-3").innerHTML = guesses[2];
-  } else if (guesses.length === 4) {
-    document.getElementById("guess-4").innerHTML = guesses[3];
-  } else if (guesses.length === 5) {
-    document.getElementById("guess-5").innerHTML = guesses[4];
-  } else if (guesses.length === 6) {
-    document.getElementById("guess-6").innerHTML = guesses[5];
-  } 
-}
+  document.getElementById("guess-" + guesses.length).innerHTML = guesses[guesses.length];
 
 function printPercent(proximity) { // Sends percent and colors to HTML & CSS
   console.log(proximity)
