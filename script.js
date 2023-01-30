@@ -3,7 +3,7 @@ let phrase; // Game variables
 let lang;
 const guesses = [];
 let won = false;
-let color;
+let sendColor;
 
 phrase = "Příběh starý jako čas"; // Test values
 lang = "Czech";
@@ -28,119 +28,85 @@ document.getElementById("guess-6").innerHTML = "";
 document.getElementById("percent-1").style.background = "#808080";
 
 // FUNCTIONS SETUP
-function compareLanguages(guess, correct) { // Compares two languages for similarity
-    return new Promise((resolve, reject) => {
-        // Fetch the JSON data
-        fetch("data.json")
-            .then(response => response.json())
-            .then(data => {
-                // Find the similarity score
-                let similarityScore;
-                let guessCorrect = data.languageData.languages.find(lang => (lang.language1 === guess && lang.language2 === correct) || (lang.language1 === correct && lang.language2 === guess));
-                if (guessCorrect) {
-                    similarityScore = guessCorrect.distance;
-                    return resolve(similarityScore);
-                } else {
-                    reject("Similarity score not found");
-                }
-            })
-            .catch(error => reject(error));
-    });
+function compareLanguages(guess, correct, callback) {
+    fetch("data.json")
+        .then(response => response.json())
+        .then(data => {
+            let similarityScore;
+            let guessCorrect = data.languageData.languages.find(lang => (lang.language1 === guess && lang.language2 === correct) || (lang.language1 === correct && lang.language2 === guess));
+            if (guessCorrect) {
+                similarityScore = guessCorrect.distance;
+                callback(null, similarityScore);
+            } else {
+                callback("Similarity score not found", null);
+            }
+        })
+        .catch(error => callback(error, null));
 }
 
-async function calculateProx(arrInput,lang) { // Calculates the precise proximity between two languages
-  return compareLanguages(arrInput, lang)
-      .then(distance => {
-          let proximity = (100 - distance);
-          printPercent(proximity);
-      })
-      .catch(error => console.error(error)); 
+function calculateProx(arrInput, lang, callback) {
+  compareLanguages(arrInput, lang, (error, distance) => {
+    if (error) {
+      callback(error, null);
+    } else {
+      let proximity = (100 - distance);
+      callback(null, proximity);
+    }
+  });
 }
 
 function printGuess(guesses) { // Sends guess to HTML
-  if (guesses.length === 1) {
-    document.getElementById("guess-1").innerHTML = guesses[0];
-  } else if (guesses.length === 2) {
-    document.getElementById("guess-2").innerHTML = guesses[1];
-  } else if (guesses.length === 3) {
-    document.getElementById("guess-3").innerHTML = guesses[2];
-  } else if (guesses.length === 4) {
-    document.getElementById("guess-4").innerHTML = guesses[3];
-  } else if (guesses.length === 5) {
-    document.getElementById("guess-5").innerHTML = guesses[4];
-  } else if (guesses.length === 6) {
-    document.getElementById("guess-6").innerHTML = guesses[5];
-  } 
-}
+  document.getElementById("guess-" + guesses.length).innerHTML = guesses[guesses.length];
 
 function printPercent(proximity) { // Sends percent and colors to HTML & CSS
-  if (0 <= proximity <= 14) {
-    color = "#ff4d3d";
-  } else if (14 < proximity <= 28) {
-    color = "#ff6a3d";
-  } else if (28 < proximity <= 42) {
-    color = "#ff9b3d";
-  } else if (42 < proximity <= 56) {
-    color = "#ffcf3d";
-  } else if (56 < proximity <= 70) {
-    color = "#fff53d";
-  } else if (70 < proximity <= 84) {
-    color = "#e2ff3d";
-  } else if (84 < proximity < 100) {
-    color = "#b5ff3d";
-  } else if (proximity === 100) {
-    color = "#e36fd7";
+  console.log(proximity)
+  const colors = ["#ff4d3d","#ff6a3d","#ff9b3d","#ffcf3d","#fff53d","#e2ff3d","#b5ff3d","#21ff3b"];
+  const checkpoints = [12.5, 25, 37.5, 50, 62.5, 75, 87.5, 100];
+  sendColor = "";
+  let i = 0;
+  while (sendColor == "") {
+    if (proximity < checkpoints[i]) {
+      sendColor = colors[i];
+    }
+    i++;
   }
-  if (guesses.length === 1) {
-    document.getElementById("percent-1").innerHTML = proximity + "%";
-    document.getElementById("percent-1").style.background = color;
-  } else if (guesses.length === 2) {
-    document.getElementById("percent-2").innerHTML = proximity + "%";
-    document.getElementById("percent-2").style.background = color;
-  } else if (guesses.length === 3) {
-    document.getElementById("percent-3").innerHTML = proximity + "%";
-    document.getElementById("percent-3").style.background = color;
-  } else if (guesses.length === 4) {
-    document.getElementById("percent-4").innerHTML = proximity + "%";
-    document.getElementById("percent-4").style.background = color;
-  } else if (guesses.length === 5) {
-    document.getElementById("percent-5").innerHTML = proximity + "%";
-    document.getElementById("percent-5").style.background = color;
-  } else if (guesses.length === 6) {
-    document.getElementById("percent-6").innerHTML = proximity + "%";
-    document.getElementById("percent-6").style.background = color;
-  } 
+  document.getElementById("percent-" + guesses.length).innerHTML = proximity + "%";
+  document.getElementById("percent-" + guesses.length).style.background = sendColor;
 }
 
+//Tells you if the answer is right or wrong
 function guessingFunction() {
   let arrInput = guessingBox.value;
-  if (validLangs.includes(arrInput) && guesses.length < 6 && won === false && arrInput != lang) {
-    guesses.push(arrInput);
-    printGuess(guesses);
-    printPercent(calculateProx(arrInput,lang));
-  } else if (validLangs.includes(arrInput) && guesses.length <= 6 && won === false && arrInput === lang) {
-    won = true;
-    document.getElementById("popHeading").innerHTML = "You won!";
-    document.getElementById("popText").innerHTML = "You're a language genius! Come back tomorrow for the next puzzle.";
-    modal.showModal();
-    guesses.push(arrInput);
-    printGuess(guesses);
-    printPercent(calculateProx(arrInput,lang));
-  } else if (validLangs.includes(arrInput) && guesses.length === 6 && won === false) {
-    document.getElementById("popHeading").innerHTML = "You lost!";
-    document.getElementById("popText").innerHTML = "You didn't guess the correct language. Come back tomorrow for the next puzzle.";
-    modal.showModal();
-    guesses.push(arrInput);
-    printGuess(guesses);
-    printPercent(calculateProx(arrInput,lang));
-  } else {
+  Console.log("Omg it's actually calling guessingFunction");
+  if (!validLangs.includes(arrInput)) {
     document.getElementById("popHeading").innerHTML = "Uh-oh!";
     document.getElementById("popText").innerHTML = "You entered a language that doesn't exist. Make sure that the first letter is capitalized. If that doesn't work, check out this list of accepted languages.";
     modal.showModal();
+    return
+  }
+    if (guesses.length < 5 && won == false && arrInput != lang) {
+      guesses.push(arrInput);
+      printGuess(guesses);
+      let proximity = calculateProx(arrInput,lang);
+      printPercent(proximity);
+    } else if (guesses.length <= 6 && won == false && arrInput == lang) {
+      won = true;
+      guesses.push(arrInput);
+      printGuess(guesses);
+      printPercent(calculateProx(arrInput,lang));
+      document.getElementById("popHeading").innerHTML = "You won!";
+      document.getElementById("popText").innerHTML = "You're a language genius! Come back tomorrow for the next puzzle.";
+      modal.showModal();
+    } else if (guesses.length == 5 && won == false && arrInput != lang) {
+      guesses.push(arrInput);
+      printGuess(guesses);
+      printPercent(calculateProx(arrInput,lang));
+      document.getElementById("popHeading").innerHTML = "You lost!";
+      document.getElementById("popText").innerHTML = "You didn't guess the correct language. Come back tomorrow for the next puzzle.";
+      modal.showModal();
   }
   guessingBox.value = "";
 }
-
 // EVENT LISTENER SETUP
 document.getElementById("popHeading").innerHTML = "Welcome to Babl!"; // Technical not an EL, opens modal
 document.getElementById("popText").innerHTML = "A twist on the traditional Wordle, you'll test out your linguistic skills through a daily guessing puzzle. Here's how to play: Every day, a new phrase in a foreign language will appear on Babl. You have to guess what language the phrase is written in (it doesn't matter what the phrase actually says). If your guess is right, you'll win! If your guess is wrong, we'll tell you how close you got. You only get 6 tries. Good luck!";
@@ -157,8 +123,8 @@ helpButton.addEventListener('click', () => {
 });
 
 guessingBox.addEventListener("keyup", function(event) {
-  guessingButton.addEventListener("click", () => guessingFunction());
   if (event.keyCode === 13) {
     guessingButton.click();
   }
 });
+guessingButton.addEventListener("click", () => guessingFunction());
