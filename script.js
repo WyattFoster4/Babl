@@ -77,6 +77,7 @@ function printPercent(proximity) { // Sends percent and colors to HTML & CSS
 //Tells you if the answer is right or wrong
 function guessingFunction() {
   let arrInput = guessingBox.value;
+  Console.log("Omg it's actually calling guessingFunction");
   if (!validLangs.includes(arrInput)) {
     document.getElementById("popHeading").innerHTML = "Uh-oh!";
     document.getElementById("popText").innerHTML = "You entered a language that doesn't exist. Make sure that the first letter is capitalized. If that doesn't work, check out this list of accepted languages.";
