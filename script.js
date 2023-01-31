@@ -28,8 +28,8 @@ document.getElementById("guess-6").innerHTML = "";
 document.getElementById("percent-1").style.background = "#808080";
 
 // FUNCTIONS SETUP
-function compareLanguages(guess, correct, callback) {
-    fetch("data.json")
+function compareLanguages(guess, correct) {
+  fetch("data.json")
         .then(response => response.json())
         .then(data => {
             let similarityScore;
@@ -57,7 +57,8 @@ function calculateProx(arrInput, lang, callback) {
 
 function printGuess(guesses) { // Sends guess to HTML
   document.getElementById("guess-" + guesses.length).innerHTML = guesses[guesses.length];
-
+}
+  
 function printPercent(proximity) { // Sends percent and colors to HTML & CSS
   console.log(proximity)
   const colors = ["#ff4d3d","#ff6a3d","#ff9b3d","#ffcf3d","#fff53d","#e2ff3d","#b5ff3d","#21ff3b"];
