@@ -287,7 +287,7 @@ body {
 
 
 
-/* this is me messing around with what the guess would look like on the screen*/
+/* guess and percent boxes*/
 .ex-guess {
   width: 32%;
   height: 58px;
@@ -304,6 +304,7 @@ body {
   line-height: 58px;
   font-family: sans-serif;
 }
+
 
 .wrong {
   width: 14.5%;
@@ -520,7 +521,6 @@ body {
     border-style: solid;
     border-width: 0px;
     border-color: black;
-    font-size: 4vw;
     border-top-width: 0px;
     z-index: 50;
   }

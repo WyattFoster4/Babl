@@ -11,6 +11,11 @@ let sendColor;
 phrase = "Příběh starý jako čas";
 lang = "Czech";
 
+
+//sets gray background for the one box that didn't have the right color (idk why)
+document.getElementById("percent-1").style.background = "#828282"
+
+
 // Modal variables
 const modal = document.querySelector('#modal');
 const helpButton = document.querySelector(".howto");
@@ -49,8 +54,8 @@ function printGuess(guesses) {
 
 // Sends percent and colors to HTML & CSS
 function printPercent(proximity) {
-  const colors = ["#ff4d3d", "#ff6a3d", "#ff9b3d", "#ffcf3d", "#fff53d", "#e2ff3d", "#b5ff3d", "#21ff3b"];
-  const checkpoints = [12.5, 25, 37.5, 50, 62.5, 75, 87.5, 100];
+  const colors = ["#ff4d3d", "#ff6a3d", "#ff9b3d", "#ffcf3d", "#fff53d", "#e2ff3d", "#b5ff3d", "#21ff3b",];
+  const checkpoints = [0, 12.5, 25, 37.5, 50, 62.5, 75, 87.5, 100];
   var sendColor = "";
   // Iterates over both arrays and fits the color to the checkpoints
   for (var i = 0; i<checkpoints.length; i++) {
@@ -65,6 +70,7 @@ function printPercent(proximity) {
 // Lets you input guesses
 async function guessingFunction() {
   let arrInput = guessingBox.value;
+  arrInput = arrInput.charAt(0).toUpperCase() + arrInput.slice(1).toLowerCase();
   console.log("Omg it's actually calling guessingFunction");
   if (!validLangs.includes(arrInput)) {
     document.getElementById("popHeading").innerHTML = "Uh-oh!";
@@ -74,6 +80,7 @@ async function guessingFunction() {
   }
   if (guesses.length < 5 && won == false && arrInput != lang) {
     guesses.push(arrInput);
+    guessingBox.value = "";
     printGuess(guesses);
     let proximity = await compareLanguages(arrInput, lang);
     console.log(proximity + "proximity")
@@ -94,7 +101,6 @@ async function guessingFunction() {
     document.getElementById("popText").innerHTML = "You didn't guess the correct language. Come back tomorrow for the next puzzle.";
     modal.showModal();
   }
-  guessingBox.value = "";
 }
 
 // EVENT LISTENER SETUP
