@@ -54,13 +54,16 @@ function printGuess(guesses) {
 
 // Sends percent and colors to HTML & CSS
 function printPercent(proximity) {
-  const colors = ["#ff4d3d", "#ff6a3d", "#ff9b3d", "#ffcf3d", "#fff53d", "#e2ff3d", "#b5ff3d", "#21ff3b",];
+  const colors = ["#8b0000", "#ff4d3d", "#ff6a3d", "#ff9b3d", "#ffcf3d", "#fff53d", "#e2ff3d", "#b5ff3d", "#21ff3b"];
   const checkpoints = [0, 12.5, 25, 37.5, 50, 62.5, 75, 87.5, 100];
   var sendColor = "";
   // Iterates over both arrays and fits the color to the checkpoints
   for (var i = 0; i<checkpoints.length; i++) {
     if (checkpoints[i-1] <= proximity && proximity <= checkpoints[i]) {
       sendColor = colors[i];
+    }
+    if (proximity == 100) {
+      sendColor = "#ff00ff"
     }
   }  
   document.getElementById("percent-" + guesses.length).innerHTML = proximity + "%";
