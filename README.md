@@ -11,10 +11,7 @@ Before continuing build, see if you can fix one of these things. We've all been 
 
 |Thing|What Happened?|Root Ideas|
 |---|---|---|
-|Uh-oh Message|Desite printing guesses to the screen, shows modal alerting of a bad guess|FIXED|
-|Passing colors|All guesses display as red|Something to fix in printPercent() function|
-|Percent delay|Find a faster way to get value|Scan json faster? Promises? Fetch?|
-|Rounding %s|When rounding proximity values, fills in all guesses and forces a loss|Literally no way to avoid this yet|
+|Link in modal|Have a link to validLangs doc in modal|Wyatt will add doc- then research hrefs in innerHTML|
 |Scrollbar|Would like to always show scrollbar, and style it to be more obvious|Mess around with scrollbar styles (without removing mobile styles)|
 |Footer padding|On some devices, no footer padding|div?|
 
@@ -27,14 +24,14 @@ Currently working on it! Here's our task board. Feel free to update based on you
 |Input for words|COMPLETED|LUKE & WYATT|
 |Language Proximity Calculator|COMPLETED|LÉO|
 |Fonts and graphics|IN PROGRESS|LUKE|
-|Guess boxes|IN PROGRESS|LUKE & WYATT|
-|Time sensors|NOT STARTED|WYATT|
-|Case senstitivity|NOT STARTED|?|
-|Solutions| IN PROGRESS|WYATT|
-|Troubleshooting|IN PROGRESS|EVERYONE|
-|How-to Modal|COMPLETED|BY SOMEONE|
+|Guess boxes|COMPLETED|LUKE & LÉO & WYATT|
+|Time sensors|IN PROGRESS|LÉO & ABE & WYATT|
+|Case senstitivity and spaces|COMPLETED|LÉO THE MADMAN|
+|Solutions|COMPLETED|WYATT|
+|Troubleshooting|COMPLETED|EVERYONE|
+|How-to Modal|COMPLETED|EVERYONE|
 |Move files to Git|COMPLETED|LÉO|
-|Final hosting|ON HOLD UNTIL COMPLETION OF PROJECT|WYATT & LÉO|
+|Final hosting|IN PROGRESS|WYATT & LÉO|
 
 ## What we're using
 We're hosting our code on Replit and GitHub. We've been programming with HTML, CSS, and JS. We're also using an external json file to calculate language proximity.
