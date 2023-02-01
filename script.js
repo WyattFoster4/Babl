@@ -69,7 +69,7 @@ function printPercent(proximity) {
 
 // Lets you input guesses
 async function guessingFunction() {
-  let arrInput = guessingBox.value;
+  let arrInput = guessingBox.value.trim();
   arrInput = arrInput.charAt(0).toUpperCase() + arrInput.slice(1).toLowerCase();
   console.log("Omg it's actually calling guessingFunction");
   if (!validLangs.includes(arrInput)) {
