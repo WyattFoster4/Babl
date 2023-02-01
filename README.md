@@ -11,7 +11,6 @@ Before continuing build, see if you can fix one of these things. We've all been 
 
 |Thing|What Happened?|Root Ideas|
 |---|---|---|
-|Link in modal|Have a link to validLangs doc in modal|Wyatt will add doc- then research hrefs in innerHTML|
 |Scrollbar|Would like to always show scrollbar, and style it to be more obvious|Mess around with scrollbar styles (without removing mobile styles)|
 |Footer padding|On some devices, no footer padding|div?|
 

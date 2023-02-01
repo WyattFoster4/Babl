@@ -77,7 +77,7 @@ async function guessingFunction() {
   console.log("Omg it's actually calling guessingFunction");
   if (!validLangs.includes(arrInput)) {
     document.getElementById("popHeading").innerHTML = "Uh-oh!";
-    document.getElementById("popText").innerHTML = "You entered a language that doesn't exist. Make sure that the first letter is capitalized. If that doesn't work, check out this list of accepted languages.";
+    document.getElementById("popText").innerHTML = "You entered a language that doesn't exist. Make sure that the first letter is capitalized. If that doesn't work, check out <a href = 'list.html'  target= '_blank'>this</a> list of accepted languages.";
     guessingBox.value = "";
     modal.showModal();
     return;
@@ -113,7 +113,7 @@ async function guessingFunction() {
 
 // Technical not an EL, opens modal
 document.getElementById("popHeading").innerHTML = "Welcome to Babl!";
-document.getElementById("popText").innerHTML = "<span>A twist on the traditional Wordle, you'll test out your linguistic skills through a daily guessing puzzle. Here's how to play: Every day, a new phrase in a foreign language will appear on Babl. You have to guess what language the phrase is written in (it doesn't matter what the phrase actually says). If your guess is right, you'll win! If your guess is wrong, we'll tell you how close you got. You only get 6 tries. Good luck! <a href = 'list.html'  target= '_blank'>here</a>";
+document.getElementById("popText").innerHTML = "A twist on the traditional Wordle, you'll test out your linguistic skills through a daily guessing puzzle. Here's how to play: Every day, a new phrase in a foreign language will appear on Babl. You have to guess what language the phrase is written in (it doesn't matter what the phrase actually says). If your guess is right, you'll win! If your guess is wrong, we'll tell you how close you got. You only get 6 tries. Good luck!";
 modal.showModal();
 
 // Adds button to close modal
