@@ -36,28 +36,20 @@ async function compareLanguages(guess, correct) {
   similarityScore = guessCorrect.distance;
   return 100 - parseInt(similarityScore);
 }
-/*
-async function calculateProx(arrInput, lang) {
-  //console.log(await compareLanguages(arrInput, lang), " prox")
-  return 100 - await compareLanguages(arrInput, lang)
-}*/
 
 function printGuess(guesses) { // Sends guess to HTML
   document.getElementById("guess-" + guesses.length).innerHTML = guesses[guesses.length - 1];
 }
 
 function printPercent(proximity) { // Sends percent and colors to HTML & CSS
-  console.log(proximity)
   const colors = ["#ff4d3d", "#ff6a3d", "#ff9b3d", "#ffcf3d", "#fff53d", "#e2ff3d", "#b5ff3d", "#21ff3b"];
   const checkpoints = [12.5, 25, 37.5, 50, 62.5, 75, 87.5, 100];
-  var sendColor = 'a';
-
+  var sendColor = "";
   for (var i = 0; i<checkpoints.length; i++) {
-    if (proximity < checkpoints[i]) {
+    if (checkpoints[i-1] <= proximity && proximity <= checkpoints[i]) {
       sendColor = colors[i];
     }
-  }
-  
+  }  
   document.getElementById("percent-" + guesses.length).innerHTML = proximity + "%";
   document.getElementById("percent-" + guesses.length).style.background = sendColor;
 }
