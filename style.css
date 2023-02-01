@@ -1,5 +1,5 @@
 body {
-  background: #454545;
+  background: #5c5c5c;
   overflow-y: scroll;
 }
 
@@ -47,6 +47,16 @@ body {
   font-family: sans-serif;
   font-weight: bold;
   border-radius: 5px;
+  transition: transform 0.15s, opacity 0.15s;
+}
+
+.howto:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+.howto:active {
+  opacity: 0.6;
 }
 
 .word-title {
@@ -68,7 +78,7 @@ body {
   left: 0; 
   right: 0; 
   margin-left: auto; 
-  margin-right: auto; 
+  margin-right: auto;
   font-size: 50px;
   /*box-shadow: 4px 4px 3px gray;*/
   top: 135px;
@@ -104,7 +114,8 @@ body {
 
 .input-box {
   width: 34.7%;
-  height: 57px;
+  padding-top: 14px;
+  padding-bottom: 15px;
   position: absolute;
   top: 445px;
   right: 41%;
@@ -113,7 +124,7 @@ body {
   border-style: solid;
   border-width: 2px;
   border-color: black;
-  font-size: 18px;
+  font-size: 26px;
   text-align: center;
   font-family: sans-serif;
 }
@@ -216,18 +227,22 @@ body {
 
 
 .modal {
-  border-radius: 2px;
+  border-radius: 10px;
   border-style: solid;
   border-width: 3px;
   border-color: #212121;
   width: 40%;
   font-family: sans-serif;
+  background: #2e2d4d;
+  color: white;
 }
 
 .modal::backdrop {
   background: black;
   opacity: 0.4;
 }
+
+
 
 .close-button {
   height: 25px;
@@ -243,6 +258,10 @@ body {
   top: 5%;
   right: 2%;
   line-height: 23.5px;
+}
+
+.close-button:focus {
+  outline: none;
 }
 
 .close-button:hover {
@@ -482,7 +501,6 @@ body {
   position: absolute;
   top: 125%;
 }
-
 
 
 
@@ -756,7 +774,7 @@ body {
 
   .input-box {
     width: 47.8%;
-    height: 50px;
+    height: 73px;
     position: absolute;
     top: 465px;
     right: 37.5%;
@@ -765,9 +783,11 @@ body {
     border-style: solid;
     border-width: 2px;
     border-color: black;
-    font-size: 38px;
+    font-size: 36px;
     text-align: center;
     font-family: sans-serif;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .input-box:focus {
@@ -776,7 +796,7 @@ body {
   
   .input-button {
     width: 26.8%;
-    height: 73px;
+    height: 77px;
     position: absolute;
     top: 463px;
     right: 10.7%;
@@ -793,6 +813,8 @@ body {
     z-index: 10;
     line-height: 12px;
     font-family: sans-serif;    
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
   .word-title {
     width: 50%;
@@ -854,6 +876,11 @@ body {
     width: 80%;
     height: 30%;
     font-size: 30px;
+  }
+
+  .howto:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
   }
   
   .modal::backdrop {
