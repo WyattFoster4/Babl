@@ -78,6 +78,7 @@ async function guessingFunction() {
   if (!validLangs.includes(arrInput)) {
     document.getElementById("popHeading").innerHTML = "Uh-oh!";
     document.getElementById("popText").innerHTML = "You entered a language that doesn't exist. Make sure that the first letter is capitalized. If that doesn't work, check out this list of accepted languages.";
+    guessingBox.value = "";
     modal.showModal();
     return;
   }
@@ -95,6 +96,7 @@ async function guessingFunction() {
     printPercent(await compareLanguages(arrInput, lang));
     document.getElementById("popHeading").innerHTML = "You won!";
     document.getElementById("popText").innerHTML = "You're a language genius! Come back tomorrow for the next puzzle.";
+    guessingBox.value = "";
     modal.showModal();
   } else if (guesses.length == 5 && won == false && arrInput != lang) {
     guesses.push(arrInput);
@@ -102,6 +104,7 @@ async function guessingFunction() {
     printPercent(await compareLanguages(arrInput, lang));
     document.getElementById("popHeading").innerHTML = "You lost!";
     document.getElementById("popText").innerHTML = "You didn't guess the correct language. Come back tomorrow for the next puzzle. Today's solution: " + lang;
+    guessingBox.value = "";
     modal.showModal();
   }
 }
