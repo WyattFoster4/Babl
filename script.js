@@ -41,12 +41,36 @@ async function compareLanguages(guess, correct) {
   let data = await fetch("./data.json", { method: 'GET' }).then(response => response.json(response));
   console.log(data);
   let similarityScore;
+  //This works but it's really slow because it's not actually working with JSON, just an array you have in a JSON file for some reason.
   let guessCorrect = await data.languageData.languages.find(lang => (lang.language1 === guess && lang.language2 === correct) || (lang.language1 === correct && lang.language2 === guess));
   console.log(guessCorrect);
   similarityScore = guessCorrect.distance;
   return 100 - parseInt(similarityScore);
 }
-
+//Won't work, ignore
+// function getSolution() {
+//    let data = await fetch("./solutions.json", { method: 'GET' }).then(response => response.json(response));
+//   let date = Date.getDate();
+//   let isEven = date % 2 == 0;
+//   let dayOfWeek = Date.getDay();
+//   if (dayOfWeek <= 1) {
+//     //Early week
+//     if (isEven) {
+//       var number = (Math.floor( Math.random() * 35 / 2 ) * 2) + 1;
+//       return data.Week.EarlyWeek["opt" + number];
+//     } else {
+//             var number = (Math.floor( Math.random() * 35 / 2 ) * 2);
+//       if (number == 0) number = 2; 
+//       return data.Week.EarlyWeek["opt" + number];
+      
+//     }
+    
+//   } else if (dayOfWeek <= 4) {
+//     //Mid week
+//   } else {
+//     //Late week
+//   }
+// }
 // Sends guess to HTML
 function printGuess(guesses) {
   document.getElementById("guess-" + guesses.length).innerHTML = guesses[guesses.length - 1];
@@ -54,8 +78,8 @@ function printGuess(guesses) {
 
 // Sends percent and colors to HTML & CSS
 function printPercent(proximity) {
-  const colors = ["#8b0000", "#ff4d3d", "#ff6a3d", "#ff9b3d", "#ffcf3d", "#fff53d", "#e2ff3d", "#b5ff3d", "#21ff3b"];
-  const checkpoints = [0, 12.5, 25, 37.5, 50, 62.5, 75, 87.5, 100];
+  const colors = ['ff0000', '#fe3900', '#fb5600', '#f66d00', '#ee8200', '#e39500', '#d7a600', '#c8b700', '#b6c700', '#a1d600', '#86e400', '#62f200', '#06ff00'];
+  const checkpoints = [0, 9, 16, 25, 35, 42, 49, 63, 70, 77, 84, 93, 100];
   var sendColor = "";
   // Iterates over both arrays and fits the color to the checkpoints
   for (var i = 0; i<checkpoints.length; i++) {
@@ -77,7 +101,7 @@ async function guessingFunction() {
   console.log("Omg it's actually calling guessingFunction");
   if (!validLangs.includes(arrInput)) {
     document.getElementById("popHeading").innerHTML = "Uh-oh!";
-    document.getElementById("popText").innerHTML = "You entered a language that doesn't exist. Make sure that the first letter is capitalized. If that doesn't work, check out <a href = 'list.html'  target= '_blank'>this</a> list of accepted languages.";
+    document.getElementById("popText").innerHTML = "You entered a language that doesn't exist. Check out <a class = 'inner-link' href = 'list.html'  target= '_blank'>this link</a> for a list of accepted languages.";
     guessingBox.value = "";
     modal.showModal();
     return;
@@ -113,7 +137,7 @@ async function guessingFunction() {
 
 // Technical not an EL, opens modal
 document.getElementById("popHeading").innerHTML = "Welcome to Babl!";
-document.getElementById("popText").innerHTML = "A twist on the traditional Wordle, you'll test out your linguistic skills through a daily guessing puzzle. Here's how to play: Every day, a new phrase in a foreign language will appear on Babl. You have to guess what language the phrase is written in (it doesn't matter what the phrase actually says). If your guess is right, you'll win! If your guess is wrong, we'll tell you how close you got. You only get 6 tries. Good luck!";
+document.getElementById("popText").innerHTML = "How to play: Every day, a new phrase in a foreign language will appear on Babl. You have to guess what language the phrase is written in (it doesn't matter what the phrase actually says). If your guess is right, you'll win! If your guess is wrong, we'll tell you how close you got. You only get 6 tries. Good luck!";
 modal.showModal();
 
 // Adds button to close modal

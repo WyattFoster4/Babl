@@ -503,7 +503,19 @@ body {
   top: 125%;
 }
 
+/*styling link within modal*/
+.inner-link {
+  color: white;
+  transition: color 0.2s, opacity 0.2s;
+}
 
+.inner-link:hover {
+  color: gray;
+}
+
+.inner-link:active {
+  opacity: 0.6;
+}
 
 
 
@@ -869,13 +881,16 @@ body {
   }
 
   .modal {
-    border-radius: 2px;
+    border-radius: 15px;
     border-style: solid;
     border-width: 3px;
     border-color: #212121;
     width: 80%;
-    height: 30%;
-    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom:15px;
+    font-size: 40px;
+    overflow: hidden;
+    transition: transform 0.15s;
   }
 
   .howto:hover {
