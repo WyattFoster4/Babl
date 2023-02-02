@@ -7,10 +7,6 @@ const guesses = [];
 let won = false;
 let sendColor;
 
-// Test values
-phrase = "Příběh starý jako čas";
-lang = "Czech";
-
 
 //sets gray background for the one box that didn't have the right color (idk why)
 document.getElementById("percent-1").style.background = "#828282"
@@ -20,13 +16,14 @@ document.getElementById("percent-1").style.background = "#828282"
 const modal = document.querySelector('#modal');
 const helpButton = document.querySelector(".howto");
 const closeModal = document.querySelector('.close-button');
+const phraseBox = document.querySelector('#phraseBox');
 
 // Input box/button variables
 let guessingBox = document.getElementById("guessingBox");
 let guessingButton = document.getElementById("guessingButton");
 
 // List of valid languages
-let validLangs = ["Abkhaz", "Adyghe", "Afar", "Afrikaans", "Ainu", "Gheg Albanian", "Tosk Albanian", "Aleut", "Altai", "Amharic", "Arabic", "Armaic", "Arbanaski", "Armenian", "Eastern Albanian", "Assamese", "Avar", "Azeri", "Balochi", "Basaa", "Bashkir", "Basque", "Belarusian", "Bemba", "Bengali", "Bihari", "Bole", "Brahui", "Brazilian", "Breton", "Bulgarian", "Burmese", "Burushaski", "Buryat", "Buyang", "Catalan", "Cebuano", "Chechen", "Cantonese", "Mandarin", "Chuvash", "Comorian", "Cornish", "Croatian", "Czech", "Danish", "Dargwa", "Dhivehi", "Digor Ossetic", "Dizi", "Douala", "Dutch", "English", "Estonian", "Even", "Faroese", "Finnish", "Flemish", "French", "Frisian", "Friulian", "Fula", "Galician", "Gelao", "Georgian", "German", "Greek", "Eastern Greenlandic", "Western Greenlandic", "Gujarati", "Gypsy Romani", "Hausa", "Hebrew", "Hindi", "Hungarian", "Icelandic", "Igbo", "Indonesian", "Irish", "Iron Ossetic", "Ishkashimi", "Istro-Romanian", "Italian", "Japanese", "Javanese", "Kabardian", "Kabylian", "Kalasha", "Kalmyk", "Kannada", "Karelian", "Kashmiri", "Kazakh", "Ket", "Khanti", "Khmer", "Khowar", "Kivalliq", "Komi", "Korean", "Kurdish", "Kurukh", "Kyrgyz", "Labrador Inuttut", "Ladin", "Lahnda", "Lak", "Lao", "Latvian", "Letzebuergesch", "Lezgian", "Lithuanian", "Macedonian", "Magahi", "Malagasy", "Malayalam", "Maltese", "Mansi", "Maori", "Marathi", "Mari", "Marwari", "Mon", "Mongolian", "Nayi", "Nenets", "Nepali", "Norwegian Bokmal", "Norwegian Nynorsk", "Oriya", "Oromo", "Oroqen", "Pashto", "Pennsylvania Dutch", "Persian", "Polish", "Portuguese", "Provencal", "Punjabi", "Romanian", "Romansch", "Russian", "Sami", "Samoan", "Sardinian Logudorese", "Sardinian Nuorese", "Sariqoli", "Schwyzerduetsch", "Scots", "Scottish Gaelic", "Serbian", "Shan", "Sheko", "Sindhi", "Sinhalese", "Slovak", "Slovene", "Somali", "Spanish", "Sranan", "Swahili", "Swedish", "Tagalog", "Tahitian", "Tajik", "Tamasheq", "Tamil", "Tashelhit", "Tatar", "Tausug", "Telugu", "Thai", "Tibetan", "Tigrigna", "Tmazight", "Tsakonian", "Turkish", "Turkmen", "Tuvan", "Ukrainian", "Urdu", "Uyghur", "Uzbek", "Veps", "Vietnamese", "Vlach", "Wakhi", "Walloon", "Warji", "Waziri", "Welsh", "Wolof", "Yakut", "Yiddish", "Yoruba", "Yupik", "Zazaki", "Zulu"];
+const validLangs = ["Abkhaz", "Adyghe", "Afar", "Afrikaans", "Ainu", "Gheg Albanian", "Tosk Albanian", "Aleut", "Altai", "Amharic", "Arabic", "Armaic", "Arbanaski", "Armenian", "Eastern Albanian", "Assamese", "Avar", "Azeri", "Balochi", "Basaa", "Bashkir", "Basque", "Belarusian", "Bemba", "Bengali", "Bihari", "Bole", "Brahui", "Brazilian", "Breton", "Bulgarian", "Burmese", "Burushaski", "Buryat", "Buyang", "Catalan", "Cebuano", "Chechen", "Cantonese", "Mandarin", "Chuvash", "Comorian", "Cornish", "Croatian", "Czech", "Danish", "Dargwa", "Dhivehi", "Digor Ossetic", "Dizi", "Douala", "Dutch", "English", "Estonian", "Even", "Faroese", "Finnish", "Flemish", "French", "Frisian", "Friulian", "Fula", "Galician", "Gelao", "Georgian", "German", "Greek", "Eastern Greenlandic", "Western Greenlandic", "Gujarati", "Gypsy Romani", "Hausa", "Hebrew", "Hindi", "Hungarian", "Icelandic", "Igbo", "Indonesian", "Irish", "Iron Ossetic", "Ishkashimi", "Istro-Romanian", "Italian", "Japanese", "Javanese", "Kabardian", "Kabylian", "Kalasha", "Kalmyk", "Kannada", "Karelian", "Kashmiri", "Kazakh", "Ket", "Khanti", "Khmer", "Khowar", "Kivalliq", "Komi", "Korean", "Kurdish", "Kurukh", "Kyrgyz", "Labrador Inuttut", "Ladin", "Lahnda", "Lak", "Lao", "Latvian", "Letzebuergesch", "Lezgian", "Lithuanian", "Macedonian", "Magahi", "Malagasy", "Malayalam", "Maltese", "Mansi", "Maori", "Marathi", "Mari", "Marwari", "Mon", "Mongolian", "Nayi", "Nenets", "Nepali", "Norwegian Bokmal", "Norwegian Nynorsk", "Oriya", "Oromo", "Oroqen", "Pashto", "Pennsylvania Dutch", "Persian", "Polish", "Portuguese", "Provencal", "Punjabi", "Romanian", "Romansch", "Russian", "Sami", "Samoan", "Sardinian Logudorese", "Sardinian Nuorese", "Sariqoli", "Schwyzerduetsch", "Scots", "Scottish Gaelic", "Serbian", "Shan", "Sheko", "Sindhi", "Sinhalese", "Slovak", "Slovene", "Somali", "Spanish", "Sranan", "Swahili", "Swedish", "Tagalog", "Tahitian", "Tajik", "Tamasheq", "Tamil", "Tashelhit", "Tatar", "Tausug", "Telugu", "Thai", "Tibetan", "Tigrigna", "Tmazight", "Tsakonian", "Turkish", "Turkmen", "Tuvan", "Ukrainian", "Urdu", "Uyghur", "Uzbek", "Veps", "Vietnamese", "Vlach", "Wakhi", "Walloon", "Warji", "Waziri", "Welsh", "Wolof", "Yakut", "Yiddish", "Yoruba", "Yupik", "Zazaki", "Zulu"];
 
 // HTML & CSS SETUP
 
@@ -34,43 +31,48 @@ for (var i = 1; i<7; i++) {
   document.getElementById("guess-"+i).innerHTML = ""; // Clears guessing boxes at start
 }
 
+window.onload = async function() {
+  let currentSolution = await getSolution()
+  phraseBox.innerText = currentSolution.phrase
+  lang = currentSolution.language
+}
+
 // FUNCTIONS SETUP
 
 // Compares languages by reading JSON, returns similarity in percent
 async function compareLanguages(guess, correct) {
   let data = await fetch("./data.json", { method: 'GET' }).then(response => response.json(response));
-  console.log(data);
   let similarityScore;
   //This works but it's really slow because it's not actually working with JSON, just an array you have in a JSON file for some reason.
   let guessCorrect = await data.languageData.languages.find(lang => (lang.language1 === guess && lang.language2 === correct) || (lang.language1 === correct && lang.language2 === guess));
-  console.log(guessCorrect);
   similarityScore = guessCorrect.distance;
   return 100 - parseInt(similarityScore);
 }
-//Won't work, ignore
-// function getSolution() {
-//    let data = await fetch("./solutions.json", { method: 'GET' }).then(response => response.json(response));
-//   let date = Date.getDate();
-//   let isEven = date % 2 == 0;
-//   let dayOfWeek = Date.getDay();
-//   if (dayOfWeek <= 1) {
-//     //Early week
-//     if (isEven) {
-//       var number = (Math.floor( Math.random() * 35 / 2 ) * 2) + 1;
-//       return data.Week.EarlyWeek["opt" + number];
-//     } else {
-//             var number = (Math.floor( Math.random() * 35 / 2 ) * 2);
-//       if (number == 0) number = 2; 
-//       return data.Week.EarlyWeek["opt" + number];
-      
-//     }
-    
-//   } else if (dayOfWeek <= 4) {
-//     //Mid week
-//   } else {
-//     //Late week
-//   }
-// }
+
+async function getSolution() {
+  let date = new Date()
+   let data = await fetch("./solutions.json", { method: 'GET' }).then(response => response.json(response));
+  var num;
+  let dayOfWeek = date.getDay()
+  if (dayOfWeek <= 1) {
+    num = (((String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear())) ** 7) % 35) + 1;
+    return data.Week.EarlyWeek[String("opt" + num)]
+    //Early week
+  } else if (dayOfWeek <= 4) {
+    //Mid week
+    num = (((String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear())) ** 7) % 51) + 1;
+    return data.Week.MidWeek[String("opt" + num)]
+  } else if (dayOfWeek <= 6) {
+    //Late week
+    num = (((String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear())) ** 7) % 48) + 1;
+    return data.Week.EarlyWeek[String("opt" + num)]
+  } else {
+    //Sunday
+    num = (((String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear())) ** 7) % 15) + 1;
+    return data.Week.Sunday[String("opt" + num)]
+  }
+  
+}
 // Sends guess to HTML
 function printGuess(guesses) {
   document.getElementById("guess-" + guesses.length).innerHTML = guesses[guesses.length - 1];
@@ -98,7 +100,7 @@ function printPercent(proximity) {
 async function guessingFunction() {
   let arrInput = guessingBox.value.trim();
   arrInput = arrInput.charAt(0).toUpperCase() + arrInput.slice(1).toLowerCase();
-  console.log("Omg it's actually calling guessingFunction");
+
   if (!validLangs.includes(arrInput)) {
     document.getElementById("popHeading").innerHTML = "Uh-oh!";
     document.getElementById("popText").innerHTML = "You entered a language that doesn't exist. Check out <a class = 'inner-link' href = 'list.html'  target= '_blank'>this link</a> for a list of accepted languages.";
@@ -111,7 +113,6 @@ async function guessingFunction() {
     guessingBox.value = "";
     printGuess(guesses);
     let proximity = await compareLanguages(arrInput, lang);
-    console.log(proximity + "proximity")
     printPercent(proximity);
   } else if (guesses.length <= 6 && won == false && arrInput == lang) {
     won = true;
