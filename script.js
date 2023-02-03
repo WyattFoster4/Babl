@@ -90,7 +90,7 @@ async function getSolution() {
   } else if (dayOfWeek <= 6) {
     //Late week
     num = (((String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear())) ** 7) % 48) + 1;
-    return data.Week.EarlyWeek[String("opt" + num)]
+    return data.Week.EndWeek[String("opt" + num)]
   } else {
     //Sunday
     num = (((String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear())) ** 7) % 15) + 1;
