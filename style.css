@@ -521,7 +521,48 @@ body {
 }
 
 
+.solution {
+  width: 51.5%;
+  height: 60px;
+  position: absolute;
+  top: 465px;
+  right: 37.5%;
+  background: #a1a1a1;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  font-size: 36px;
+  text-align: center;
+  font-family: sans-serif;
+  padding-top: 13px;
+  padding-bottom: 0px;
+  z-index: -10;
+}
 
+.share {
+  width: 26.8%;
+  height: 77px;
+  position: absolute;
+  top: 463px;
+  right: 10.7%;
+  font-size: 36px;
+  text-align: center;
+  background: #1a1919;
+  color: white;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #1a1919;
+  transition: background 0.15s, border-color 0.15s, opacity 0.15s;
+  margin-top: 2px;
+  z-index: 10;
+  line-height: 12px;
+  font-family: sans-serif;    
+  padding-top: 0px;
+  padding-bottom: 0px;
+  z-index: -10;
+}
 
 
 /*mobile css goes here*/
