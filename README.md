@@ -33,15 +33,15 @@ Currently working on it! Here's our task board. Feel free to update based on you
 |Final hosting|IN PROGRESS|WYATT & LÉO|
 
 ## What we're using
-We're hosting our code on Replit and GitHub. We've been programming with HTML, CSS, and JS. We're also using an external json file to calculate language proximity.
+We're hosting our code on Replit and GitHub. We've been programming with HTML, CSS, and JS. We're also using some JSON to store large data (eg. language proximity, possible solutions). We're hosting with GitHub. 
 
 ## Contributors
-Luke Dreyfuss, Wyatt Foster, and Léo Fitzpatrick: Original creators and programmers
-Abe Kirschner & Danica Stout: Troubleshooting
-Abe Kirschner & Ryder Something: Inspiration and logistical setup
-Josh Wardle: For being a legend and making Wordle
-Open AI's ChatGPT for helping us debug
-elinguistics.net: The original producers of the algorithm we use
-@polvanrijn on GitHub: Author of the scraper program for elinguistics.net
+* Luke Dreyfuss, Wyatt Foster, and Léo Fitzpatrick: Original creators and programmers
+* Abe Kirschner, Danica Stout, & Dylan Rafael: Troubleshooting and technical setup
+* Abe Kirschner & Ryder Something: Inspiration and logistical setup
+* Josh Wardle: For being a legend and making Wordle
+* Open AI: For making ChatGPT to helping us debug (and usually break our code)
+* elinguistics.net: The original producers of the algorithm we use
+* @polvanrijn on GitHub: Author of the scraper program for elinguistics.net
 
-Thanks to everyone that helped make this project possible!
+Thanks to everyone that helped make this project possible! It really takes a village.

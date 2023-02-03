@@ -4,13 +4,17 @@
 let phrase;
 let lang;
 const guesses = [];
+const proxList = [];
 let won = false;
 let sendColor;
 let proximities;
+var originDate = new Date("02/01/2023");
+var currentDate = new Date();
+var timeDifference = currentDate.getTime() - originDate.getTime();
+var bablNumber = Math.ceil(timeDifference / (1000 * 3600 * 24));
 
 //sets gray background for the one box that didn't have the right color (idk why)
 document.getElementById("percent-1").style.background = "#828282"
-
 
 // Modal variables
 const modal = document.querySelector('#modal');
@@ -94,6 +98,7 @@ async function getSolution() {
   }
   
 }
+
 // Sends guess to HTML
 function printGuess(guesses) {
   document.getElementById("guess-" + guesses.length).innerHTML = guesses[guesses.length - 1];
@@ -115,6 +120,7 @@ function printPercent(proximity) {
   }  
   document.getElementById("percent-" + guesses.length).innerHTML = proximity + "%";
   document.getElementById("percent-" + guesses.length).style.background = sendColor;
+  proxList.push(proximity);
 }
 
 // Lets you input guesses
@@ -142,6 +148,7 @@ async function guessingFunction() {
     printPercent(await compareLanguages(arrInput, lang));
     document.getElementById("popHeading").innerHTML = "You won!";
     document.getElementById("popText").innerHTML = "You're a language genius! Come back tomorrow for the next puzzle.";
+    document.getElementById("emojiGridText").innerHTML = emojiGrid(proxList, bablNumber);
     guessingBox.value = "";
     modal.showModal();
   } else if (guesses.length == 5 && won == false && arrInput != lang) {
@@ -150,9 +157,32 @@ async function guessingFunction() {
     printPercent(await compareLanguages(arrInput, lang));
     document.getElementById("popHeading").innerHTML = "You lost!";
     document.getElementById("popText").innerHTML = "You didn't guess the correct language. Come back tomorrow for the next puzzle. Today's solution: " + lang;
+    document.getElementById("emojiGridText").innerHTML = emojiGrid(proxList, bablNumber);
     guessingBox.value = "";
     modal.showModal();
   }
+}
+
+// Generates emoji grid
+function emojiGrid(proxList, bablNumber) { 
+  let block = "";
+  let message = "Babl #" + bablNumber + " " + proxList.length + "/6 <br>";
+  
+  for (var i = 0; i<proxList.length; i++) {
+    if (proxList[i] >= 0 && proxList[i] < 25) {
+      block = "🟥🟥🟥🟥🟥"; 
+    } else if (proxList[i] >= 25 && proxList[i] < 50) {
+      block = "🟧🟧🟧🟧🟧";
+    } else if (proxList[i] >= 50 && proxList[i] < 75) {
+      block = "🟨🟨🟨🟨🟨";
+    } else if (proxList[i] >= 75 && proxList[i] < 100) {
+      block = "🟩🟩🟩🟩🟩";
+    } else if (proxList[i] == 100) {
+      block = "🟪🟪🟪🟪🟪";
+    }
+    message = message + " " + block + " " + proxList[i] + "% <br>" ;
+  }
+  return message;
 }
 
 // EVENT LISTENER SETUP
