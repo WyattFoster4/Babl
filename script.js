@@ -129,8 +129,9 @@ async function guessingFunction() {
   arrInput = arrInput.charAt(0).toUpperCase() + arrInput.slice(1).toLowerCase();
 
   if (!validLangs.includes(arrInput)) {
+    let link = "list.html"
     document.getElementById("popHeading").innerHTML = "Uh-oh!";
-    document.getElementById("popText").innerHTML = "You entered a language that doesn't exist. Check out <a class = 'inner-link' href = 'list.html'  target= '_blank'>this link</a> for a list of accepted languages.";
+    document.getElementById("popText").innerHTML = "You entered a language that doesn't exist. Check out <a class='inner-link' href=" + link + " target='_blank'>this link</a> for a list of accepted languages.";
     guessingBox.value = "";
     modal.showModal();
     return;
@@ -147,7 +148,7 @@ async function guessingFunction() {
     printGuess(guesses);
     printPercent(await compareLanguages(arrInput, lang));
     document.getElementById("popHeading").innerHTML = "You won!";
-    document.getElementById("popText").innerHTML = "You're a language genius! Come back tomorrow for the next puzzle.";
+    document.getElementById("popText").innerHTML = "You're a language genius! Come back tomorrow for the next puzzle. Want to learn more about " + lang + "? Click " + "<a class='inner-link' href='https://en.wikipedia.org/wiki/" + lang + "_Language' target='_blank'>here.</a>";
     document.getElementById("emojiGridText").innerHTML = emojiGrid(proxList, bablNumber);
     guessingBox.value = "";
     modal.showModal();
