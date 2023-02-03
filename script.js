@@ -14,7 +14,7 @@ var timeDifference = currentDate.getTime() - originDate.getTime();
 var bablNumber = Math.ceil(timeDifference / (1000 * 3600 * 24));
 
 //sets gray background for the one box that didn't have the right color (idk why)
-document.getElementById("percent-1").style.background = "#828282"
+document.getElementById("percent-1").style.background = "#828282";
 
 // Modal variables
 const modal = document.querySelector('#modal');
@@ -123,6 +123,14 @@ function printPercent(proximity) {
   proxList.push(proximity);
 }
 
+// Hides boxes, switch
+function hideGame() {
+  document.getElementById("solutionBox").style.zIndex = "10";
+  document.getElementById("shareButton").style.zIndex = "10";
+  document.getElementById("guessingBox").style.display = "none";
+  document.getElementById("solutionBox").innerHTML = "Today's solution: " + lang;
+}
+
 // Lets you input guesses
 async function guessingFunction() {
   let arrInput = guessingBox.value.trim();
@@ -148,17 +156,19 @@ async function guessingFunction() {
     printGuess(guesses);
     printPercent(await compareLanguages(arrInput, lang));
     document.getElementById("popHeading").innerHTML = "You won!";
-    document.getElementById("popText").innerHTML = "You're a language genius! Come back tomorrow for the next puzzle. Want to learn more about " + lang + "? Click " + "<a class='inner-link' href='https://en.wikipedia.org/wiki/" + lang + "_Language' target='_blank'>here.</a>";
-    document.getElementById("emojiGridText").innerHTML = emojiGrid(proxList, bablNumber);
+    document.getElementById("popText").innerHTML = "You're a language genius! Come back tomorrow for the next puzzle. Want to learn more about " + lang + "? Click " + "<a class='inner-link' href='https://en.wikipedia.org/wiki/" + lang + "_language' target='_blank'>here.</a>";
+    document.getElementById("emojiGridText").innerHTML = emojiGrid(proxList, bablNumber) + + "<button class = \"share-button\" type=\"button\">Share</button>";
     guessingBox.value = "";
     modal.showModal();
+    hideGame();
   } else if (guesses.length == 5 && won == false && arrInput != lang) {
     guesses.push(arrInput);
     printGuess(guesses);
     printPercent(await compareLanguages(arrInput, lang));
     document.getElementById("popHeading").innerHTML = "You lost!";
     document.getElementById("popText").innerHTML = "You didn't guess the correct language. Come back tomorrow for the next puzzle. Today's solution: " + lang;
-    document.getElementById("emojiGridText").innerHTML = emojiGrid(proxList, bablNumber);
+    hideGame();
+    document.getElementById("emojiGridText").innerHTML = emojiGrid(proxList, bablNumber) + + "<button class = \"share-button\" type=\"button\">Share</button>";
     guessingBox.value = "";
     modal.showModal();
   }
@@ -169,7 +179,7 @@ function emojiGrid(proxList, bablNumber) {
   let block = "";
   let message = "Babl #" + bablNumber + " " + proxList.length + "/6 <br>";
   
-  for (var i = 0; i<proxList.length; i++) {
+  for (var i = 0; i < proxList.length; i++) {
     if (proxList[i] >= 0 && proxList[i] < 25) {
       block = "🟥🟥🟥🟥🟥"; 
     } else if (proxList[i] >= 25 && proxList[i] < 50) {
@@ -190,7 +200,7 @@ function emojiGrid(proxList, bablNumber) {
 
 // Technical not an EL, opens modal
 document.getElementById("popHeading").innerHTML = "Welcome to Babl!";
-document.getElementById("popText").innerHTML = "How to play: Every day, a new phrase in a foreign language will appear on Babl. You have to guess what language the phrase is written in (it doesn't matter what the phrase actually says). If your guess is right, you'll win! If your guess is wrong, we'll tell you how close you got. You only get 6 tries. Good luck!";
+document.getElementById("popText").innerHTML = "Here's how to play: Every day, a new phrase in a foreign language will appear on Babl. You have to guess what language the phrase is written in (it doesn't matter what the phrase actually says). If your guess is right, you'll win! If your guess is wrong, we'll tell you how close you got. You only get 6 tries. Good luck!";
 modal.showModal();
 
 // Adds button to close modal
@@ -201,7 +211,8 @@ closeModal.addEventListener('click', () => {
 // Opens modal when the help button is clicked
 helpButton.addEventListener('click', () => {
   document.getElementById("popHeading").innerHTML = "Welcome to Babl!";
-  document.getElementById("popText").innerHTML = "A twist on the traditional Wordle, you'll test out your linguistic skills through a daily guessing puzzle. Here's how to play: Every day, a new phrase in a foreign language will appear on Babl. You have to guess what language the phrase is written in (it doesn't matter what the phrase actually says). If your guess is right, you'll win! If your guess is wrong, we'll tell you how close you got. You only get 6 tries. Good luck!";
+  document.getElementById("popText").innerHTML = "Here's how to play: Every day, a new phrase in a foreign language will appear on Babl. You have to guess what language the phrase is written in (it doesn't matter what the phrase actually says). If your guess is right, you'll win! If your guess is wrong, we'll tell you how close you got. You only get 6 tries. Good luck!";
+  document.getElementById("emojiGridText").innerHTML = " ";
   modal.showModal();
 });
 
