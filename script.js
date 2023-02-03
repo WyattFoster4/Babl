@@ -8,6 +8,9 @@ const proxList = [];
 let won = false;
 let sendColor;
 let proximities;
+
+var response
+// Time variables
 var originDate = new Date("02/01/2023");
 var currentDate = new Date();
 var timeDifference = currentDate.getTime() - originDate.getTime();
@@ -27,8 +30,8 @@ let guessingBox = document.getElementById("guessingBox");
 let guessingButton = document.getElementById("guessingButton");
 
 // List of valid languages
-const validLangs = ["Abkhaz", "Adyghe", "Afar", "Afrikaans", "Ainu", "Gheg Albanian", "Tosk Albanian", "Aleut", "Altai", "Amharic",
-    "Arabic", "Aramaic", "Arbanaski", "Armenian", "Eastern Armenian", "Assamese", "Avar", "Azeri",
+const validLangs = ["Abkhaz", "Adyghe", "Afar", "Afrikaans", "Ainu", "Gheg Albanian", "Tosk Albanian", "Aleut", "Altai", 
+    "Amharic", "Arabic", "Aramaic", "Arbanaski", "Armenian", "Eastern Armenian", "Assamese", "Avar", "Azeri",
     "Balochi", "Basaa", "Bashkir", "Basque", "Belarusian", "Bemba", "Bengali", "Bihari", "Bole", "Brahui", "Brazilian",
     "Breton", "Bulgarian", "Burmese", "Burushaski", "Buryat", "Buyang", "Catalan", "Cebuano", "Chechen",
     "Cantonese", "Mandarin", "Chuvash", "Comorian", "Cornish", "Croatian", "Czech", "Danish",
@@ -60,6 +63,8 @@ window.onload = async function() {
   let currentSolution = await getSolution()
   phraseBox.innerText = currentSolution.phrase
   lang = currentSolution.language
+  response = await fetch("./out.json", { method: 'GET' });
+  proximities = await response.json();
 }
 
 // FUNCTIONS SETUP
@@ -67,8 +72,6 @@ window.onload = async function() {
 // Compares languages by reading JSON, returns similarity in percent
 async function compareLanguages(guess, correct) {
   if (!proximities) {
-    let response = await fetch("./out.json", { method: 'GET' });
-    proximities = await response.json();
     console.log(proximities);
   }
   return 100 - parseInt(proximities.map[proximities.indices[guess]][proximities.indices[correct]]);
@@ -99,6 +102,7 @@ async function getSolution() {
   
 }
 
+
 // Sends guess to HTML
 function printGuess(guesses) {
   document.getElementById("guess-" + guesses.length).innerHTML = guesses[guesses.length - 1];
@@ -125,10 +129,27 @@ function printPercent(proximity) {
 
 // Hides boxes, switch
 function hideGame() {
-  document.getElementById("solutionBox").style.zIndex = "10";
-  document.getElementById("shareButton").style.zIndex = "10";
-  document.getElementById("guessingBox").style.display = "none";
-  document.getElementById("solutionBox").innerHTML = "Today's solution: " + lang;
+  const solutionBox = document.getElementById("solutionBox")
+  const guessingButton = document.getElementById("guessingButton")
+  const guessingBox = document.getElementById("guessingBox")
+  guessingButton.innerText = "Share"
+  guessingBox.readOnly = true;
+  guessingBox.value = "Today's solution was: " + lang
+  guessingButton.addEventListener("click", () => {
+    if (won == true) {
+      document.getElementById("popText").innerHTML = "You're a language genius! Come back tomorrow for the next puzzle. Want to learn more about " + lang + "? Click " + "<a class='inner-link' href='https://en.wikipedia.org/wiki/" + lang + "_language' target='_blank'>here.</a>";
+    
+    } else {
+      document.getElementById("popText").innerHTML = "You didn't guess the correct language. Come back tomorrow for the next puzzle. Today's solution: " + lang;
+    }
+    document.getElementById("emojiGridText").innerHTML = emojiGrid(proxList, bablNumber) + "<button class = \"share-button\" type=\"button\">Share</button>";
+    modal.showModal()
+  });
+  
+  // document.getElementById("solutionBox").style.zIndex = "10";
+  // document.getElementById("shareButton").style.zIndex = "10";
+  // document.getElementById("guessingBox").style.display = "none";
+  // document.getElementById("solutionBox").innerHTML = "Today's solution: " + lang;
 }
 
 // Lets you input guesses
@@ -157,7 +178,7 @@ async function guessingFunction() {
     printPercent(await compareLanguages(arrInput, lang));
     document.getElementById("popHeading").innerHTML = "You won!";
     document.getElementById("popText").innerHTML = "You're a language genius! Come back tomorrow for the next puzzle. Want to learn more about " + lang + "? Click " + "<a class='inner-link' href='https://en.wikipedia.org/wiki/" + lang + "_language' target='_blank'>here.</a>";
-    document.getElementById("emojiGridText").innerHTML = emojiGrid(proxList, bablNumber) + + "<button class = \"share-button\" type=\"button\">Share</button>";
+    document.getElementById("emojiGridText").innerHTML = emojiGrid(proxList, bablNumber) + "<button class = \"share-button\" type=\"button\">Share</button>";
     guessingBox.value = "";
     modal.showModal();
     hideGame();
@@ -168,7 +189,7 @@ async function guessingFunction() {
     document.getElementById("popHeading").innerHTML = "You lost!";
     document.getElementById("popText").innerHTML = "You didn't guess the correct language. Come back tomorrow for the next puzzle. Today's solution: " + lang;
     hideGame();
-    document.getElementById("emojiGridText").innerHTML = emojiGrid(proxList, bablNumber) + + "<button class = \"share-button\" type=\"button\">Share</button>";
+    document.getElementById("emojiGridText").innerHTML = emojiGrid(proxList, bablNumber) + "<button class = \"share-button\" type=\"button\">Share</button>";
     guessingBox.value = "";
     modal.showModal();
   }
@@ -180,6 +201,7 @@ function emojiGrid(proxList, bablNumber) {
   let message = "Babl #" + bablNumber + " " + proxList.length + "/6 <br>";
   
   for (var i = 0; i < proxList.length; i++) {
+    console.log(proxList[i])
     if (proxList[i] >= 0 && proxList[i] < 25) {
       block = "🟥🟥🟥🟥🟥"; 
     } else if (proxList[i] >= 25 && proxList[i] < 50) {
