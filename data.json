@@ -353,7 +353,7 @@
       },
       {
         "language1": "Abkhaz",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "100.0"
       },
       {
@@ -1323,7 +1323,7 @@
       },
       {
         "language1": "Adyghe",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "93.6"
       },
       {
@@ -1338,7 +1338,7 @@
       },
       {
         "language1": "Adyghe",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "90.8"
       },
       {
@@ -2318,7 +2318,7 @@
       },
       {
         "language1": "Afar",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "91.7"
       },
       {
@@ -3293,7 +3293,7 @@
       },
       {
         "language1": "Afrikaans",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "81.7"
       },
       {
@@ -4263,7 +4263,7 @@
       },
       {
         "language1": "Ainu",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "88.3"
       },
       {
@@ -5213,7 +5213,7 @@
       },
       {
         "language1": "Gheg Albanian",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "92.3"
       },
       {
@@ -5228,7 +5228,7 @@
       },
       {
         "language1": "Gheg Albanian",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "78.7"
       },
       {
@@ -6173,7 +6173,7 @@
       },
       {
         "language1": "Tosk Albanian",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "86.5"
       },
       {
@@ -6188,7 +6188,7 @@
       },
       {
         "language1": "Tosk Albanian",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "75.9"
       },
       {
@@ -7128,7 +7128,7 @@
       },
       {
         "language1": "Aleut",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "76.7"
       },
       {
@@ -7143,7 +7143,7 @@
       },
       {
         "language1": "Aleut",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "81.5"
       },
       {
@@ -8078,7 +8078,7 @@
       },
       {
         "language1": "Altai",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "90.3"
       },
       {
@@ -8093,7 +8093,7 @@
       },
       {
         "language1": "Altai",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "85.0"
       },
       {
@@ -9023,7 +9023,7 @@
       },
       {
         "language1": "Amharic",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "89.2"
       },
       {
@@ -9038,7 +9038,7 @@
       },
       {
         "language1": "Amharic",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "92.6"
       },
       {
@@ -9963,7 +9963,7 @@
       },
       {
         "language1": "Arabic",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "90.1"
       },
       {
@@ -9978,7 +9978,7 @@
       },
       {
         "language1": "Arabic",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "87.0"
       },
       {
@@ -10898,7 +10898,7 @@
       },
       {
         "language1": "Aramaic",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "84.6"
       },
       {
@@ -10913,7 +10913,7 @@
       },
       {
         "language1": "Aramaic",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "80.9"
       },
       {
@@ -11828,7 +11828,7 @@
       },
       {
         "language1": "Arbanaski",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "89.5"
       },
       {
@@ -11843,7 +11843,7 @@
       },
       {
         "language1": "Arbanaski",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "73.1"
       },
       {
@@ -12753,7 +12753,7 @@
       },
       {
         "language1": "Armenian",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "93.7"
       },
       {
@@ -12768,7 +12768,7 @@
       },
       {
         "language1": "Armenian",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "77.8"
       },
       {
@@ -13673,7 +13673,7 @@
       },
       {
         "language1": "Eastern Armenian",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "93.7"
       },
       {
@@ -13688,7 +13688,7 @@
       },
       {
         "language1": "Eastern Armenian",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "77.8"
       },
       {
@@ -14588,7 +14588,7 @@
       },
       {
         "language1": "Assamese",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "88.9"
       },
       {
@@ -14603,7 +14603,7 @@
       },
       {
         "language1": "Assamese",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "33.9"
       },
       {
@@ -15498,7 +15498,7 @@
       },
       {
         "language1": "Avar",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "98.3"
       },
       {
@@ -15513,7 +15513,7 @@
       },
       {
         "language1": "Avar",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "91.8"
       },
       {
@@ -16403,7 +16403,7 @@
       },
       {
         "language1": "Azeri",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "95.1"
       },
       {
@@ -16418,7 +16418,7 @@
       },
       {
         "language1": "Azeri",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "85.7"
       },
       {
@@ -17303,7 +17303,7 @@
       },
       {
         "language1": "Balochi",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "96.0"
       },
       {
@@ -17318,7 +17318,7 @@
       },
       {
         "language1": "Balochi",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "61.7"
       },
       {
@@ -18198,7 +18198,7 @@
       },
       {
         "language1": "Basaa",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "94.8"
       },
       {
@@ -18213,7 +18213,7 @@
       },
       {
         "language1": "Basaa",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "90.1"
       },
       {
@@ -19088,7 +19088,7 @@
       },
       {
         "language1": "Bashkir",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "93.2"
       },
       {
@@ -19103,7 +19103,7 @@
       },
       {
         "language1": "Bashkir",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "89.9"
       },
       {
@@ -19973,7 +19973,7 @@
       },
       {
         "language1": "Basque",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "85.7"
       },
       {
@@ -19988,7 +19988,7 @@
       },
       {
         "language1": "Basque",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "95.6"
       },
       {
@@ -20853,7 +20853,7 @@
       },
       {
         "language1": "Belarusian",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "86.5"
       },
       {
@@ -20868,7 +20868,7 @@
       },
       {
         "language1": "Belarusian",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "73.8"
       },
       {
@@ -21728,7 +21728,7 @@
       },
       {
         "language1": "Bemba",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "96.1"
       },
       {
@@ -21743,7 +21743,7 @@
       },
       {
         "language1": "Bemba",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "90.4"
       },
       {
@@ -22598,7 +22598,7 @@
       },
       {
         "language1": "Bengali",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "88.0"
       },
       {
@@ -22613,7 +22613,7 @@
       },
       {
         "language1": "Bengali",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "36.9"
       },
       {
@@ -23463,7 +23463,7 @@
       },
       {
         "language1": "Bihari",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "86.1"
       },
       {
@@ -23478,7 +23478,7 @@
       },
       {
         "language1": "Bihari",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "38.9"
       },
       {
@@ -24323,7 +24323,7 @@
       },
       {
         "language1": "Bole",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "92.7"
       },
       {
@@ -24338,7 +24338,7 @@
       },
       {
         "language1": "Bole",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "85.3"
       },
       {
@@ -25178,7 +25178,7 @@
       },
       {
         "language1": "Brahui",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "87.4"
       },
       {
@@ -25193,7 +25193,7 @@
       },
       {
         "language1": "Brahui",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "92.7"
       },
       {
@@ -26028,7 +26028,7 @@
       },
       {
         "language1": "Brazilian",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "78.3"
       },
       {
@@ -26043,7 +26043,7 @@
       },
       {
         "language1": "Brazilian",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "68.0"
       },
       {
@@ -26873,7 +26873,7 @@
       },
       {
         "language1": "Breton",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "85.6"
       },
       {
@@ -26888,7 +26888,7 @@
       },
       {
         "language1": "Breton",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "60.3"
       },
       {
@@ -27713,7 +27713,7 @@
       },
       {
         "language1": "Bulgarian",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "83.1"
       },
       {
@@ -27728,7 +27728,7 @@
       },
       {
         "language1": "Bulgarian",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "71.0"
       },
       {
@@ -28548,7 +28548,7 @@
       },
       {
         "language1": "Burmese",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "89.3"
       },
       {
@@ -28563,7 +28563,7 @@
       },
       {
         "language1": "Burmese",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "97.2"
       },
       {
@@ -29378,7 +29378,7 @@
       },
       {
         "language1": "Burushaski",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "92.6"
       },
       {
@@ -29393,7 +29393,7 @@
       },
       {
         "language1": "Burushaski",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "97.2"
       },
       {
@@ -30203,7 +30203,7 @@
       },
       {
         "language1": "Buryat",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "93.1"
       },
       {
@@ -30218,7 +30218,7 @@
       },
       {
         "language1": "Buryat",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "86.2"
       },
       {
@@ -31023,7 +31023,7 @@
       },
       {
         "language1": "Buyang",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "93.3"
       },
       {
@@ -31038,7 +31038,7 @@
       },
       {
         "language1": "Buyang",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "91.1"
       },
       {
@@ -31838,7 +31838,7 @@
       },
       {
         "language1": "Catalan",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "75.6"
       },
       {
@@ -31853,7 +31853,7 @@
       },
       {
         "language1": "Catalan",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "64.3"
       },
       {
@@ -32648,7 +32648,7 @@
       },
       {
         "language1": "Cebuano",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "92.0"
       },
       {
@@ -32663,7 +32663,7 @@
       },
       {
         "language1": "Cebuano",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "90.3"
       },
       {
@@ -33453,7 +33453,7 @@
       },
       {
         "language1": "Chechen",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "91.2"
       },
       {
@@ -33468,7 +33468,7 @@
       },
       {
         "language1": "Chechen",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "100.0"
       },
       {
@@ -34253,7 +34253,7 @@
       },
       {
         "language1": "Cantonese",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "94.8"
       },
       {
@@ -34268,7 +34268,7 @@
       },
       {
         "language1": "Cantonese",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "95.0"
       },
       {
@@ -35048,7 +35048,7 @@
       },
       {
         "language1": "Mandarin",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "96.0"
       },
       {
@@ -35063,7 +35063,7 @@
       },
       {
         "language1": "Mandarin",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "92.6"
       },
       {
@@ -35838,7 +35838,7 @@
       },
       {
         "language1": "Chuvash",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "91.5"
       },
       {
@@ -35853,7 +35853,7 @@
       },
       {
         "language1": "Chuvash",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "90.3"
       },
       {
@@ -36623,7 +36623,7 @@
       },
       {
         "language1": "Comorian",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "93.9"
       },
       {
@@ -36638,7 +36638,7 @@
       },
       {
         "language1": "Comorian",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "91.0"
       },
       {
@@ -37403,7 +37403,7 @@
       },
       {
         "language1": "Cornish",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "93.5"
       },
       {
@@ -37418,7 +37418,7 @@
       },
       {
         "language1": "Cornish",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "58.2"
       },
       {
@@ -38178,7 +38178,7 @@
       },
       {
         "language1": "Croatian",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "85.9"
       },
       {
@@ -38193,7 +38193,7 @@
       },
       {
         "language1": "Croatian",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "73.8"
       },
       {
@@ -38948,7 +38948,7 @@
       },
       {
         "language1": "Czech",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "85.9"
       },
       {
@@ -38963,7 +38963,7 @@
       },
       {
         "language1": "Czech",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "71.0"
       },
       {
@@ -39713,7 +39713,7 @@
       },
       {
         "language1": "Danish",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "87.8"
       },
       {
@@ -39728,7 +39728,7 @@
       },
       {
         "language1": "Danish",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "70.5"
       },
       {
@@ -40473,7 +40473,7 @@
       },
       {
         "language1": "Dargwa",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "84.0"
       },
       {
@@ -40488,7 +40488,7 @@
       },
       {
         "language1": "Dargwa",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "93.8"
       },
       {
@@ -41228,7 +41228,7 @@
       },
       {
         "language1": "Dhivehi",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "88.9"
       },
       {
@@ -41243,7 +41243,7 @@
       },
       {
         "language1": "Dhivehi",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "60.7"
       },
       {
@@ -41978,7 +41978,7 @@
       },
       {
         "language1": "Digor Ossetic",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "86.6"
       },
       {
@@ -41993,7 +41993,7 @@
       },
       {
         "language1": "Digor Ossetic",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "72.8"
       },
       {
@@ -42723,7 +42723,7 @@
       },
       {
         "language1": "Dizi",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "96.4"
       },
       {
@@ -42738,7 +42738,7 @@
       },
       {
         "language1": "Dizi",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "89.3"
       },
       {
@@ -43463,7 +43463,7 @@
       },
       {
         "language1": "Douala",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "87.1"
       },
       {
@@ -43478,7 +43478,7 @@
       },
       {
         "language1": "Douala",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "100.0"
       },
       {
@@ -44198,7 +44198,7 @@
       },
       {
         "language1": "Dutch",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "91.3"
       },
       {
@@ -44213,7 +44213,7 @@
       },
       {
         "language1": "Dutch",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "81.7"
       },
       {
@@ -44928,7 +44928,7 @@
       },
       {
         "language1": "English",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "91.0"
       },
       {
@@ -44943,7 +44943,7 @@
       },
       {
         "language1": "English",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "74.2"
       },
       {
@@ -45653,7 +45653,7 @@
       },
       {
         "language1": "Estonian",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "95.0"
       },
       {
@@ -45668,7 +45668,7 @@
       },
       {
         "language1": "Estonian",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "83.8"
       },
       {
@@ -46373,7 +46373,7 @@
       },
       {
         "language1": "Even",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "87.5"
       },
       {
@@ -46388,7 +46388,7 @@
       },
       {
         "language1": "Even",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "83.9"
       },
       {
@@ -47088,7 +47088,7 @@
       },
       {
         "language1": "Faroese",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "90.4"
       },
       {
@@ -47103,7 +47103,7 @@
       },
       {
         "language1": "Faroese",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "76.9"
       },
       {
@@ -47798,7 +47798,7 @@
       },
       {
         "language1": "Finnish",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "95.0"
       },
       {
@@ -47813,7 +47813,7 @@
       },
       {
         "language1": "Finnish",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "87.0"
       },
       {
@@ -48503,7 +48503,7 @@
       },
       {
         "language1": "Flemish",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "91.3"
       },
       {
@@ -48518,7 +48518,7 @@
       },
       {
         "language1": "Flemish",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "81.7"
       },
       {
@@ -49203,7 +49203,7 @@
       },
       {
         "language1": "French",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "85.2"
       },
       {
@@ -49218,7 +49218,7 @@
       },
       {
         "language1": "French",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "58.7"
       },
       {
@@ -49898,7 +49898,7 @@
       },
       {
         "language1": "Frisian",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "90.5"
       },
       {
@@ -49913,7 +49913,7 @@
       },
       {
         "language1": "Frisian",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "79.3"
       },
       {
@@ -50588,7 +50588,7 @@
       },
       {
         "language1": "Friulian",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "80.2"
       },
       {
@@ -50603,7 +50603,7 @@
       },
       {
         "language1": "Friulian",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "61.5"
       },
       {
@@ -51273,7 +51273,7 @@
       },
       {
         "language1": "Fula",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "94.4"
       },
       {
@@ -51288,7 +51288,7 @@
       },
       {
         "language1": "Fula",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "83.3"
       },
       {
@@ -51953,7 +51953,7 @@
       },
       {
         "language1": "Galician",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "75.6"
       },
       {
@@ -51968,7 +51968,7 @@
       },
       {
         "language1": "Galician",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "65.2"
       },
       {
@@ -52628,7 +52628,7 @@
       },
       {
         "language1": "Gelao",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "100.0"
       },
       {
@@ -52643,7 +52643,7 @@
       },
       {
         "language1": "Gelao",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "92.2"
       },
       {
@@ -53298,7 +53298,7 @@
       },
       {
         "language1": "Georgian",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "97.5"
       },
       {
@@ -53313,7 +53313,7 @@
       },
       {
         "language1": "Georgian",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "86.1"
       },
       {
@@ -53963,7 +53963,7 @@
       },
       {
         "language1": "German",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "91.8"
       },
       {
@@ -53978,7 +53978,7 @@
       },
       {
         "language1": "German",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "84.6"
       },
       {
@@ -54623,7 +54623,7 @@
       },
       {
         "language1": "Greek",
-        "language2": "Easternic",
+        "language2": "Eastern Greenlandic",
         "distance": "90.2"
       },
       {
@@ -54638,7 +54638,7 @@
       },
       {
         "language1": "Greek",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "74.2"
       },
       {
@@ -55277,657 +55277,657 @@
         "distance": "88.1"
       },
       {
-        "language1": "Easternic",
-        "language2": "Easternic",
+        "language1": "Eastern Greenlandic",
+        "language2": "Eastern Greenlandic",
         "distance": "0.0"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Western Greenlandic",
         "distance": "33.6"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Gujarati",
         "distance": "90.7"
       },
       {
-        "language1": "Easternic",
-        "language2": "Gypsy Romani",
+        "language1": "Eastern Greenlandic",
+        "language2": "Romani",
         "distance": "83.9"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Hausa",
         "distance": "94.2"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Hebrew",
         "distance": "90.8"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Hindi",
         "distance": "87.0"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Hungarian",
         "distance": "88.9"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Icelandic",
         "distance": "91.0"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Igbo",
         "distance": "91.7"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Indonesian",
         "distance": "87.3"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Irish",
         "distance": "84.0"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Iron Ossetic",
         "distance": "92.1"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Ishkashimi",
         "distance": "92.2"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Istro-Romanian",
         "distance": "86.3"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Italian",
         "distance": "80.6"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Japanese",
         "distance": "86.4"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Javanese",
         "distance": "92.3"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Kabardian",
         "distance": "94.3"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Kabylian",
         "distance": "96.9"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Kalasha",
         "distance": "89.2"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Kalmyk",
         "distance": "92.7"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Kannada",
         "distance": "97.0"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Karelian",
         "distance": "95.0"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Kashmiri",
         "distance": "89.5"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Kazakh",
         "distance": "89.7"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Ket",
         "distance": "97.6"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Khanti",
         "distance": "93.5"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Khmer",
         "distance": "88.9"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Khowar",
         "distance": "85.8"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Kivalliq",
         "distance": "46.3"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Komi",
         "distance": "91.2"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Korean",
         "distance": "84.8"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Kurdish",
         "distance": "91.7"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Kurukh",
         "distance": "81.2"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Kyrgyz",
         "distance": "89.7"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Labrador Inuttut",
         "distance": "42.2"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Ladin",
         "distance": "79.6"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Lahnda",
         "distance": "85.6"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Lak",
         "distance": "88.1"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Lao",
         "distance": "92.6"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Latvian",
         "distance": "80.3"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Letzebuergesch",
         "distance": "86.8"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Lezgian",
         "distance": "92.9"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Lithuanian",
         "distance": "79.6"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Macedonian",
         "distance": "85.9"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Magahi",
         "distance": "88.9"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Malagasy",
         "distance": "94.4"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Malayalam",
         "distance": "94.5"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Maltese",
         "distance": "90.4"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Mansi",
         "distance": "96.3"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Maori",
         "distance": "92.6"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Marathi",
         "distance": "86.1"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Mari",
         "distance": "91.7"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Marwari",
         "distance": "88.9"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Mon",
         "distance": "84.5"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Mongolian",
         "distance": "93.3"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Nayi",
         "distance": "94.2"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Nenets",
         "distance": "91.4"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Nepali",
         "distance": "86.1"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Norwegian Bokmal",
         "distance": "91.0"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Norwegian Nynorsk",
         "distance": "89.2"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Oriya",
         "distance": "87.0"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Oromo",
         "distance": "89.8"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Oroqen",
         "distance": "87.2"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Pashto",
         "distance": "94.4"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Pennsylvania Dutch",
         "distance": "89.9"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Persian",
         "distance": "88.4"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Polish",
         "distance": "85.9"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Portuguese",
         "distance": "78.3"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Provencal",
         "distance": "80.0"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Punjabi",
         "distance": "87.4"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Romanian",
         "distance": "89.8"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Romansch",
         "distance": "85.2"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Russian",
         "distance": "85.9"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Sami",
         "distance": "93.4"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Samoan",
         "distance": "91.3"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Sardinian Logudorese",
         "distance": "88.9"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Sardinian Nuorese",
         "distance": "83.3"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Sariqoli",
         "distance": "94.8"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Schwyzerduetsch",
         "distance": "86.6"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Scots",
         "distance": "90.5"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Scottish Gaelic",
         "distance": "84.6"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Serbian",
         "distance": "83.1"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Shan",
         "distance": "90.0"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Sheko",
         "distance": "93.3"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Sindhi",
         "distance": "85.6"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Sinhalese",
         "distance": "92.4"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Slovak",
         "distance": "82.5"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Slovene",
         "distance": "85.3"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Somali",
         "distance": "90.7"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Spanish",
         "distance": "83.9"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Sranan",
         "distance": "95.1"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Swahili",
         "distance": "91.7"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Swedish",
         "distance": "87.8"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Tagalog",
         "distance": "94.2"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Tahitian",
         "distance": "97.0"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Tajik",
         "distance": "88.4"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Tamasheq",
         "distance": "92.4"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Tamil",
         "distance": "91.5"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Tashelhit",
         "distance": "93.9"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Tatar",
         "distance": "92.6"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Tausug",
         "distance": "91.1"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Telugu",
         "distance": "95.5"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Thai",
         "distance": "90.8"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Tibetan",
         "distance": "94.0"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Tigrigna",
         "distance": "84.6"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Tmazight",
         "distance": "96.2"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Tsakonian",
         "distance": "90.7"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Turkish",
         "distance": "95.1"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Turkmen",
         "distance": "94.4"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Tuvan",
         "distance": "92.2"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Ukrainian",
         "distance": "86.5"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Urdu",
         "distance": "87.0"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Uyghur",
         "distance": "89.1"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Uzbek",
         "distance": "89.7"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Veps",
         "distance": "97.2"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Vietnamese",
         "distance": "87.1"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Vlach",
         "distance": "85.0"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Wakhi",
         "distance": "85.0"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Walloon",
         "distance": "83.3"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Warji",
         "distance": "100.0"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Waziri",
         "distance": "94.4"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Welsh",
         "distance": "82.8"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Wolof",
         "distance": "81.2"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Yakut",
         "distance": "89.7"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Yiddish",
         "distance": "92.3"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Yoruba",
         "distance": "88.9"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Yupik",
         "distance": "49.5"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Zazaki",
         "distance": "91.7"
       },
       {
-        "language1": "Easternic",
+        "language1": "Eastern Greenlandic",
         "language2": "Zulu",
         "distance": "98.1"
       },
@@ -55943,7 +55943,7 @@
       },
       {
         "language1": "Western Greenlandic",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "85.3"
       },
       {
@@ -56588,7 +56588,7 @@
       },
       {
         "language1": "Gujarati",
-        "language2": "Gypsy Romani",
+        "language2": "Romani",
         "distance": "38.8"
       },
       {
@@ -57227,642 +57227,642 @@
         "distance": "89.3"
       },
       {
-        "language1": "Gypsy Romani",
-        "language2": "Gypsy Romani",
+        "language1": "Romani",
+        "language2": "Romani",
         "distance": "0.0"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Hausa",
         "distance": "92.6"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Hebrew",
         "distance": "91.7"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Hindi",
         "distance": "34.7"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Hungarian",
         "distance": "84.0"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Icelandic",
         "distance": "78.1"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Igbo",
         "distance": "85.0"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Indonesian",
         "distance": "87.6"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Irish",
         "distance": "65.2"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Iron Ossetic",
         "distance": "71.6"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Ishkashimi",
         "distance": "67.1"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Istro-Romanian",
         "distance": "62.2"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Italian",
         "distance": "58.7"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Japanese",
         "distance": "93.3"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Javanese",
         "distance": "93.0"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Kabardian",
         "distance": "90.8"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Kabylian",
         "distance": "84.2"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Kalasha",
         "distance": "55.9"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Kalmyk",
         "distance": "75.2"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Kannada",
         "distance": "90.7"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Karelian",
         "distance": "78.3"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Kashmiri",
         "distance": "43.3"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Kazakh",
         "distance": "85.0"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Ket",
         "distance": "97.5"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Khanti",
         "distance": "79.3"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Khmer",
         "distance": "93.9"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Khowar",
         "distance": "65.7"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Kivalliq",
         "distance": "81.0"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Komi",
         "distance": "76.9"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Korean",
         "distance": "92.3"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Kurdish",
         "distance": "62.4"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Kurukh",
         "distance": "100.0"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Kyrgyz",
         "distance": "85.0"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Labrador Inuttut",
         "distance": "78.5"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Ladin",
         "distance": "64.3"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Lahnda",
         "distance": "29.7"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Lak",
         "distance": "94.4"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Lao",
         "distance": "96.6"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Latvian",
         "distance": "74.9"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Letzebuergesch",
         "distance": "80.8"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Lezgian",
         "distance": "97.2"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Lithuanian",
         "distance": "61.2"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Macedonian",
         "distance": "72.1"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Magahi",
         "distance": "34.1"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Malagasy",
         "distance": "88.0"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Malayalam",
         "distance": "96.7"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Maltese",
         "distance": "90.1"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Mansi",
         "distance": "78.8"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Maori",
         "distance": "94.4"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Marathi",
         "distance": "35.6"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Mari",
         "distance": "79.0"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Marwari",
         "distance": "34.7"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Mon",
         "distance": "97.2"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Mongolian",
         "distance": "83.4"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Nayi",
         "distance": "90.7"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Nenets",
         "distance": "79.0"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Nepali",
         "distance": "36.6"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Norwegian Bokmal",
         "distance": "69.5"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Norwegian Nynorsk",
         "distance": "71.0"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Oriya",
         "distance": "33.4"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Oromo",
         "distance": "86.2"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Oroqen",
         "distance": "88.0"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Pashto",
         "distance": "71.8"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Pennsylvania Dutch",
         "distance": "84.1"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Persian",
         "distance": "60.2"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Polish",
         "distance": "71.8"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Portuguese",
         "distance": "68.0"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Provencal",
         "distance": "67.1"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Punjabi",
         "distance": "37.1"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Romanian",
         "distance": "58.7"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Romansch",
         "distance": "67.1"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Russian",
         "distance": "69.9"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Sami",
         "distance": "81.8"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Samoan",
         "distance": "98.1"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Sardinian Logudorese",
         "distance": "60.3"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Sardinian Nuorese",
         "distance": "63.1"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Sariqoli",
         "distance": "69.1"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Schwyzerduetsch",
         "distance": "81.7"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Scots",
         "distance": "79.1"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Scottish Gaelic",
         "distance": "66.8"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Serbian",
         "distance": "69.9"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Shan",
         "distance": "96.6"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Sheko",
         "distance": "91.3"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Sindhi",
         "distance": "45.8"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Sinhalese",
         "distance": "58.1"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Slovak",
         "distance": "69.1"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Slovene",
         "distance": "69.1"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Somali",
         "distance": "87.3"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Spanish",
         "distance": "63.3"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Sranan",
         "distance": "78.5"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Swahili",
         "distance": "89.8"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Swedish",
         "distance": "75.1"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Tagalog",
         "distance": "88.4"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Tahitian",
         "distance": "91.4"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Tajik",
         "distance": "60.2"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Tamasheq",
         "distance": "90.0"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Tamil",
         "distance": "87.3"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Tashelhit",
         "distance": "86.9"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Tatar",
         "distance": "87.1"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Tausug",
         "distance": "85.7"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Telugu",
         "distance": "96.7"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Thai",
         "distance": "96.6"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Tibetan",
         "distance": "82.5"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Tigrigna",
         "distance": "89.8"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Tmazight",
         "distance": "82.6"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Tsakonian",
         "distance": "71.8"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Turkish",
         "distance": "88.1"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Turkmen",
         "distance": "85.4"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Tuvan",
         "distance": "82.5"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Ukrainian",
         "distance": "72.7"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Urdu",
         "distance": "39.7"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Uyghur",
         "distance": "87.0"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Uzbek",
         "distance": "85.0"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Veps",
         "distance": "84.3"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Vietnamese",
         "distance": "100.0"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Vlach",
         "distance": "63.0"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Wakhi",
         "distance": "67.0"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Walloon",
         "distance": "65.2"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Warji",
         "distance": "82.0"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Waziri",
         "distance": "79.8"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Welsh",
         "distance": "57.3"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Wolof",
         "distance": "86.7"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Yakut",
         "distance": "86.8"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Yiddish",
         "distance": "85.5"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Yoruba",
         "distance": "88.9"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Yupik",
         "distance": "85.2"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Zazaki",
         "distance": "62.4"
       },
       {
-        "language1": "Gypsy Romani",
+        "language1": "Romani",
         "language2": "Zulu",
         "distance": "91.5"
       },
@@ -98505,9 +98505,6 @@
         "language1": "Zulu",
         "language2": "Zulu",
         "distance": "0.0"
-      },
-      {
-        "language1": ""
       }
     ]
   }
