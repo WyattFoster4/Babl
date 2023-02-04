@@ -18,6 +18,29 @@ body {
   z-index: 50;
 }
 
+.popup {
+     position: absolute;
+     display: inline-block;
+     background-color: #2e2d4d;
+     color: white;
+     border-radius: 15px;
+     padding: 10px, 5px, 10px, 5px;
+     z-index: 990;
+     text-align: center;
+     overflow: hidden;
+     visibility: "";
+     font-size: 100%;
+     border-color: black;
+     border-style: solid;
+     border-width: 2px;
+     padding-left: 10px;
+     padding-right: 10px;
+
+
+     transition: visible 1s;
+
+}
+
 .center {
   text-align: center;
 }
@@ -50,7 +73,7 @@ body {
   font-family: sans-serif;
   font-weight: bold;
   border-radius: 5px;
-  transition: transform 0.15s, opacity 0.15s;
+  transition: transform 0.25s, opacity 0.15s;
 }
 
 .howto:hover {
@@ -582,6 +605,26 @@ body {
   z-index: -10;
 }
 
+.share-button {
+  height: 30px;
+  font-size: 15px;
+  border-style: solid;
+  border-color: #211c3b;
+  border-radius: 5px;
+  border-width: 3px;
+  background: #aa99ff;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 13px; 
+  transition: box-shadow 0.15s, transform 0.15s;
+}
+
+.share-button:hover,
+.share-button:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em;
+  transform: translateY(-0.25em);
+}
+
 
 /*mobile css goes here*/
 @media screen and (max-width: 1080px) {
@@ -626,6 +669,8 @@ body {
     font-family: sans-serif;
     font-weight: bold;
     border-radius: 5px;
+    padding-left: 13px;
+    padding-right: 13px;
   }
 
   .logo {
@@ -996,6 +1041,7 @@ body {
     font-size: 40px;
     overflow: hidden;
     transition: transform 0.15s;
+    text-align: left;
   }
 
   .howto:hover {
@@ -1026,5 +1072,29 @@ body {
     padding-left: 22px;
     padding-right: 50px;
 
+  }
+
+  .share-button {
+    height: 70px;
+    font-size: 40px;
+    border-style: solid;
+    border-color: #211c3b;
+    border-radius: 8px;
+    border-width: 3px;
+    background: #aa99ff;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 13px; 
+    transition: box-shadow 0.15s, transform 0.15s;
+    color: black;
+    line-height: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .share-button:hover,
+  .share-button:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em;
+    transform: translateY(-0.25em);
   }
 }

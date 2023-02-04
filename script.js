@@ -8,6 +8,7 @@ const proxList = [];
 let won = false;
 let sendColor;
 let proximities;
+const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 var response
 // Time variables
@@ -65,6 +66,7 @@ window.onload = async function() {
   lang = currentSolution.language
   response = await fetch("./out.json", { method: 'GET' });
   proximities = await response.json();
+  guessingBox.value = "";
 }
 
 // FUNCTIONS SETUP
@@ -132,19 +134,23 @@ function hideGame() {
   const solutionBox = document.getElementById("solutionBox")
   const guessingButton = document.getElementById("guessingButton")
   const guessingBox = document.getElementById("guessingBox")
-  guessingButton.innerText = "Share"
+  const copyButton = document.getElementById("copy-button")
+  guessingButton.innerText = "Share";
   guessingBox.readOnly = true;
-  guessingBox.value = "Today's solution was: " + lang
+  guessingBox.value = "Today's solution: " + lang
   guessingButton.addEventListener("click", () => {
+    document.getElementById("popHeading").innerHTML = "Share";
     if (won == true) {
       document.getElementById("popText").innerHTML = "You're a language genius! Come back tomorrow for the next puzzle. Want to learn more about " + lang + "? Click " + "<a class='inner-link' href='https://en.wikipedia.org/wiki/" + lang + "_language' target='_blank'>here.</a>";
-    
     } else {
       document.getElementById("popText").innerHTML = "You didn't guess the correct language. Come back tomorrow for the next puzzle. Today's solution: " + lang;
     }
     document.getElementById("emojiGridText").innerHTML = emojiGrid(proxList, bablNumber) + "<button class = \"share-button\" type=\"button\">Share</button>";
     modal.showModal()
   });
+  copyButton.addEventListener("click", () => {
+        shareGame();
+    })
   
   // document.getElementById("solutionBox").style.zIndex = "10";
   // document.getElementById("shareButton").style.zIndex = "10";
@@ -152,12 +158,55 @@ function hideGame() {
   // document.getElementById("solutionBox").innerHTML = "Today's solution: " + lang;
 }
 
+async function shareGame() {
+  console.log("share");
+  let messageShare = document.getElementById("emojiGridText").innerText
+  messageShare = messageShare.substring(0, messageShare.length - 6); //eliminates the share at the end
+     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+          const shareMessage = {
+               title: "Babl",
+               text: `${messageShare}`
+          }
+          navigator.share(shareMessage);
+     } else {
+          navigator.clipboard.writeText(messageShare);
+     }
+    // alert("copied to clipboard!");
+  await makePopup("Copied to clipboard!", 1000)
+}
+
+var notificationShowing = false;
+async function makePopup(text, time) {
+  console.log("popup")
+     if (notificationShowing === false) {
+          notificationShowing = true
+          const body = document.getElementById("body")
+          const popup = document.createElement("h1")
+          popup.classList.add("popup")
+          const popupText = document.createTextNode(text)
+          popup.appendChild(popupText)
+          popup.style.visibility = "hidden"
+          body.appendChild(popup)
+          const width = popup.clientWidth
+          popup.style.paddingTop = `${15}px`
+          popup.style.paddingBottom = `${15}px`
+          popup.style.top = `${window.innerHeight * 0.1}px`
+          popup.style.left = `${(window.innerWidth / 2) - popup.clientWidth / 2}px`
+          popup.style.visibility = "visible"
+
+          await sleep(time)
+          popup.style.visibility = "hidden"
+          popup.remove()
+     }
+     notificationShowing = false
+}
+
 // Lets you input guesses
 async function guessingFunction() {
   let arrInput = guessingBox.value.trim();
   arrInput = arrInput.charAt(0).toUpperCase() + arrInput.slice(1).toLowerCase();
 
-  if (!validLangs.includes(arrInput)) {
+  if (!validLangs.includes(arrInput) && !won) {
     let link = "list.html"
     document.getElementById("popHeading").innerHTML = "Uh-oh!";
     document.getElementById("popText").innerHTML = "You entered a language that doesn't exist. Check out <a class='inner-link' href=" + link + " target='_blank'>this link</a> for a list of accepted languages.";
@@ -177,8 +226,9 @@ async function guessingFunction() {
     printGuess(guesses);
     printPercent(await compareLanguages(arrInput, lang));
     document.getElementById("popHeading").innerHTML = "You won!";
-    document.getElementById("popText").innerHTML = "You're a language genius! Come back tomorrow for the next puzzle. Want to learn more about " + lang + "? Click " + "<a class='inner-link' href='https://en.wikipedia.org/wiki/" + lang + "_language' target='_blank'>here.</a>";
-    document.getElementById("emojiGridText").innerHTML = emojiGrid(proxList, bablNumber) + "<button class = \"share-button\" type=\"button\">Share</button>";
+    //lang = "Ancient Aramaic"
+    document.getElementById("popText").innerHTML = "You're a language genius! Come back tomorrow for the next puzzle. Want to learn more about " + lang + "? Click " + "<a class='inner-link' href='https://en.wikipedia.org/wiki/" + lang.replace(/ /g,"_") + "_language' target='_blank'>here.</a>";
+    document.getElementById("emojiGridText").innerHTML = emojiGrid(proxList, bablNumber) + "<button class = \"share-button\" id=\"copy-button\" type=\"button\">Share</button>";
     guessingBox.value = "";
     modal.showModal();
     hideGame();
@@ -189,7 +239,7 @@ async function guessingFunction() {
     document.getElementById("popHeading").innerHTML = "You lost!";
     document.getElementById("popText").innerHTML = "You didn't guess the correct language. Come back tomorrow for the next puzzle. Today's solution: " + lang;
     hideGame();
-    document.getElementById("emojiGridText").innerHTML = emojiGrid(proxList, bablNumber) + "<button class = \"share-button\" type=\"button\">Share</button>";
+    document.getElementById("emojiGridText").innerHTML = emojiGrid(proxList, bablNumber) + "<button class = \"share-button\" id=\"copy-button\" type=\"button\">Share</button>";
     guessingBox.value = "";
     modal.showModal();
   }
@@ -199,7 +249,7 @@ async function guessingFunction() {
 function emojiGrid(proxList, bablNumber) { 
   let block = "";
   let message = "Babl #" + bablNumber + " " + proxList.length + "/6 <br>";
-  
+  console.log(proxList)
   for (var i = 0; i < proxList.length; i++) {
     console.log(proxList[i])
     if (proxList[i] >= 0 && proxList[i] < 25) {
@@ -213,7 +263,7 @@ function emojiGrid(proxList, bablNumber) {
     } else if (proxList[i] == 100) {
       block = "🟪🟪🟪🟪🟪";
     }
-    message = message + " " + block + " " + proxList[i] + "% <br>" ;
+    message = message + " " + block + " " /* + proxList[i] + "% */ + "<br>";
   }
   return message;
 }
@@ -245,6 +295,8 @@ guessingBox.addEventListener("keyup", function(event) {
   }
 });
 guessingButton.addEventListener("click", () => guessingFunction());
+
+
 
 // Automatically scrolls back to the top of the page when refreshed
 window.onunload = function () {
