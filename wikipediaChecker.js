@@ -24,6 +24,5 @@ const validLangs = ["Abkhaz", "Adyghe", "Afar", "Afrikaans", "Ainu", "Gheg Alban
 for (var i = 0; i < validLangs.length; i++) {
   lang = validLangs[i];
   wikiUrl = "https://en.wikipedia.org/wiki/"+lang+"_language";
-  console.log(wikiUrl)
   
 }
