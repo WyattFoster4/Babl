@@ -9,8 +9,8 @@ let won = false;
 let sendColor;
 let proximities;
 const sleep = ms => new Promise(r => setTimeout(r, ms));
+var response;
 
-var response
 // Time variables
 var originDate = new Date("02/01/2023");
 var currentDate = new Date();
@@ -23,8 +23,29 @@ document.getElementById("percent-1").style.background = "#828282";
 // Modal variables
 const modal = document.querySelector('#modal');
 const helpButton = document.querySelector(".howto");
+const modalHeading = document.getElementById("popHeading");
+const modalText = document.getElementById("popText");
+const modalEmogiGrid = document.getElementById("emojiGridText");
 const closeModal = document.querySelector('.close-button');
 const phraseBox = document.querySelector('#phraseBox');
+var modalMessages = {
+  "test": [
+    "Hi",
+    "Hello",
+    " "
+  ],
+  "welcome": [
+    "Welcome to Babl!", 
+    "Here's how to play: Every day, a new phrase in a foreign language will appear on Babl. You have to guess what language the phrase is written in (it doesn't matter what the phrase actually says). If your guess is right, you'll win! If your guess is wrong, we'll tell you how close you got. You only get 6 tries. Good luck!",
+    " "
+  ],
+  "badLang": [
+    "Uh-oh!", 
+    "You entered a language that doesn't exist. Check out <a class='inner-link' href='list.html' target='_blank'>this link</a> for a list of accepted languages.",
+    " "
+  ]
+};
+
 
 // Input box/button variables
 let guessingBox = document.getElementById("guessingBox");
@@ -61,12 +82,22 @@ for (var i = 1; i<7; i++) {
 }
 
 window.onload = async function() {
-  let currentSolution = await getSolution()
-  phraseBox.innerText = currentSolution.phrase
-  lang = currentSolution.language
+  let currentSolution = await getSolution();
+  phraseBox.innerText = currentSolution.phrase;
+  lang = currentSolution.language;
   response = await fetch("./out.json", { method: 'GET' });
   proximities = await response.json();
   guessingBox.value = "";
+  modalMessages["shareWon"] = [
+    "You won!", 
+    "You're a language genius! Come back tomorrow for the next puzzle. Want to learn more about " + lang.language + "? Click " + "<a class='inner-link' href='https://en.wikipedia.org/wiki/" + lang.replace(/ /g,"_") + "_language' target='_blank'>here.</a>", 
+    "<button class = \"share-button\" type=\"button\">Share</button>"
+  ]
+  modalMessages["shareLost"] = [
+    "You lost.",
+    "You didn't guess the correct language. Come back tomorrow for the next puzzle. Today's solution: " + lang.language, 
+    "<button class = \"share-button\" type=\"button\">Share</button>"
+  ]
 }
 
 // FUNCTIONS SETUP
@@ -79,31 +110,30 @@ async function compareLanguages(guess, correct) {
   return 100 - parseInt(proximities.map[proximities.indices[guess]][proximities.indices[correct]]);
 }
 
+//Gets solution randomly by day
 async function getSolution() {
   let date = new Date();
   let data = await fetch("./solutions.json", { method: 'GET' }).then(response => response.json(response));
   var num;
   let dayOfWeek = date.getDay()
   if (dayOfWeek <= 1) {
-    num = (((date.getDay() + date.getDate() + date.getMonth() + date.getFullYear()) ** 7) % 35) + 1;
-    return data.Week.EarlyWeek[String("opt" + num)]
+    num = (((date.getDay() + date.getDate() + date.getMonth() + date.getFullYear()) ** 7) % data.Solutions.Lengths.EarlyWeek) + 1;
+    return data.Solutions.Week.EarlyWeek[String("opt" + num)]
     //Early week
   } else if (dayOfWeek <= 4) {
     //Mid week
-    num = (((date.getDay() + date.getDate() + date.getMonth() + date.getFullYear()) ** 7) % 51) + 1;
-    return data.Week.MidWeek[String("opt" + num)]
+    num = (((date.getDay() + date.getDate() + date.getMonth() + date.getFullYear()) ** 7) % data.Solutions.Lengths.MidWeek) + 1;
+    return data.Solutions.Week.MidWeek[String("opt" + num)]
   } else if (dayOfWeek <= 6) {
     //Late week
-    num = (((date.getDay() + date.getDate() + date.getMonth() + date.getFullYear()) ** 7) % 48) + 1;
-    return data.Week.EndWeek[String("opt" + num)];
+    num = (((date.getDay() + date.getDate() + date.getMonth() + date.getFullYear()) ** 7) % data.Solutions.Lengths.EndWeek) + 1;
+    return data.Solutions.Week.EndWeek[String("opt" + num)];
   } else {
     //Sunday
-    num = (((date.getDay() + date.getDate() + date.getMonth() + date.getFullYear()) ** 7) % 15) + 1;
-    return data.Week.Sunday[String("opt" + num)]
+    num = (((date.getDay() + date.getDate() + date.getMonth() + date.getFullYear()) ** 7) % data.Solutions.Lengths.Sunday) + 1;
+    return data.Solutions.Week.Sunday[String("opt" + num)]
   }
-  
 }
-
 
 // Sends guess to HTML
 function printGuess(guesses) {
@@ -129,6 +159,25 @@ function printPercent(proximity) {
   proxList.push(proximity);
 }
 
+function makeModal(heading, text) {
+    document.getElementById("popHeading").innerHTML = heading;
+    document.getElementById("popText").innerHTML = text;
+}
+
+function makeModal2(message, share) {
+  if (modalMessages.hasOwnProperty(message)) {
+    modalHeading.innerHTML = modalMessages[message][0];
+    modalText.innerHTML = modalMessages[message][1];
+    if (share) {
+      modalEmogiGrid.innerHTML = emojiGrid(proxList, bablNumber) + modalMessages[message][2];
+    } else {
+      modalEmogiGrid.innerHTML = modalMessages[message][2];
+    }
+  } else {
+    return;
+  }
+}
+
 // Hides boxes, switch
 function hideGame() {
   const solutionBox = document.getElementById("solutionBox")
@@ -139,28 +188,21 @@ function hideGame() {
   guessingBox.readOnly = true;
   guessingBox.value = "Today's solution: " + lang
   guessingButton.addEventListener("click", () => {
-    document.getElementById("popHeading").innerHTML = "Share";
     if (won == true) {
-      document.getElementById("popText").innerHTML = "You're a language genius! Come back tomorrow for the next puzzle. Want to learn more about " + lang + "? Click " + "<a class='inner-link' href='https://en.wikipedia.org/wiki/" + lang + "_language' target='_blank'>here.</a>";
+      makeModal2("shareWon", true);
     } else {
-      document.getElementById("popText").innerHTML = "You didn't guess the correct language. Come back tomorrow for the next puzzle. Today's solution: " + lang;
+      makeModal2("shareLost", true);
     }
-    document.getElementById("emojiGridText").innerHTML = emojiGrid(proxList, bablNumber) + "<button class = \"share-button\" type=\"button\">Share</button>";
     modal.showModal()
   });
   copyButton.addEventListener("click", () => {
         shareGame();
     })
-  
-  // document.getElementById("solutionBox").style.zIndex = "10";
-  // document.getElementById("shareButton").style.zIndex = "10";
-  // document.getElementById("guessingBox").style.display = "none";
-  // document.getElementById("solutionBox").innerHTML = "Today's solution: " + lang;
 }
 
 async function shareGame() {
   console.log("share");
-  let messageShare = document.getElementById("emojiGridText").innerText
+  let messageShare = modalEmogiGrid.innerText
   messageShare = messageShare.substring(0, messageShare.length - 6); //eliminates the share at the end
      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
           const shareMessage = {
@@ -217,9 +259,8 @@ async function guessingFunction() {
   let arrInput = fixInput(guessingBox.value);
 
   if (!validLangs.includes(arrInput) && !won) {
-    let link = "list.html"
-    document.getElementById("popHeading").innerHTML = "Uh-oh!";
-    document.getElementById("popText").innerHTML = "You entered a language that doesn't exist. Check out <a class='inner-link' href=" + link + " target='_blank'>this link</a> for a list of accepted languages.";
+    //let link = "list.html"
+    makeModal2("badLang", false);
     guessingBox.value = "";
     modal.showModal();
     return;
@@ -235,10 +276,7 @@ async function guessingFunction() {
     guesses.push(arrInput);
     printGuess(guesses);
     printPercent(await compareLanguages(arrInput, lang));
-    document.getElementById("popHeading").innerHTML = "You won!";
-    //lang = "Ancient Aramaic"
-    document.getElementById("popText").innerHTML = "You're a language genius! Come back tomorrow for the next puzzle. Want to learn more about " + lang + "? Click " + "<a class='inner-link' href='https://en.wikipedia.org/wiki/" + lang.replace(/ /g,"_") + "_language' target='_blank'>here.</a>";
-    document.getElementById("emojiGridText").innerHTML = emojiGrid(proxList, bablNumber) + "<button class = \"share-button\" id=\"copy-button\" type=\"button\">Share</button>";
+    makeModal2("shareWon", true);
     guessingBox.value = "";
     modal.showModal();
     hideGame();
@@ -246,12 +284,10 @@ async function guessingFunction() {
     guesses.push(arrInput);
     printGuess(guesses);
     printPercent(await compareLanguages(arrInput, lang));
-    document.getElementById("popHeading").innerHTML = "You lost!";
-    document.getElementById("popText").innerHTML = "You didn't guess the correct language. Come back tomorrow for the next puzzle. Today's solution: " + lang;
-    hideGame();
-    document.getElementById("emojiGridText").innerHTML = emojiGrid(proxList, bablNumber) + "<button class = \"share-button\" id=\"copy-button\" type=\"button\">Share</button>";
+    makeModal2("shareLost", true);
     guessingBox.value = "";
     modal.showModal();
+    hideGame();
   }
 }
 
@@ -281,8 +317,7 @@ function emojiGrid(proxList, bablNumber) {
 // EVENT LISTENER SETUP
 
 // Technical not an EL, opens modal
-document.getElementById("popHeading").innerHTML = "Welcome to Babl!";
-document.getElementById("popText").innerHTML = "Here's how to play: Every day, a new phrase in a foreign language will appear on Babl. You have to guess what language the phrase is written in (it doesn't matter what the phrase actually says). If your guess is right, you'll win! If your guess is wrong, we'll tell you how close you got. You only get 6 tries. Good luck!";
+makeModal2("welcome", false);
 modal.showModal();
 
 // Adds button to close modal
@@ -292,9 +327,7 @@ closeModal.addEventListener('click', () => {
 
 // Opens modal when the help button is clicked
 helpButton.addEventListener('click', () => {
-  document.getElementById("popHeading").innerHTML = "Welcome to Babl!";
-  document.getElementById("popText").innerHTML = "Here's how to play: Every day, a new phrase in a foreign language will appear on Babl. You have to guess what language the phrase is written in (it doesn't matter what the phrase actually says). If your guess is right, you'll win! If your guess is wrong, we'll tell you how close you got. You only get 6 tries. Good luck!";
-  document.getElementById("emojiGridText").innerHTML = " ";
+  makeModal2("welcome", false);
   modal.showModal();
 });
 
@@ -302,6 +335,8 @@ helpButton.addEventListener('click', () => {
 guessingBox.addEventListener("keyup", function(event) {
   if (event.keyCode === 13) {
     guessingButton.click();
+    //makeModal2("welcome");
+    //modal.showModal();
   }
 });
 guessingButton.addEventListener("click", () => guessingFunction());
@@ -313,3 +348,17 @@ window.onunload = function () {
   window.scrollTo(0,0);
   document.getElementById("html").style.zoom = "100%"
 };
+
+
+/*
+    "shareWon": [
+      "You won!", 
+      "You're a language genius! Come back tomorrow for the next puzzle. Want to learn more about " + currentSolution().language + "? Click " + "<a class='inner-link' href='https://en.wikipedia.org/wiki/" + lang.replace(/ /g,"_") + "_language' target='_blank'>here.</a>", 
+      "<button class = \"share-button\" type=\"button\">Share</button>"
+    ], 
+    "shareLost":[
+      "You lost.",
+      "You didn't guess the correct language. Come back tomorrow for the next puzzle. Today's solution: " + currentSolution().language, 
+      "<button class = \"share-button\" type=\"button\">Share</button>"
+    ],
+*/
