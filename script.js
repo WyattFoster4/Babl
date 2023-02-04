@@ -85,20 +85,20 @@ async function getSolution() {
   var num;
   let dayOfWeek = date.getDay()
   if (dayOfWeek <= 1) {
-    num = (((String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear())) ** 7) % 35) + 1;
+    num = (((date.getDay() + date.getDate() + date.getMonth() + date.getFullYear()) ** 7) % 35) + 1;
     return data.Week.EarlyWeek[String("opt" + num)]
     //Early week
   } else if (dayOfWeek <= 4) {
     //Mid week
-    num = (((String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear())) ** 7) % 51) + 1;
+    num = (((date.getDay() + date.getDate() + date.getMonth() + date.getFullYear()) ** 7) % 51) + 1;
     return data.Week.MidWeek[String("opt" + num)]
   } else if (dayOfWeek <= 6) {
     //Late week
-    num = (((String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear())) ** 7) % 48) + 1;
-    return data.Week.EndWeek[String("opt" + num)]
+    num = (((date.getDay() + date.getDate() + date.getMonth() + date.getFullYear()) ** 7) % 48) + 1;
+    return data.Week.EndWeek[String("opt" + num)];
   } else {
     //Sunday
-    num = (((String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear())) ** 7) % 15) + 1;
+    num = (((date.getDay() + date.getDate() + date.getMonth() + date.getFullYear()) ** 7) % 15) + 1;
     return data.Week.Sunday[String("opt" + num)]
   }
   
@@ -201,10 +201,20 @@ async function makePopup(text, time) {
      notificationShowing = false
 }
 
+function fixInput(str) {
+return str
+    .trim()
+    .toLowerCase()
+    .split(' ')
+    .map(function(word) {
+        return word[0].toUpperCase() + word.substr(1);
+    })
+    .join(' ');
+ }
+
 // Lets you input guesses
 async function guessingFunction() {
-  let arrInput = guessingBox.value.trim();
-  arrInput = arrInput.charAt(0).toUpperCase() + arrInput.slice(1).toLowerCase();
+  let arrInput = fixInput(guessingBox.value);
 
   if (!validLangs.includes(arrInput) && !won) {
     let link = "list.html"
