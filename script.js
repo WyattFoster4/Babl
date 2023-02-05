@@ -32,7 +32,7 @@ let guessingButton = document.getElementById("guessingButton");
 
 // List of valid languages
 const validLangs = ["Abkhaz", "Adyghe", "Afar", "Afrikaans", "Ainu", "Gheg Albanian", "Tosk Albanian", "Aleut", "Altai", 
-    "Amharic", "Arabic", "Aramaic", "Arbanaski", "Armenian", "Eastern Armenian", "Assamese", "Avar", "Azeri",
+    "Amharic", "Arabic", "Aramaic", "Arbanasi", "Armenian", "Eastern Armenian", "Assamese", "Avar", "Azeri",
     "Balochi", "Basaa", "Bashkir", "Basque", "Belarusian", "Bemba", "Bengali", "Bihari", "Bole", "Brahui", "Brazilian",
     "Breton", "Bulgarian", "Burmese", "Burushaski", "Buryat", "Buyang", "Catalan", "Cebuano", "Chechen",
     "Cantonese", "Mandarin", "Chuvash", "Comorian", "Cornish", "Croatian", "Czech", "Danish",
