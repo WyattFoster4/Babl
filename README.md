@@ -30,7 +30,7 @@ Currently working on it! Here's our task board. Feel free to update based on you
 |Troubleshooting|COMPLETED|EVERYONE|
 |How-to Modal|COMPLETED|EVERYONE|
 |Move files to Git|COMPLETED|LÉO|
-|Final hosting|IN PROGRESS|WYATT & LÉO|
+|Final hosting|COMPLETED|WYATT|
 
 ## What we're using
 We're hosting our code on Replit and GitHub. We've been programming with HTML, CSS, and JS. We're also using some JSON to store large data (eg. language proximity, possible solutions). We're hosting with GitHub. 
