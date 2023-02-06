@@ -77,6 +77,18 @@ img {
   padding-right: 0;
 }
 
+a {
+  color: #97a3dd;
+  transition: color 0.2s, opacity 0.2s;
+}
+
+a:hover {
+  color: gray;
+}
+
+a:active {
+  opacity: 0.6;
+}
 
 @media screen and (max-width: 1080px) {
   .header {
@@ -104,18 +116,6 @@ img {
   .title {
     color: #020231;
     z-index: -10;
+    display: none;
   }
-}
-
-.inner-link {
-  color: #97a3dd;
-  transition: color 0.2s, opacity 0.2s;
-}
-
-.inner-link:hover {
-  color: gray;
-}
-
-.inner-link:active {
-  opacity: 0.6;
 }

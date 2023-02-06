@@ -148,8 +148,12 @@ function hideGame() {
     }
     document.getElementById("emojiGridText").innerHTML = emojiGrid(proxList, bablNumber) + "<button class = \"share-button\" type=\"button\">Share</button>";
     modal.showModal()
+
+    copyButton.addEventListener("click", () => {
+        shareGame();
+    })
   });
-  copyButton.addEventListener("click", () => {
+   copyButton.addEventListener("click", () => {
         shareGame();
     })
   
