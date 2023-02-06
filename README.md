@@ -13,6 +13,7 @@ Before continuing build, see if you can fix one of these things. We've all been 
 |---|---|---|
 |Scrollbar|Would like to always show scrollbar, and style it to be more obvious|Mess around with scrollbar styles (without removing mobile styles)|
 |Footer padding|On some devices, no footer padding|div?|
+|Share button popup|Pops up underneath the background dim from the share modal|Use Z-index to move a layer up (not sure if it'll work or not)|
 
 ## Build status
 Currently working on it! Here's our task board. Feel free to update based on your current tasks. 
@@ -33,7 +34,7 @@ Currently working on it! Here's our task board. Feel free to update based on you
 |Final hosting|COMPLETED|WYATT|
 
 ## What we're using
-We're hosting our code on Replit and GitHub. We've been programming with HTML, CSS, and JS. We're also using some JSON to store large data (eg. language proximity, possible solutions). We're hosting with GitHub. 
+We're hosting our code on Replit and GitHub. We've been programming with HTML, CSS, and JS. We're also using some JSON to store large data (eg. language proximity, possible solutions). We're hosting with GitHub, through babl.day. 
 
 ## Contributors
 * Luke Dreyfuss, Wyatt Foster, and Léo Fitzpatrick: Original creators and programmers

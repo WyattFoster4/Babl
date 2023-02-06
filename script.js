@@ -66,6 +66,7 @@ window.onload = async function() {
   lang = currentSolution.language
   response = await fetch("./out.json", { method: 'GET' });
   proximities = await response.json();
+  console.log(proximities)
   guessingBox.value = "";
 }
 
@@ -84,15 +85,15 @@ async function getSolution() {
   let data = await fetch("./solutions.json", { method: 'GET' }).then(response => response.json(response));
   var num;
   let dayOfWeek = date.getDay()
-  if (dayOfWeek <= 1) {
+  if (dayOfWeek == 1) {
     num = (((date.getDay() + date.getDate() + date.getMonth() + date.getFullYear()) ** 7) % 35) + 1;
     return data.Week.EarlyWeek[String("opt" + num)]
     //Early week
-  } else if (dayOfWeek <= 4) {
+  } else if (dayOfWeek >=2 && dayOfWeek <= 4) {
     //Mid week
     num = (((date.getDay() + date.getDate() + date.getMonth() + date.getFullYear()) ** 7) % 51) + 1;
     return data.Week.MidWeek[String("opt" + num)]
-  } else if (dayOfWeek <= 6) {
+  } else if (dayOfWeek <= 6 && dayOfWeek >= 5) {
     //Late week
     num = (((date.getDay() + date.getDate() + date.getMonth() + date.getFullYear()) ** 7) % 48) + 1;
     return data.Week.EndWeek[String("opt" + num)];
@@ -193,7 +194,7 @@ async function makePopup(text, time) {
           popup.style.top = `${window.innerHeight * 0.1}px`
           popup.style.left = `${(window.innerWidth / 2) - popup.clientWidth / 2}px`
           popup.style.visibility = "visible"
-
+          popup.style.zIndex = "10"
           await sleep(time)
           popup.style.visibility = "hidden"
           popup.remove()
@@ -229,6 +230,7 @@ async function guessingFunction() {
     guessingBox.value = "";
     printGuess(guesses);
     let proximity = await compareLanguages(arrInput, lang);
+    console.log(proximity)
     printPercent(proximity);
   } else if (guesses.length <= 6 && won == false && arrInput == lang) {
     won = true;
