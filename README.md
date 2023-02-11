@@ -11,7 +11,6 @@ Before continuing build, see if you can fix one of these things. We've all been 
 
 |Thing|What Happened?|Root Ideas|
 |---|---|---|
-|Scrollbar|Would like to always show scrollbar, and style it to be more obvious|Mess around with scrollbar styles (without removing mobile styles)|
 |Footer padding|On some devices, no footer padding|div?|
 |Share button popup|Pops up underneath the background dim from the share modal|Use Z-index to move a layer up (not sure if it'll work or not)|
 

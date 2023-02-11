@@ -19,25 +19,25 @@ body {
 }
 
 .popup {
-     position: absolute;
-     display: inline-block;
-     background-color: #2e2d4d;
-     color: white;
-     border-radius: 15px;
-     padding: 10px, 5px, 10px, 5px;
-     z-index: 990;
-     text-align: center;
-     overflow: hidden;
-     visibility: "";
-     font-size: 100%;
-     border-color: black;
-     border-style: solid;
-     border-width: 2px;
-     padding-left: 10px;
-     padding-right: 10px;
-
-
-     transition: visible 1s;
+  position: absolute;
+  display: inline-block;
+  background-color: #2e2d4d;
+  color: white;
+  border-radius: 15px;
+  padding: 10px, 5px, 10px, 5px;
+  z-index: 200;
+  text-align: center;
+  overflow: hidden;
+  visibility: "";
+  font-size: 100%;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  filter: brightness(2.0);
+  font-family: sans-serif;
+  transition: visible 1s;
 
 }
 
@@ -87,7 +87,6 @@ body {
 
 .word-title {
   width: 40%;
-  /*height: 30px;*/
   background: #1a1919;
   text-align: center;
   margin: auto;
@@ -95,7 +94,6 @@ body {
   padding-bottom: 10px;
   color: white;
   position: absolute;
-  
   border-style: solid;
   border-width: 1px;
   border-color: black;
@@ -106,7 +104,6 @@ body {
   margin-left: auto; 
   margin-right: auto;
   font-size: 50px;
-  /*box-shadow: 4px 4px 3px gray;*/
   top: 135px;
   margin-top: 10px;
   font-family: sans-serif;
@@ -181,7 +178,6 @@ body {
   padding-top: 14px;
   padding-bottom: 15px;
   width: 17.5%;
-  /*height: 48px;*/
   position: absolute;
   top: 443px;
   right: 23.5%;
@@ -214,7 +210,6 @@ body {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  /*background: #a1a1a1;*/
   position: fixed;
   top: 18px;
   left: 20px;
@@ -257,17 +252,7 @@ body {
   background: #3e3d3d;
 }
 
-.container {
-  width: 630px;
-  height: 660px;
 
-  border-color: #1a1919;
-  position: fixed;
-  right: 0px;
-  bottom: 2px;
-  overflow: hidden;
-  z-index: -30;
-}
 
 
 .modal {
@@ -279,12 +264,16 @@ body {
   font-family: sans-serif;
   background: #2e2d4d;
   color: white;
+  z-index: 200;
 }
 
 .modal::backdrop {
   background: black;
   opacity: 0.4;
 }
+
+
+
 
 
 
@@ -316,17 +305,33 @@ body {
   opacity: 0.4;
 }
 
-.contain {
-  width: 500px;
-  height: 665px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
+/*scrollbar styling*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
 }
 
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #221551; 
+  border-radius: 10px;
+}
 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #301d72; 
+}
 
+::-webkit-scrollbar-thumb:active {
+  background: #3c258d;
+}
 
 
 
@@ -557,6 +562,9 @@ body {
   color: gray;
 }
 
+.inner-link:focus {
+  outline: none;
+}
 .inner-link:active {
   opacity: 0.6;
 }
@@ -624,6 +632,9 @@ body {
   box-shadow: 0 0.5em 0.5em -0.4em;
   transform: translateY(-0.25em);
 }
+
+
+
 
 
 /*mobile css goes here*/
@@ -1040,7 +1051,7 @@ body {
     padding-bottom:15px;
     font-size: 40px;
     overflow: hidden;
-    transition: transform 0.15s;
+    transition: transform 0.15s, background 0.15s, opacity 0.15s;
     text-align: left;
   }
 
@@ -1096,5 +1107,12 @@ body {
   .share-button:focus {
     box-shadow: 0 0.5em 0.5em -0.4em;
     transform: translateY(-0.25em);
+  }
+
+  .popup {
+    width: 45%;
+    
+    font-size: 30px;
+    
   }
 }

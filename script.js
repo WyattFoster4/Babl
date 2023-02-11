@@ -72,6 +72,25 @@ window.onload = async function() {
 
 // FUNCTIONS SETUP
 
+// share function
+async function shareGame() {
+  console.log("share");
+  let messageShare = document.getElementById("emojiGridText").innerText
+  messageShare = messageShare.substring(0, messageShare.length - 6); //eliminates the share at the end
+     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+          const shareMessage = {
+               title: "Babl",
+               text: `${messageShare}`
+          }
+          navigator.share(shareMessage);
+     } else {
+          navigator.clipboard.writeText(messageShare);
+     }
+    // alert("copied to clipboard!");
+  await makePopup("Copied to clipboard!", 1000)
+}
+
+
 // Compares languages by reading JSON, returns similarity in percent
 async function compareLanguages(guess, correct) {
   if (!proximities) {
@@ -86,20 +105,20 @@ async function getSolution() {
   var num;
   let dayOfWeek = date.getDay()
   if (dayOfWeek == 1) {
-    num = (((date.getDay() + date.getDate() + date.getMonth() + date.getFullYear()) ** 7) % 35) + 1;
+    num = (parseInt((String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear())) ** 7) % 35) + 1;
     return data.Week.EarlyWeek[String("opt" + num)]
     //Early week
-  } else if (dayOfWeek >=2 && dayOfWeek <= 4) {
+  } else if (dayOfWeek <= 4) {
     //Mid week
-    num = (((date.getDay() + date.getDate() + date.getMonth() + date.getFullYear()) ** 7) % 51) + 1;
+    num = (parseInt((String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear())) ** 7) % 51) + 1;
     return data.Week.MidWeek[String("opt" + num)]
-  } else if (dayOfWeek <= 6 && dayOfWeek >= 5) {
+  } else if (dayOfWeek <= 6) {
     //Late week
-    num = (((date.getDay() + date.getDate() + date.getMonth() + date.getFullYear()) ** 7) % 48) + 1;
-    return data.Week.EndWeek[String("opt" + num)];
+    num = (parseInt((String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear())) ** 7) % 48) + 1;
+    return data.Week.EndWeek[String("opt" + num)]
   } else {
     //Sunday
-    num = (((date.getDay() + date.getDate() + date.getMonth() + date.getFullYear()) ** 7) % 15) + 1;
+    num = (parseInt((String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear())) ** 7) % 15) + 1;
     return data.Week.Sunday[String("opt" + num)]
   }
   
@@ -143,16 +162,18 @@ function hideGame() {
     document.getElementById("popHeading").innerHTML = "Share";
     if (won == true) {
       document.getElementById("popText").innerHTML = "You're a language genius! Come back tomorrow for the next puzzle. Want to learn more about " + lang + "? Click " + "<a class='inner-link' href='https://en.wikipedia.org/wiki/" + lang + "_language' target='_blank'>here.</a>";
+
     } else {
       document.getElementById("popText").innerHTML = "You didn't guess the correct language. Come back tomorrow for the next puzzle. Today's solution: " + lang;
     }
-    document.getElementById("emojiGridText").innerHTML = emojiGrid(proxList, bablNumber) + "<button class = \"share-button\" type=\"button\">Share</button>";
+    document.getElementById("emojiGridText").innerHTML = emojiGrid(proxList, bablNumber) + "<button class = \"share-button\" id=\"copy-button\" type=\"button\" onclick='shareGame()'>Share</button>";
     modal.showModal()
 
     copyButton.addEventListener("click", () => {
         shareGame();
     })
   });
+  // copyButton = document.getElementById("copy-button")
    copyButton.addEventListener("click", () => {
         shareGame();
     })
@@ -198,7 +219,7 @@ async function makePopup(text, time) {
           popup.style.top = `${window.innerHeight * 0.1}px`
           popup.style.left = `${(window.innerWidth / 2) - popup.clientWidth / 2}px`
           popup.style.visibility = "visible"
-          popup.style.zIndex = "10"
+          popup.style.zIndex = "9999"
           await sleep(time)
           popup.style.visibility = "hidden"
           popup.remove()
@@ -244,7 +265,7 @@ async function guessingFunction() {
     document.getElementById("popHeading").innerHTML = "You won!";
     //lang = "Ancient Aramaic"
     document.getElementById("popText").innerHTML = "You're a language genius! Come back tomorrow for the next puzzle. Want to learn more about " + lang + "? Click " + "<a class='inner-link' href='https://en.wikipedia.org/wiki/" + lang.replace(/ /g,"_") + "_language' target='_blank'>here.</a>";
-    document.getElementById("emojiGridText").innerHTML = emojiGrid(proxList, bablNumber) + "<button class = \"share-button\" id=\"copy-button\" type=\"button\">Share</button>";
+    document.getElementById("emojiGridText").innerHTML = emojiGrid(proxList, bablNumber) + "<button class = \"share-button\" id=\"copy-button\" type=\"button\" onclick='shareGame()'>Share</button>";
     guessingBox.value = "";
     modal.showModal();
     hideGame();
@@ -255,7 +276,7 @@ async function guessingFunction() {
     document.getElementById("popHeading").innerHTML = "You lost!";
     document.getElementById("popText").innerHTML = "You didn't guess the correct language. Come back tomorrow for the next puzzle. Today's solution: " + lang;
     hideGame();
-    document.getElementById("emojiGridText").innerHTML = emojiGrid(proxList, bablNumber) + "<button class = \"share-button\" id=\"copy-button\" type=\"button\">Share</button>";
+    document.getElementById("emojiGridText").innerHTML = emojiGrid(proxList, bablNumber) + "<button class = \"share-button\" id=\"copy-button\" type=\"button\" onclick='shareGame()'>Share</button>";
     guessingBox.value = "";
     modal.showModal();
   }
