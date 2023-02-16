@@ -104,21 +104,21 @@ async function getSolution() {
   let data = await fetch("./solutions.json", { method: 'GET' }).then(response => response.json(response));
   var num;
   let dayOfWeek = date.getDay()
-  if (dayOfWeek == 1) {
-    num = (parseInt((String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear())) ** 7) % 35) + 1;
+  if (dayOfWeek == 1 || dayOfWeek == 2) {
+    num = parseInt(String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear())) ** 7 % 35 + 1;
     return data.Week.EarlyWeek[String("opt" + num)]
     //Early week
   } else if (dayOfWeek <= 4) {
     //Mid week
-    num = (parseInt((String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear())) ** 7) % 51) + 1;
+    num = parseInt(String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear())) ** 7 % 51 + 1;
     return data.Week.MidWeek[String("opt" + num)]
   } else if (dayOfWeek <= 6) {
     //Late week
-    num = (parseInt((String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear())) ** 7) % 48) + 1;
+    num = (parseInt(String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear()))) ** 7 % 48 + 1;
     return data.Week.EndWeek[String("opt" + num)]
   } else {
     //Sunday
-    num = (parseInt((String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear())) ** 7) % 15) + 1;
+    num = (parseInt(String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear()))) ** 7 % 15 + 1;
     return data.Week.Sunday[String("opt" + num)]
   }
   

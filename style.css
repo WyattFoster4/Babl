@@ -38,13 +38,11 @@ body {
   filter: brightness(2.0);
   font-family: sans-serif;
   transition: visible 1s;
-
 }
 
 .center {
   text-align: center;
 }
-
 
 .title {
   position: fixed;
@@ -133,8 +131,6 @@ body {
   font-family: sans-serif;
 }
 
-
-
 .input-box {
   width: 34.7%;
   padding-top: 14px;
@@ -154,20 +150,10 @@ body {
 
 .input-box-div {
   width: 34.7%;
-  /*padding-top: 14px;
-/*   padding-bottom: 15px; */
   position: absolute;
- /* z-index: 0;*/
-   top: 445px;
+  top: 445px;
   right: 41%;
   background: #a1a1a1;
-/*   border-radius: 5px;
-  border-style: solid;
-  border-width: 2px;
-  border-color: black;
-  font-size: 26px;
-  text-align: center;
-  font-family: sans-serif; */
 }
 
 .input-box:focus {
@@ -195,7 +181,6 @@ body {
   font-family: sans-serif;
 }
 
-
 .input-button:hover {
   background: #575757;
   border-color: black;
@@ -218,42 +203,11 @@ body {
   padding-left: 0px
 }
 
-/*.babel2 {
-  width: 500px;
-  height: 665px;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqQEt7pqh9RkuJWErOOF6GRUEPQ4tT1ejlWg&usqp=CAU");
-  mix-blend-mode: darken;
-  position: fixed;
-  z-index: -1;
-  right: -58px;
-  bottom: -17px;
-  background-repeat: no-repeat;
-  background-size: contain;
-}*/
-
-/*.babel {
-  width: 580px;
-  height: 645px;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVzBoSz7JjG__0fDWuhyUXZTzcNAyuACydcg&usqp=CAU");
-  mix-blend-mode: darken;
-  position: absolute;
-  z-index: -10;
-  right: -100px;
-  bottom: -10%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  overflow: hidden;
-}*/
-
-
 .back {
   width: 101%;
   height: 101%;
   background: #3e3d3d;
 }
-
-
-
 
 .modal {
   border-radius: 10px;
@@ -271,11 +225,6 @@ body {
   background: black;
   opacity: 0.4;
 }
-
-
-
-
-
 
 .close-button {
   height: 25px;
@@ -307,24 +256,20 @@ body {
 
 /*scrollbar styling*/
 
-/* width */
 ::-webkit-scrollbar {
   width: 15px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey; 
   border-radius: 10px;
 }
  
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #221551; 
   border-radius: 10px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #301d72; 
 }
@@ -332,9 +277,6 @@ body {
 ::-webkit-scrollbar-thumb:active {
   background: #3c258d;
 }
-
-
-
 
 /* guess and percent boxes*/
 .ex-guess {
@@ -353,7 +295,6 @@ body {
   line-height: 58px;
   font-family: sans-serif;
 }
-
 
 .wrong {
   width: 14.5%;
@@ -569,7 +510,6 @@ body {
   opacity: 0.6;
 }
 
-
 .solution {
   width: 51.5%;
   height: 60px;
@@ -633,10 +573,6 @@ body {
   transform: translateY(-0.25em);
 }
 
-
-
-
-
 /*mobile css goes here*/
 @media screen and (max-width: 1080px) {
   .top-bar {
@@ -688,7 +624,6 @@ body {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    /*background: #a1a1a1;*/
     position: fixed;
     top: 30px;
     left: 20px;
@@ -899,7 +834,6 @@ body {
     text-align: center;
     line-height: 70px;
     font-family: sans-serif;
-    
   }
 
   .input-box {
@@ -991,7 +925,6 @@ body {
   }
   .word-title {
     width: 50%;
-    /*height: 30px;*/
     background: #1a1919;
     text-align: center;
     margin: auto;
@@ -999,7 +932,6 @@ body {
     padding-bottom: 10px;
     color: white;
     position: absolute;
-    
     border-style: solid;
     border-width: 1px;
     border-color: black;
@@ -1010,7 +942,6 @@ body {
     margin-left: auto; 
     margin-right: auto; 
     font-size: 55px;
-    /*box-shadow: 4px 4px 3px gray;*/
     top: 155px;
     margin-top: 10px;
     font-family: sans-serif;
@@ -1019,7 +950,6 @@ body {
   
   .placeholder {
     width: 90%;
-    /*height: 100px;*/
     background: #2b2b2b;
     border-style: solid;
     border-width: 5px;
@@ -1067,7 +997,6 @@ body {
   
   .close-button {
     height: 55px;
-    /*width: 45px;*/
     border-radius: 3px;
     border-style: solid;
     border-width: 1px;
@@ -1082,7 +1011,6 @@ body {
     font-size: 40px;
     padding-left: 22px;
     padding-right: 50px;
-
   }
 
   .share-button {
@@ -1111,8 +1039,6 @@ body {
 
   .popup {
     width: 45%;
-    
     font-size: 30px;
-    
   }
 }
