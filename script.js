@@ -9,6 +9,7 @@ let won = false;
 let sendColor;
 let proximities;
 const sleep = ms => new Promise(r => setTimeout(r, ms));
+const lenSolutions = 139;
 
 var response
 // Time variables
@@ -103,24 +104,26 @@ async function getSolution() {
   let date = new Date();
   let data = await fetch("./solutions.json", { method: 'GET' }).then(response => response.json(response));
   var num;
-  let dayOfWeek = date.getDay()
-  if (dayOfWeek == 1 || dayOfWeek == 2) {
-    num = parseInt(String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear())) ** 7 % 35 + 1;
-    return data.Week.EarlyWeek[String("opt" + num)]
-    //Early week
-  } else if (dayOfWeek <= 4) {
-    //Mid week
-    num = parseInt(String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear())) ** 7 % 51 + 1;
-    return data.Week.MidWeek[String("opt" + num)]
-  } else if (dayOfWeek <= 6) {
-    //Late week
-    num = (parseInt(String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear()))) ** 7 % 48 + 1;
-    return data.Week.EndWeek[String("opt" + num)]
-  } else {
-    //Sunday
-    num = (parseInt(String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear()))) ** 7 % 15 + 1;
-    return data.Week.Sunday[String("opt" + num)]
-  }
+  // let dayOfWeek = date.getDay()
+  num = parseInt(String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear())) ** 7 % lenSolutions + 1;
+  return data[String("opt" + num)]
+  // if (dayOfWeek == 1 || dayOfWeek == 2) {
+  //   num = parseInt(String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear())) ** 7 % 35 + 1;
+  //   return data.Week.EarlyWeek[String("opt" + num)]
+  //   //Early week
+  // } else if (dayOfWeek <= 4) {
+  //   //Mid week
+  //   num = parseInt(String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear())) ** 7 % 51 + 1;
+  //   return data.Week.MidWeek[String("opt" + num)]
+  // } else if (dayOfWeek <= 6) {
+  //   //Late week
+  //   num = (parseInt(String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear()))) ** 7 % 48 + 1;
+  //   return data.Week.EndWeek[String("opt" + num)]
+  // } else {
+  //   //Sunday
+  //   num = (parseInt(String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear()))) ** 7 % 15 + 1;
+  //   return data.Week.Sunday[String("opt" + num)]
+  // }
   
 }
 

@@ -91,21 +91,25 @@ a:active {
 }
 
 @media screen and (max-width: 1080px) {
+  
   .header {
     font-size: 70px;
     width: 700px;
     padding-left: 5px;
     padding-right: 5px;
   }
+  
   .label {
     font-size: 40px;
     width: 800px;
   }
+  
   .langs {
     width: 900px;
     font-size: 40px;
     margin-bottom: 20px;
   }
+  
   img {
     position: absolute;
     top: 25px;
@@ -113,6 +117,7 @@ a:active {
     height: 100px;
     width: 100px;
   }
+  
   .title {
     color: #020231;
     z-index: -10;
