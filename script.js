@@ -288,7 +288,12 @@ async function guessingFunction() {
 // Generates emoji grid
 function emojiGrid(proxList, bablNumber) { 
   let block = "";
-  let message = "Babl #" + bablNumber + " " + proxList.length + "/6 <br>";
+  let message;
+  if (proxList.length == 6 && proxList[5] != 100) {
+    message = "Babl #" + bablNumber + " FAIL<br>";
+  } else {
+    message = "Babl #" + bablNumber + " " + proxList.length + "/6 <br>";
+  }
   console.log(proxList)
   for (var i = 0; i < proxList.length; i++) {
     console.log(proxList[i])
