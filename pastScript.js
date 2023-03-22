@@ -14,7 +14,8 @@ const lenSolutions = 139;
 var response
 // Time variables
 var originDate = new Date("02/01/2023");
-var currentDate = new Date();
+var currentDate = new Date(document.getElementById("bablDate").value);
+console.log(currentDate);
 var timeDifference = currentDate.getTime() - originDate.getTime();
 var bablNumber = Math.ceil(timeDifference / (1000 * 3600 * 24));
 
@@ -73,6 +74,14 @@ window.onload = async function() {
 
 // FUNCTIONS SETUP
 
+function setDate() {
+  currentDate = new Date(document.getElementById("bablDate").value);
+  console.log(date);
+  console.log(document.getElementById("bablDate").value);
+  dateDate = new Date(date)
+  console.log(dateDate.toUTCString());
+}
+
 // share function
 async function shareGame() {
   console.log("share");
@@ -101,7 +110,7 @@ async function compareLanguages(guess, correct) {
 }
 
 async function getSolution() {
-  let date = new Date();
+  let date = currentDate;
   let data = await fetch("./solutions.json", { method: 'GET' }).then(response => response.json(response));
   var num;
   // let dayOfWeek = date.getDay()

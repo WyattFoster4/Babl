@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Babl</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <meta name="google" value="notranslate">
+  <meta name="viewport" content="maximum-scale=1.0, user-scalable=0" />
+
+</head>
+
+<body id="body">
+  <div class="back"></div>
+  <div class="guess">
+    Babl date: <input type="date" id="bablDate">
+    <button onclick="async function() {let currentSolution = await getSolution(); phraseBox.innerText = currentSolution.phrase; lang = currentSolution.language;
+  response = await fetch("./out.json", { method: 'GET' });
+  proximities = await response.json();
+  console.log(proximities)
+  guessingBox.value = "";">Submit</button>
+    <input class="input-box" type="text" id="guessingBox">
+    <button class="input-button" type="button" id="guessingButton">Guess</button>
+  </div>
+To set a date: <br>
+- set the date in the input <br>
+- reload page <br>
+  <div class="top-bar"></div>
+
+  <p class="title">
+    Babl
+  </p>
+  <button class="howto" type="button">Help</button>
+  <div class="word-title">
+    Today's Phrase
+  </div>
+  <p class="placeholder" id="phraseBox"></p>
+
+  <div class="logo">
+    <img src="babl.png" width=70 height=70 />
+  </div>
+
+  <dialog id="modal" class="modal">
+    <h2 id="popHeading"></h2>
+    <p id="popText"></p>
+    <p class="center" id="emojiGridText"></p>
+    <button class="close-button">X</button>
+  </dialog>
+
+  <div class="guess-contain">
+    <div id="guess-1" class="ex-guess"></div>
+    <div id="percent-1" class="wrong"></div>
+
+
+    <div id="guess-2" class="ex-guess2"></div>
+    <div id="percent-2" class="right"></div>
+
+
+
+    <div id="guess-3" class="ex-guess3"></div>
+    <div id="percent-3" class="wrong2"></div>
+
+    <div id="guess-4" class="ex-guess4"></div>
+    <div id="percent-4" class="wrong3"></div>
+
+    <div id="guess-5" class="ex-guess5"></div>
+    <div id="percent-5" class="wrong4"></div>
+
+    <div id="guess-6" class="ex-guess6"></div>
+    <div id="percent-6" class="wrong5"></div>
+  </div>
+
+
+  <div class="test"></div>
+
+  <script src="pastScript.js"></script>
+</body>
+
+</html>

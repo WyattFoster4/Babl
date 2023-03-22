@@ -1041,4 +1041,11 @@ body {
     width: 45%;
     font-size: 30px;
   }
+  #bablDate {
+    width: 26.8%;
+    height: 77px;
+    position: absolute;
+    top: 463px;
+    right: 10.7%;
+  }
 }
