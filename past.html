@@ -14,11 +14,7 @@
   <div class="back"></div>
   <div class="guess">
     Babl date: <input type="date" id="bablDate">
-    <button onclick="async function() {let currentSolution = await getSolution(); phraseBox.innerText = currentSolution.phrase; lang = currentSolution.language;
-  response = await fetch("./out.json", { method: 'GET' });
-  proximities = await response.json();
-  console.log(proximities)
-  guessingBox.value = "";">Submit</button>
+    <button onclick="setup(); setDate()">Submit</button>
     <input class="input-box" type="text" id="guessingBox">
     <button class="input-button" type="button" id="guessingButton">Guess</button>
   </div>

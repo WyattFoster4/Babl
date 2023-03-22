@@ -62,7 +62,7 @@ for (var i = 1; i<7; i++) {
   document.getElementById("guess-"+i).innerHTML = ""; // Clears guessing boxes at start
 }
 
-window.onload = async function() {
+async function setup() {
   let currentSolution = await getSolution()
   phraseBox.innerText = currentSolution.phrase
   lang = currentSolution.language
