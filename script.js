@@ -308,7 +308,7 @@ function emojiGrid(proxList, bablNumber) {
     } else if (proxList[i] == 100) {
       block = "🟪🟪🟪🟪🟪";
     }
-    message = message + " " + block + " " /* + proxList[i] + "% */ + "<br>";
+    message = message + " " + block + " " /* + proxList[i] + "% */ + "/6 <br>";
   }
   return message;
 }
