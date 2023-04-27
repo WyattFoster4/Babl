@@ -1,6 +1,7 @@
  // VARIABLE SETUP
 
 // Game variables
+var DateTime = luxon.DateTime;
 let phrase;
 let lang;
 const guesses = [];
@@ -101,11 +102,13 @@ async function compareLanguages(guess, correct) {
 }
 
 async function getSolution() {
-  let date = new Date();
+  let date = DateTime.now();
+  // console.log(date.day)
   let data = await fetch("./solutions.json", { method: 'GET' }).then(response => response.json(response));
   var num;
   // let dayOfWeek = date.getDay()
-  num = parseInt(String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear())) ** 7 % lenSolutions + 1;
+  num = (parseInt(String(date.weekday - 1) + String(date.day - 1) + String(date.month - 1) + String(date.year)) ** 7) % lenSolutions + 1;
+  console.log(data)
   return data[String("opt" + num)]
   // if (dayOfWeek == 1 || dayOfWeek == 2) {
   //   num = parseInt(String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear())) ** 7 % 35 + 1;
