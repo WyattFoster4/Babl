@@ -68,7 +68,6 @@ window.onload = async function() {
   lang = currentSolution.language
   response = await fetch("./out.json", { method: 'GET' });
   proximities = await response.json();
-  console.log(proximities)
   guessingBox.value = "";
 }
 
@@ -102,13 +101,11 @@ async function compareLanguages(guess, correct) {
 }
 
 async function getSolution() {
-  let date = DateTime.now();
-  // console.log(date.day)
-  let data = await fetch("./solutions.json", { method: 'GET' }).then(response => response.json(response));
+  let data = await fetch("./solutionsmanual.json", { method: 'GET' }).then(response => response.json(response));
   var num;
-  // let dayOfWeek = date.getDay()
-  num = (parseInt(String(date.weekday - 1) + String(date.day - 1) + String(date.month - 1) + String(date.year)) ** 7) % lenSolutions + 1;
-  console.log(data)
+  var originDateII = new Date("04/27/2023");
+  var currentDateII = new Date();
+  var num = currentDateII.getTime() - originDateII.getTime();
   return data[String("opt" + num)]
   // if (dayOfWeek == 1 || dayOfWeek == 2) {
   //   num = parseInt(String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear())) ** 7 % 35 + 1;
