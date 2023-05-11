@@ -290,9 +290,9 @@ function emojiGrid(proxList, bablNumber) {
   let block = "";
   let message;
   if (proxList.length == 6 && proxList[5] != 100) {
-    message = "Babl #" + bablNumber + " FAIL<br>";
+    message = "Babl #" + bablNumber + " FAIL ALSO BABL 100 HYPE!! <br>";
   } else {
-    message = "Babl #" + bablNumber + " " + proxList.length + "/6 <br>";
+    message = "Babl #" + bablNumber + " " + proxList.length + "/6 BABL 100 HYPE!! <br>";
   }
   console.log(proxList)
   for (var i = 0; i < proxList.length; i++) {
@@ -308,7 +308,7 @@ function emojiGrid(proxList, bablNumber) {
     } else if (proxList[i] == 100) {
       block = "🟪🟪🟪🟪🟪";
     }
-    message = message + " " + block + " " /* + proxList[i] + "% */ + "<br>";
+    message = message + " " + block + " " /* + proxList[i] + "% */ + "/6 <br>";
   }
   return message;
 }
@@ -316,7 +316,7 @@ function emojiGrid(proxList, bablNumber) {
 // EVENT LISTENER SETUP
 
 // Technical not an EL, opens modal
-document.getElementById("popHeading").innerHTML = "Welcome to Babl!";
+document.getElementById("popHeading").innerHTML = "Welcome to Babl! BABL 100 HYPE!!";
 document.getElementById("popText").innerHTML = "Here's how to play: Every day, a new phrase in a foreign language will appear on Babl. You have to guess what language the phrase is written in (it doesn't matter what the phrase actually says). If your guess is right, you'll win! If your guess is wrong, we'll tell you how close you got. You only get 6 tries. Good luck!";
 modal.showModal();
 
@@ -327,7 +327,7 @@ closeModal.addEventListener('click', () => {
 
 // Opens modal when the help button is clicked
 helpButton.addEventListener('click', () => {
-  document.getElementById("popHeading").innerHTML = "Welcome to Babl!";
+  document.getElementById("popHeading").innerHTML = "Welcome to Babl! BABL 100 HYPE!!";
   document.getElementById("popText").innerHTML = "Here's how to play: Every day, a new phrase in a foreign language will appear on Babl. You have to guess what language the phrase is written in (it doesn't matter what the phrase actually says). If your guess is right, you'll win! If your guess is wrong, we'll tell you how close you got. You only get 6 tries. Good luck!";
   document.getElementById("emojiGridText").innerHTML = " ";
   modal.showModal();
