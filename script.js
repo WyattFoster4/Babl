@@ -64,6 +64,8 @@ for (var i = 1; i<7; i++) {
 
 window.onload = async function() {
   let currentSolution = await getSolution()
+  console.log(currentSolution.phrase)
+  console.log(currentSolution.language)
   phraseBox.innerText = currentSolution.phrase
   lang = currentSolution.language
   response = await fetch("./out.json", { method: 'GET' });
@@ -103,9 +105,11 @@ async function compareLanguages(guess, correct) {
 async function getSolution() {
   let data = await fetch("./solutionsmanual.json", { method: 'GET' }).then(response => response.json(response));
   var num;
-  var originDateII = new Date("04/27/2023");
+  var originDateII = new Date("05/10/2023");
   var currentDateII = new Date();
-  var num = currentDateII.getTime() - originDateII.getTime();
+  var num = Math.floor((currentDateII.getTime() - originDateII.getTime())/86400000);
+  num = num % 167;
+  console.log("num", num)
   return data[String("opt" + num)]
   // if (dayOfWeek == 1 || dayOfWeek == 2) {
   //   num = parseInt(String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear())) ** 7 % 35 + 1;
