@@ -105,7 +105,7 @@ async function compareLanguages(guess, correct) {
 async function getSolution() {
   let data = await fetch("./solutionsmanual.json", { method: 'GET' }).then(response => response.json(response));
   var num;
-  var originDateII = new Date("05/14/2023");
+  var originDateII = new Date("05/15/2023"); // change back to 14
   var currentDateII = new Date();
   var num = Math.floor((currentDateII.getTime() - originDateII.getTime())/86400000);
   num = num % 167;
