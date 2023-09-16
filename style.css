@@ -1,5 +1,5 @@
 body {
-  background: #5c5c5c;
+  background: #404040;
   overflow-y: scroll;
 }
 
@@ -9,10 +9,10 @@ body {
   position: fixed;
   top: 0%;
   right: .01%;
-  background: #141414;
+  background: #212121;
   border-style: solid;
   border-width: 0px;
-  border-color: black;
+  border-color: #212121;
   font-size: 4vw;
   border-top-width: 0px;
   z-index: 50;
@@ -36,7 +36,8 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   filter: brightness(2.0);
-  font-family: sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
   transition: visible 1s;
 }
 
@@ -51,11 +52,11 @@ body {
   top: 0%;
   padding-top: 0px;
   margin-top: 22px;
-  color: white;
+  color: #ffd369;
   font-size: 45px;
   z-index: 100;
-  font-family: sans-serif;
-  font-weight: bold;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 800;
 }
 
 .howto {
@@ -63,13 +64,13 @@ body {
   right: 35px;
   top: 0%;
   color: black;
-  background-color: #a8a800;
+  background-color: #ffd369;
   padding-top: 0px;
   margin-top: 22px;
   font-size: 45px;
   z-index: 100;
-  font-family: sans-serif;
-  font-weight: bold;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 800;
   border-radius: 5px;
   transition: transform 0.25s, opacity 0.15s;
 }
@@ -90,7 +91,7 @@ body {
   margin: auto;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: white;
+  color: #ffd369;
   position: absolute;
   border-style: solid;
   border-width: 1px;
@@ -104,8 +105,8 @@ body {
   font-size: 50px;
   top: 135px;
   margin-top: 10px;
-  font-family: sans-serif;
-  font-weight: bold;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 800;
 }
 
 .placeholder {
@@ -114,7 +115,7 @@ body {
   background: #2b2b2b;
   border-style: solid;
   border-width: 5px;
-  border-color: #a8a800;
+  border-color: #ffd369;
   border-radius: 5px;
   position: absolute;
   top: 135px;
@@ -128,7 +129,8 @@ body {
   font-size: 45px;
   vertical-align: middle;
   padding-top: 55px;
-  font-family: sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
 }
 
 .input-box {
@@ -145,7 +147,8 @@ body {
   border-color: black;
   font-size: 26px;
   text-align: center;
-  font-family: sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
 }
 
 .input-box-div {
@@ -178,7 +181,8 @@ body {
   transition: background 0.15s, border-color 0.15s, opacity 0.15s;
   margin-top: 2px;
   z-index: 10;
-  font-family: sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
 }
 
 .input-button:hover {
@@ -192,7 +196,7 @@ body {
 }
 
 .logo {
-  width: 70px;
+  width: 125px;
   height: 70px;
   border-radius: 50%;
   position: fixed;
@@ -215,7 +219,8 @@ body {
   border-width: 3px;
   border-color: #212121;
   width: 40%;
-  font-family: sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
   background: #2e2d4d;
   color: white;
   z-index: 200;
@@ -293,7 +298,8 @@ body {
   font-size: 30px;
   text-align: center;
   line-height: 58px;
-  font-family: sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
 }
 
 .wrong {
@@ -310,7 +316,8 @@ body {
   font-size: 30px;
   text-align: center;
   line-height: 58px;
-  font-family: sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
 }
 
 .ex-guess2 {
@@ -327,7 +334,8 @@ body {
   font-size: 30px;
   text-align: center;
   line-height: 58px;
-  font-family: sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
 }
 
 .ex-guess3 {
@@ -344,7 +352,8 @@ body {
   font-size: 30px;
   text-align: center;
   line-height: 58px;
-  font-family: sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
 }
 
 .wrong2 {
@@ -361,7 +370,8 @@ body {
   font-size: 30px;
   text-align: center;
   line-height: 58px;
-  font-family: sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
 }
 
 .ex-guess4 {
@@ -378,7 +388,8 @@ body {
   font-size: 30px;
   text-align: center;
   line-height: 58px;
-  font-family: sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
 }
 
 .wrong3 {
@@ -395,7 +406,8 @@ body {
   font-size: 30px;
   text-align: center;
   line-height: 58px;
-  font-family: sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
 }
 
 .ex-guess5 {
@@ -412,7 +424,8 @@ body {
   font-size: 30px;
   text-align: center;
   line-height: 58px;
-  font-family: sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
 }
 
 .wrong4 {
@@ -429,7 +442,8 @@ body {
   font-size: 30px;
   text-align: center;
   line-height: 58px;
-  font-family: sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
 }
 
 .ex-guess6 {
@@ -446,7 +460,8 @@ body {
   font-size: 30px;
   text-align: center;
   line-height: 58px;
-  font-family: sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
   margin-bottom: 40px;
 }
 
@@ -464,7 +479,8 @@ body {
   font-size: 30px;
   text-align: center;
   line-height: 58px;
-  font-family: sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
   margin-bottom: 40px;
 }
 
@@ -482,7 +498,8 @@ body {
   font-size: 30px;
   text-align: center;
   line-height: 58px;
-  font-family: sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
 }
 
 /*adds a small amount of margin at the bottom of the screen*/
@@ -523,7 +540,8 @@ body {
   border-color: black;
   font-size: 36px;
   text-align: center;
-  font-family: sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
   padding-top: 13px;
   padding-bottom: 0px;
   z-index: -10;
@@ -547,7 +565,8 @@ body {
   margin-top: 2px;
   z-index: 10;
   line-height: 12px;
-  font-family: sans-serif;    
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;    
   padding-top: 0px;
   padding-bottom: 0px;
   z-index: -10;
@@ -596,10 +615,10 @@ body {
     top: 0%;
     padding-top: 0px;
     margin-top: 22px;
-    color: white;
+    color: #ffd369;
     font-size: 60px;
-    font-family: sans-serif;
-    font-weight: bold;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
     z-index: 100;
   }
 
@@ -613,15 +632,15 @@ body {
     margin-top: 22px;
     font-size: 55px;
     z-index: 100;
-    font-family: sans-serif;
-    font-weight: bold;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
     border-radius: 5px;
     padding-left: 13px;
     padding-right: 13px;
   }
 
   .logo {
-    width: 70px;
+    width: 125px;
     height: 70px;
     border-radius: 50%;
     position: fixed;
@@ -646,7 +665,8 @@ body {
     font-size: 35px;
     text-align: center;
     line-height: 70px;
-    font-family: sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
   }
   
   .wrong {
@@ -663,7 +683,8 @@ body {
     font-size: 35px;
     text-align: center;
     line-height: 70px;
-    font-family: sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
   }
   
   .ex-guess2 {
@@ -680,7 +701,8 @@ body {
     font-size: 35px;
     text-align: center;
     line-height: 70px;
-    font-family: sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
   }
   
   .right {
@@ -697,7 +719,8 @@ body {
     font-size: 35px;
     text-align: center;
     line-height: 70px;
-    font-family: sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
   }
 
   .ex-guess3 {
@@ -714,7 +737,8 @@ body {
     font-size: 35px;
     text-align: center;
     line-height: 70px;
-    font-family: sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
   }
 
   .wrong2 {
@@ -731,7 +755,8 @@ body {
     font-size: 35px;
     text-align: center;
     line-height: 70px;
-    font-family: sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
   }
 
   .ex-guess4 {
@@ -748,7 +773,8 @@ body {
     font-size: 35px;
     text-align: center;
     line-height: 70px;
-    font-family: sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
   }
 
   .wrong3 {
@@ -765,7 +791,8 @@ body {
     font-size: 35px;
     text-align: center;
     line-height: 70px;
-    font-family: sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
   }
   
   .ex-guess5 {
@@ -782,7 +809,8 @@ body {
     font-size: 35px;
     text-align: center;
     line-height: 70px;
-    font-family: sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
   }
   
   .wrong4 {
@@ -799,7 +827,8 @@ body {
     font-size: 35px;
     text-align: center;
     line-height: 70px;
-    font-family: sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
   }
   
   .ex-guess6 {
@@ -816,7 +845,8 @@ body {
     font-size: 35px;
     text-align: center;
     line-height: 70px;
-    font-family: sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
   }
   
   .wrong5 {
@@ -833,7 +863,8 @@ body {
     font-size: 35px;
     text-align: center;
     line-height: 70px;
-    font-family: sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
   }
 
   .input-box {
@@ -849,7 +880,8 @@ body {
     border-color: black;
     font-size: 36px;
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
     padding-top: 0px;
     padding-bottom: 0px;
   }
@@ -867,7 +899,8 @@ body {
     border-color: black;
     font-size: 36px;
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
     padding-top: 13px;
     padding-bottom: 0px;
     z-index: -10;
@@ -885,17 +918,18 @@ body {
     right: 10.7%;
     font-size: 36px;
     text-align: center;
-    background: #1a1919;
+    background: #21212;
     color: white;
     border-radius: 5px;
     border-style: solid;
     border-width: 2px;
-    border-color: #1a1919;
+    border-color: #21212;
     transition: background 0.15s, border-color 0.15s, opacity 0.15s;
     margin-top: 2px;
     z-index: 10;
     line-height: 12px;
-    font-family: sans-serif;    
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;    
     padding-top: 0px;
     padding-bottom: 0px;
   }
@@ -918,23 +952,24 @@ body {
     margin-top: 2px;
     z-index: 10;
     line-height: 12px;
-    font-family: sans-serif;    
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;    
     padding-top: 0px;
     padding-bottom: 0px;
     z-index: -10;
   }
   .word-title {
     width: 50%;
-    background: #1a1919;
+    background: #21212;
     text-align: center;
     margin: auto;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: white;
+    color: #ffd369;
     position: absolute;
     border-style: solid;
     border-width: 1px;
-    border-color: black;
+    border-color: #21212;
     border-radius: 5px;
     z-index: 10;
     left: 0; 
@@ -944,8 +979,8 @@ body {
     font-size: 55px;
     top: 155px;
     margin-top: 10px;
-    font-family: sans-serif;
-    font-weight: bold;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
   }
   
   .placeholder {
@@ -968,7 +1003,8 @@ body {
     vertical-align: middle;
     padding-top: 60px;
     padding-bottom: 45px;
-    font-family: sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
   }
 
   .modal {
