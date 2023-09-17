@@ -1,5 +1,5 @@
 body {
-  background: #404040;
+  background: #292929;
   overflow-y: scroll;
 }
 
@@ -9,10 +9,10 @@ body {
   position: fixed;
   top: 0%;
   right: .01%;
-  background: #212121;
+  background: #1a1919;
   border-style: solid;
   border-width: 0px;
-  border-color: #212121;
+  border-color: #1a1919;
   font-size: 4vw;
   border-top-width: 0px;
   z-index: 50;
@@ -95,7 +95,7 @@ body {
   position: absolute;
   border-style: solid;
   border-width: 1px;
-  border-color: black;
+  border-color: #1a1919;
   border-radius: 5px;
   z-index: 10;
   left: 0; 
@@ -112,7 +112,7 @@ body {
 .placeholder {
   width: 60%;
   height: 100px;
-  background: #2b2b2b;
+  background: #292929;
   border-style: solid;
   border-width: 5px;
   border-color: #ffd369;
@@ -140,13 +140,14 @@ body {
   position: absolute;
   top: 445px;
   right: 41%;
-  background: #a1a1a1;
-  border-radius: 5px;
+  background: #2e2d4d;
+  border-radius: 0px;
   border-style: solid;
-  border-width: 2px;
-  border-color: black;
-  font-size: 26px;
+  border-width: 5px;
+  border-color: #1a1919;
+  font-size: 30px;
   text-align: center;
+  color: #ffffff;
   font-family: 'Noto Sans', sans-serif;
   font-weight: 500;
 }
@@ -156,7 +157,7 @@ body {
   position: absolute;
   top: 445px;
   right: 41%;
-  background: #a1a1a1;
+  background: #5e4a4a;
 }
 
 .input-box:focus {
@@ -170,13 +171,13 @@ body {
   position: absolute;
   top: 443px;
   right: 23.5%;
-  font-size: 26px;
+  font-size: 30px;
   text-align: center;
   background: #1a1919;
   color: white;
-  border-radius: 5px;
+  border-radius: 0px;
   border-style: solid;
-  border-width: 2px;
+  border-width: 5px;
   border-color: #1a1919;
   transition: background 0.15s, border-color 0.15s, opacity 0.15s;
   margin-top: 2px;
@@ -186,8 +187,9 @@ body {
 }
 
 .input-button:hover {
-  background: #575757;
-  border-color: black;
+  background: #2e2d4d;
+  border-color: #1a1919;
+  border-width: 5px;
   cursor: pointer;
 }
 
@@ -217,7 +219,7 @@ body {
   border-radius: 10px;
   border-style: solid;
   border-width: 3px;
-  border-color: #212121;
+  border-color: #1a1919;
   width: 40%;
   font-family: 'Noto Sans', sans-serif;
   font-weight: 500;
@@ -287,17 +289,18 @@ body {
 .ex-guess {
   width: 32%;
   height: 58px;
-  background: #828282;
+  background: #292929;
   position: absolute;
   top: 540px;
   right: 41%;
-  border-radius: 5px;
+  border-radius: 0px;
   border-style: solid;
-  border-width: 2px;
-  border-color: black;
+  border-width: 5px;
+  border-color: #1a1919;
   font-size: 30px;
   text-align: center;
   line-height: 58px;
+  color: #ffd369;
   font-family: 'Noto Sans', sans-serif;
   font-weight: 500;
 }
@@ -305,14 +308,14 @@ body {
 .wrong {
   width: 14.5%;
   height: 58px;
-  background: #828282;
+  background: #292929;
   position: absolute;
   top: 540px;
   right: 26.3%;
-  border-radius: 5px;
+  border-radius: 0px;
   border-style: solid;
-  border-width: 2px;
-  border-color: black;
+  border-width: 5px;
+  border-color: #1a1919;
   font-size: 30px;
   text-align: center;
   line-height: 58px;
@@ -323,14 +326,14 @@ body {
 .ex-guess2 {
   width: 32%;
   height: 58px;
-  background: #828282;
+  background: #292929;
   position: absolute;
   top: 620px;
   right: 41%;
-  border-radius: 5px;
+  border-radius: 0px;
   border-style: solid;
-  border-width: 2px;
-  border-color: black;
+  border-width: 5px;
+  border-color: #1a1919;
   font-size: 30px;
   text-align: center;
   line-height: 58px;
@@ -348,7 +351,7 @@ body {
   border-radius: 5px;
   border-style: solid;
   border-width: 2px;
-  border-color: black;
+  border-color: #1a1919;
   font-size: 30px;
   text-align: center;
   line-height: 58px;
@@ -366,7 +369,7 @@ body {
   border-radius: 5px;
   border-style: solid;
   border-width: 2px;
-  border-color: black;
+  border-color: #ffd369;
   font-size: 30px;
   text-align: center;
   line-height: 58px;
@@ -384,7 +387,7 @@ body {
   border-radius: 5px;
   border-style: solid;
   border-width: 2px;
-  border-color: black;
+  border-color: #ffd369;
   font-size: 30px;
   text-align: center;
   line-height: 58px;
@@ -873,7 +876,7 @@ body {
     position: absolute;
     top: 465px;
     right: 37.5%;
-    background: #a1a1a1;
+    background: #292929;
     border-radius: 5px;
     border-style: solid;
     border-width: 2px;
@@ -918,12 +921,12 @@ body {
     right: 10.7%;
     font-size: 36px;
     text-align: center;
-    background: #21212;
+    background: #1a1919;
     color: white;
     border-radius: 5px;
     border-style: solid;
-    border-width: 2px;
-    border-color: #21212;
+    border-width: 5px;
+    border-color: #1a1919;
     transition: background 0.15s, border-color 0.15s, opacity 0.15s;
     margin-top: 2px;
     z-index: 10;
@@ -1011,7 +1014,7 @@ body {
     border-radius: 15px;
     border-style: solid;
     border-width: 3px;
-    border-color: #212121;
+    border-color: #1a1919;
     width: 80%;
     padding-top: 10px;
     padding-bottom:15px;

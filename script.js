@@ -20,7 +20,7 @@ var timeDifference = currentDate.getTime() - originDate.getTime();
 var bablNumber = Math.ceil(timeDifference / (1000 * 3600 * 24));
 
 //sets gray background for the one box that didn't have the right color (idk why)
-document.getElementById("percent-1").style.background = "#828282";
+document.getElementById("percent-1").style.background = "#292929";
 
 // Modal variables
 const modal = document.querySelector('#modal');
