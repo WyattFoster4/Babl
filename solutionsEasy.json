@@ -1,0 +1,674 @@
+{
+  "opt1": {
+    "phrase": "'Ahlan wasahlan bik fi manzili",
+    "language": "Arabic"
+  },
+"opt2":  {
+    "phrase": "Rasaam alkharayit marid alyawm",
+    "language": "Arabic"
+  },
+"opt3":  {
+    "phrase": "Althaeabin laha 'asnan",
+    "language": "Arabic"
+  },
+"opt4":  {
+    "phrase": "Altaayirat muthirat liliahtimam",
+    "language": "Arabic"
+  },
+"opt5":  {
+    "phrase": "Alwaraqat qadimat waraqiqa",
+    "language": "Arabic"
+  },
+"opt6":  {
+    "phrase": "Zhǐzhāng yòu jiù yòu báo",
+    "language": "Mandarin"
+  },
+"opt7":  {
+    "phrase": "Hùliánwǎng hěn dà",
+    "language": "Mandarin"
+  },
+"opt8":  {
+    "phrase": "Gòngchǎn zhǔyì cúnzài",
+    "language": "Mandarin"
+  },
+"opt9":  {
+    "phrase": "Miànshí shì mǐsè de",
+    "language": "Mandarin"
+  },
+"opt10":  {
+    "phrase": "Fójiào guǎngfàn chuánbò",
+    "language": "Mandarin"
+  },
+"opt11":  {
+    "phrase": "Le bouddhisme est répandu",
+    "language": "France"
+  },
+"opt12":  {
+    "phrase": "Les plages sont rocheuses",
+    "language": "French"
+  },
+"opt13":  {
+    "phrase": "L'Inde était une île",
+    "language": "French"
+  },
+"opt14":  {
+    "phrase": "Gagnez du premier coup",
+    "language": "French"
+  },
+"opt15":  {
+    "phrase": "Les couleurs sont chères",
+    "language": "French"
+  },
+"opt16":  {
+    "phrase": "Farben sind jetzt teuer",
+    "language": "German"
+  },
+"opt17":  {
+    "phrase": "Die Rakete war sehr groß",
+    "language": "German"
+  },
+"opt18":  {
+    "phrase": "Der Geist ist ein Gefängnis",
+    "language": "German"
+  },
+"opt19":  {
+    "phrase": "Von seiner eigenen Schöpfung",
+    "language": "German"
+  },
+"opt20":  {
+    "phrase": "Befreien Sie Ihr Gehirn",
+    "language": "German"
+  },
+"opt21":  {
+    "phrase": "Tavniyyot pelastik zeh magniv",
+    "language": "Hebrew"
+  },
+"opt22":  {
+    "phrase": "Etzim delilim kan",
+    "language": "Hebrew"
+  },
+"opt23":  {
+    "phrase": "Marak hu be'al erech rav",
+    "language": "Hebrew"
+  },
+"opt24":  {
+    "phrase": "Ha'iyyim rechavim baddarom",
+    "language": "Hebrew"
+  },
+"opt25":  {
+    "phrase": "V'eshehattehom tihyeh gedullah",
+    "language": "Hebrew"
+  },
+"opt26":  {
+    "phrase": "Aur khaee mahaan ho",
+    "language": "Hindi"
+  },
+"opt27":  {
+    "phrase": "Ham shaanti kee aasha karate hain",
+    "language": "Hindi"
+  },
+"opt28":  {
+    "phrase": "Havaee jahaaj bade paimaane hain",
+    "language": "Hindi"
+  },
+"opt29":  {
+    "phrase": "Ravaanda bahut thanda hai",
+    "language": "Hindi"
+  },
+"opt30":  {
+    "phrase": "Main shukravaar se pyaar hai",
+    "language": "Hindi"
+  },
+"opt31":  {
+    "phrase": "Il documento è aggiornato",
+    "language": "Italian"
+  },
+"opt32":  {
+    "phrase": "Ci sono molti libri",
+    "language": "Italian"
+  },
+"opt33":  {
+    "phrase": "I pappagalli sono costosi",
+    "language": "Italian"
+  },
+"opt34":  {
+    "phrase": "Il caffè è difficile da scrivere",
+    "language": "Italian"
+  },
+"opt35":  {
+    "phrase": "Il serpente si disintegrò",
+    "language": "Italian"
+  },
+"opt36":  {
+    "phrase": "Kyō hebi ga shinda",
+    "language": "Japanese"
+  },
+"opt37":  {
+    "phrase": "Watashinoie ga moete imasu",
+    "language": "Japanese"
+  },
+"opt38":  {
+    "phrase": "Taiyō wa totemo akaruidesu",
+    "language": "Japanese"
+  },
+"opt39":  {
+    "phrase": "Ramu no kanshoku ga wakarimasu",
+    "language": "Japanese"
+  },
+"opt40":  {
+    "phrase": "Watashinochichi wa nan-saidesu",
+    "language": "Japanese"
+  },
+"opt41":  {
+    "phrase": "Uli abeojineun myeoch sal-iseyo",
+    "language": "Korean"
+  },
+"opt42":  {
+    "phrase": "Igeos-eul ppalli insighala",
+    "language": "Korean"
+  },
+"opt43":  {
+    "phrase": "Meongcheonghamyeon domangchyeo",
+    "language": "Korean"
+  },
+"opt44":  {
+    "phrase": "Sigyeeneun heunjeog-i manhda",
+    "language": "Korean"
+  },
+"opt45":  {
+    "phrase": "I seukeulibteuleul sicheonghaseyo",
+    "language": "Korean"
+  },
+"opt46":  {
+    "phrase": "Letras romanas são chatas",
+    "language": "Portuguese"
+  },
+"opt47":  {
+    "phrase": "Confira a pontuação acima",
+    "language": "Portuguese"
+  },
+"opt48":  {
+    "phrase": "O melhor lado da Ibérica",
+    "language": "Portuguese"
+  },
+"opt49":  {
+    "phrase": "Espanhol fora da marca",
+    "language": "Portuguese"
+  },
+"opt50":  {
+    "phrase": "Um pedaço do novo mundo",
+    "language": "Portuguese"
+  },
+"opt51":  {
+    "phrase": "Nosotras ganamos el tratado",
+    "language": "Spanish"
+  },
+"opt52":  {
+    "phrase": "Bolsas de lona para café",
+    "language": "Spanish"
+  },
+"opt53":  {
+    "phrase": "Reconoce esto o eres tonto",
+    "language": "Spanish"
+  },
+"opt54":  {
+  "phrase": "Tienes que saber este",
+  "language": "Spanish"
+  },
+"opt55":  {
+    "phrase": "Lo siento olvidé cómo contar",
+    "language": "Spanish"
+  },
+"opt56":  {
+    "phrase": "Hamingjusamur eins og",
+    "language": "Icelandic"
+  },
+"opt57":  {
+    "phrase": "Kuroi sement wa koutaku ga ari",
+    "language": "Japanese"
+  },
+"opt58":  {
+    "phrase": "O assado de porco é muito",
+    "language": "Portuguese"
+  },
+"opt59":  {
+    "phrase": "Scáth, meáchan a dhéanaimid",
+    "language": "Irish"
+  },
+"opt60":  {
+    "phrase": "Lekker om jou te ontmoet",
+    "language": "Afrikaans"
+  },
+"opt61":  {
+    "phrase": "Asin sikhia hai ki chupp nahin",
+    "language": "Punjabi"
+  },
+"opt62":  {
+    "phrase": "Shachak bavel kol yom",
+    "language": "Hebrew"
+  },
+"opt63":  {
+    "phrase": "Sauthi mahan shikshak",
+    "language": "Gujarati"
+  },
+"opt64":  {
+    "phrase": "Podul este o cale navigabilă",
+    "language": "Romanian"
+  },
+"opt65":  {
+    "phrase": "My grys hare is vandag voos",
+    "language": "Afrikaans"
+  },
+"opt66":  {
+    "phrase": "Word volgend jaar een taalkunde",
+    "language": "Dutch"
+  },
+"opt67":  {
+    "phrase": "Zvuchya kato zhaba bik",
+    "language": "Bulgarian"
+  },
+"opt68":  {
+    "phrase": "Valójában elég kompakt lehet",
+    "language": "Hungarian"
+  },
+"opt69":  {
+    "phrase": "Tôi làm những gì tôi có",
+    "language": "Vietnamese"
+  },
+"opt70":  {
+    "phrase": "Ya veru vie bolshee blago",
+    "language": "Russian"
+  },
+"opt71":  {
+    "phrase": "Vsi ludi znovu maiut tsinnist",
+    "language": "Ukrainian"
+  },
+"opt72":  {
+    "phrase": "Mae argraffydd sgleiniog",
+    "language": "Welsh"
+  },
+"opt73":  {
+    "phrase": "Yah sab se ziyadah mushkil he",
+    "language": "Urdu"
+  },
+"opt74":  {
+    "phrase": "Tā hē le nà me duō chá",
+    "language": "Mandarin"
+  },
+"opt75":  {
+    "phrase": "Ez egy hosszú szöveg",
+    "language": "Hungarian"
+  },
+"opt76":  {
+    "phrase": "Yhdessä menemme upouuteen",
+    "language": "Finnish"
+  },
+"opt77":  {
+    "phrase": "Z toho, čo len je, nie vždy",
+    "language": "Slovak"
+  },
+"opt78":  {
+    "phrase": "Farraige a chaithfimid wade",
+    "language": "Irish"
+  },
+"opt79":  {
+    "phrase": "Liye kya kar sakta hai",
+    "language": "Hindi"
+  },
+"opt80":  {
+    "phrase": "Stendi ya mabasi iko mbali",
+    "language": "Swahili"
+  },
+"opt81":  {
+    "phrase": "Monyet sangat mahal di sini",
+    "language": "Indonesian"
+  },
+"opt82":  {
+    "phrase": "Omistan mukavan höyryl",
+    "language": "Finnish"
+  },
+"opt83":  {
+    "phrase": "Tena koa whakaarohia ia",
+    "language": "Maori"
+  },
+"opt84":  {
+    "phrase": "Penso che la tua faccia sia",
+    "language": "Italian"
+  },
+"opt85":  {
+    "phrase": "Mi cabeza está en llamas",
+    "language": "Spanish"
+  },
+"opt86":  {
+    "phrase": "Kia thom zaban boll sakte ho",
+    "language": "Urdu"
+  },
+"opt87":  {
+    "phrase": "Há muitos museus no meu",
+    "language": "Portuguese"
+  },
+"opt88":  {
+    "phrase": "Hij woont in een herenhuis",
+    "language": "Dutch"
+  },
+"opt89":  {
+    "phrase": "Sîloyên genim dirêj in",
+    "language": "Kurdish"
+  },
+"opt90":  {
+    "phrase": "Csak egy nagyon ingatag",
+    "language": "Hungarian"
+  },
+"opt91":  {
+    "phrase": "Mang theo người của tôi",
+    "language": "Vietnamese"
+  },
+"opt92":  {
+    "phrase": "Phinong khongkhony yuthini",
+    "language": "Lao"
+  },
+"opt93":  {
+    "phrase": "Moj susjed živi u potoku",
+    "language": "Croatian"
+  },
+"opt94":  {
+    "phrase": "Neden yeşil seviyorsunuz",
+    "language": "Turkish"
+  },
+"opt95":  {
+    "phrase": "Mere qalam bahat mahange",
+    "language": "Urdu"
+  },
+"opt96":  {
+    "phrase": "Kuna nchi ya kigeni tena",
+    "language": "Swahili"
+  },
+"opt97":  {
+    "phrase": "W nieznane słyszę",
+    "language": "Polish"
+  },
+"opt98":  {
+    "phrase": "An féidir linn solas a fháil",
+    "language": "Irish"
+  },
+"opt99":  {
+    "phrase": "Gịnị bụ ụgha ndị a",
+    "language": "Igbo"
+  },
+"opt100":  {
+    "phrase": "Misrah mele'ah ad latzuf",
+    "language": "Hebrew"
+  },
+"opt101":  {
+    "phrase": "Kato apo the thalassa",
+    "language": "Greek"
+  },
+"opt102":  {
+    "phrase": "Mainne do kitaaben likheen",
+    "language": "Hindi"
+  },
+"opt103":  {
+    "phrase": "Haddii aad aqrinayso waxan",
+    "language": "Somali"
+  },
+"opt104":  {
+    "phrase": "Kafiye kadar eski güzellik",
+    "language": "Turkish"
+  },
+"opt105":  {
+    "phrase": "Dina tantangan wis teka",
+    "language": "Javanese"
+  },
+"opt106":  {
+    "phrase": "Hudha al-muhait yebdo bla",
+    "language": "Arabic"
+  },
+"opt107":  {
+    "phrase": "Bịa n'obi m ma rie nri",
+    "language": "Igbo"
+  },
+"opt108":  {
+    "phrase": "Fiafraigh dínn féin, cá háit",
+    "language": "Irish"
+  },
+"opt109":  {
+    "phrase": "Erbyn goleuni cynnar y",
+    "language": "Welsh"
+  },
+"opt110":  {
+    "phrase": "Saídas não são tão",
+    "language": "Portuguese"
+  },
+"opt111":  {
+    "phrase": "Aceste străzi pietruite sunt",
+    "language": "Romanian"
+  },
+"opt112":  {
+    "phrase": "Go khrabrivme stomakota nha",
+    "language": "Macedonian"
+  },
+"opt113":  {
+    "phrase": "Yn cael ei alw gan y",
+    "language": "Welsh"
+  },
+"opt114":  {
+    "phrase": "Ve'achshav anachnu matchilim",
+    "language": "Hebrew"
+  },
+"opt115":  {
+    "phrase": "Astronomul de pe deal este sărac",
+    "language": "Romanian"
+  },
+"opt116":  {
+    "phrase": "Einai pio ygro ston ocean",
+    "language": "Greek"
+  },
+"opt117":  {
+    "phrase": "Ve canavar devam ediyor",
+    "language": "Turkish"
+  },
+"opt118":  {
+    "phrase": "Igray v babel' kazhdyy den'",
+    "language": "Russian"
+  },
+"opt119":  {
+    "phrase": "Ya snova ograbil dva banka",
+    "language": "Russian"
+  },
+"opt120":  {
+    "phrase": "Indha script swarasyamaanadhu",
+    "language": "Tamil"
+  },
+"opt121":  {
+    "phrase": "Nī̀ khụ̄x lîn k̄hxng c̄hạn",
+    "language": "Thai"
+  },
+"opt122":  {
+    "phrase": "Ngapunten wong biasa",
+    "language": "Javanese"
+  },
+"opt123":  {
+    "phrase": "Ketika terang datang kita",
+    "language": "Indonesian"
+  },
+"opt124":  {
+    "phrase": "Hatvey la yazal jern morra",
+    "language": "Arabic"
+  },
+"opt125":  {
+    "phrase": "Gebroken glas voelt niet ",
+    "language": "Dutch"
+  },
+"opt126":  {
+    "phrase": "No josangdeuri deutgo",
+    "language": "Korean"
+  },
+"opt127":  {
+    "phrase": "Min historielærer er sej",
+    "language": "Danish"
+  },
+"opt128":  {
+    "phrase": "Spravodlivosť pre poéziu",
+    "language": "Slovak"
+  },
+"opt129":  {
+    "phrase": "Kināramā tinīharū kāma garchan",
+    "language": "Nepali"
+  },
+"opt130":  {
+    "phrase": "Hizkuntza hau oso arraroa da ",
+    "language": "Basque"
+  },
+"opt131":  {
+    "phrase": "Main do ghusapaithiyan",
+    "language": "Hindi"
+  },
+"opt132":  {
+    "phrase": "Gyegogeun no geosi aniya",
+    "language": "Korean"
+  },
+"opt133":  {
+    "phrase": "Informatik ist besser als",
+    "language": "German"
+  },
+"opt134":  {
+    "phrase": "Watashi wa shimaguni kara rai",
+    "language": "Japanese"
+  },
+"opt135":  {
+    "phrase": "Žabe nemaju mnogo organa",
+    "language": "Croatian"
+  },
+"opt136":  {
+    "phrase": "Naneun gam-og-e issda",
+    "language": "Korean"
+  },
+"opt137":  {
+    "phrase": "Đối với đường chân trời",
+    "language": "Vietnamese"
+  },
+"opt138":  {
+    "phrase": "Potknąłem się o drut",
+    "language": "Polish"
+  },
+"opt139":  {
+    "phrase": "Estoy enfermo porque problemas",
+    "language": "Spanish"
+  },
+"opt140":  {
+    "phrase": "Hvorfor gør du dette mod",
+    "language": "Danish"
+  },
+"opt141":  {
+    "phrase": "Tôi muốn một máy tính",
+    "language": "Vietnamese"
+  },
+"opt142":  {
+    "phrase": "Og himmel så blå som min",
+    "language": "Danish"
+  },
+"opt143":  {
+    "phrase": "Zō wa tsūjōmai o tabemasen",
+    "language": "Japanese"
+  },
+"opt144":  {
+    "phrase": "Ilüü chiigtei gazar dooshoo",
+    "language": "Mongolian"
+  },
+"opt145":  {
+    "phrase": "Aquest poble té una bandera fresca",
+    "language": "Catalan"
+  },
+"opt146":  {
+    "phrase": "Í gegnum öldurnar sem",
+    "language": "Icelandic"
+  },
+"opt147":  {
+    "phrase": "Ik bezocht de grotschilden",
+    "language": "Dutch"
+  },
+"opt148":  {
+    "phrase": "Czego nie mam, mówi się",
+    "language": "Polish"
+  },
+"opt149":  {
+    "phrase": "Zhè li de láng tài duō",
+    "language": "Mandarin"
+  },
+"opt150":  {
+    "phrase": "Wǒ yǒngyǒu tài duō de shūdiàn",
+    "language": "Mandarin"
+  },
+"opt151":  {
+    "phrase": "Edo kato all ta psaria",
+    "language": "Greek"
+  },
+"opt152":  {
+    "phrase": "Diventa un maggiore",
+    "language": "Italian"
+  },
+"opt153":  {
+    "phrase": "Nywele zangu ni ndefu zaidi",
+    "language": "Swahili"
+  },
+"opt154":  {
+    "phrase": "Unasema nini hapa kwa hili",
+    "language": "Swahili"
+  },
+"opt154":  {
+    "phrase": "Við hin erum svöng",
+    "language": "Icelandic"
+  },
+"opt155":  {
+    "phrase": "Ginkou kouza ga kuu desu",
+    "language": "Japanese"
+  },
+"opt156":  {
+    "phrase": "Vždy mier a normy a pojmy",
+    "language": "Slovak"
+  },
+"opt157":  {
+    "phrase": "Vahid al-qurn he khaoul kabira",
+    "language": "Arabic"
+  },
+"opt158":  {
+    "phrase": "Vola de vermell i groc al vent",
+    "language": "Catalan"
+  },
+"opt159":  {
+    "phrase": "Mi electrican está en casa",
+    "language": "Spanish"
+  },
+"opt160":  {
+    "phrase": "Wǒ de jiā rén zhù dé hěn",
+    "language": "Mandarin"
+  },
+"opt161":  {
+    "phrase": "Två klasser är bättre än en",
+    "language": "Swedish"
+  },
+"opt162":  {
+    "phrase": "Ek is mal oor speelgoedverhaal",
+    "language": "Afrikaans"
+  },
+"opt163":  {
+    "phrase": "Nečekaně jen malá změna",
+    "language": "Czech"
+  },
+"opt164":  {
+    "phrase": "Europa zaharreko lehergailua da",
+    "language": "Basque"
+  },
+"opt165":  {
+    "phrase": "Halō eṉ naṇparkaḷlē",
+    "language": "Tamil"
+  },
+"opt166":  {
+    "phrase": "Oon dareh ye azmayesh anjam",
+    "language": "Persian"
+  },
+"opt167":  {
+    "phrase": "A gdybym to usłyszał",
+    "language": "Polish"
+  }
+}
