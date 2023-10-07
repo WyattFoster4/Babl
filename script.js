@@ -103,7 +103,7 @@ async function compareLanguages(guess, correct) {
 }
 
 async function getSolution() {
-  let data = await fetch("./solutionsmanual.json", { method: 'GET' }).then(response => response.json(response));
+  let data = await fetch("./solutionsmanualOldII.json", { method: 'GET' }).then(response => response.json(response));
   var num;
   var originDateII = new Date("05/15/2023"); // change back to 14
   var currentDateII = new Date();
@@ -269,7 +269,11 @@ async function guessingFunction() {
     guesses.push(arrInput);
     printGuess(guesses);
     printPercent(await compareLanguages(arrInput, lang));
-    document.getElementById("popHeading").innerHTML = "You won!";
+    if (bablNumber % 50 < 6) {
+      document.getElementById("popHeading").innerHTML = "You won! BABL " + bablNumber + " HYPE!!!";
+    } else {
+      document.getElementById("popHeading").innerHTML = "You won!";
+    }
     //lang = "Ancient Aramaic"
     document.getElementById("popText").innerHTML = "You're a language genius! Come back tomorrow for the next puzzle. Want to learn more about " + lang + "? Click " + "<a class='inner-link' href='https://en.wikipedia.org/wiki/" + lang.replace(/ /g,"_") + "_language' target='_blank'>here.</a>";
     document.getElementById("emojiGridText").innerHTML = emojiGrid(proxList, bablNumber) + "<button class = \"share-button\" id=\"copy-button\" type=\"button\" onclick='shareGame()'>Share</button>";
@@ -298,6 +302,9 @@ function emojiGrid(proxList, bablNumber) {
   } else {
     message = "Babl #" + bablNumber + " " + proxList.length + "/6 <br>";
   }
+  if (bablNumber % 50 < 6) {
+    message = message + " BABL " + bablNumber + " HYPE!!!";
+  }
   console.log(proxList)
   for (var i = 0; i < proxList.length; i++) {
     console.log(proxList[i])
@@ -320,7 +327,11 @@ function emojiGrid(proxList, bablNumber) {
 // EVENT LISTENER SETUP
 
 // Technical not an EL, opens modal
-document.getElementById("popHeading").innerHTML = "Welcome to Babl!";
+if (bablNumber % 50 < 6) {
+  document.getElementById("popHeading").innerHTML = "Welcome to Babl! BABL " + bablNumber + " HYPE!!!";
+} else {
+  document.getElementById("popHeading").innerHTML = "Welcome to Babl!";
+}
 document.getElementById("popText").innerHTML = "Here's how to play: Every day, a new phrase in a foreign language will appear on Babl. You have to guess what language the phrase is written in (it doesn't matter what the phrase actually says). If your guess is right, you'll win! If your guess is wrong, we'll tell you how close you got. You only get 6 tries. Good luck!";
 modal.showModal();
 
@@ -331,7 +342,11 @@ closeModal.addEventListener('click', () => {
 
 // Opens modal when the help button is clicked
 helpButton.addEventListener('click', () => {
-  document.getElementById("popHeading").innerHTML = "Welcome to Babl!";
+  if (bablNumber % 50 < 6) {
+    document.getElementById("popHeading").innerHTML = "Welcome to Babl! BABL " + bablNumber + " HYPE!!!";
+  } else {
+    document.getElementById("popHeading").innerHTML = "Welcome to Babl!";
+  }
   document.getElementById("popText").innerHTML = "Here's how to play: Every day, a new phrase in a foreign language will appear on Babl. You have to guess what language the phrase is written in (it doesn't matter what the phrase actually says). If your guess is right, you'll win! If your guess is wrong, we'll tell you how close you got. You only get 6 tries. Good luck!";
   document.getElementById("emojiGridText").innerHTML = " ";
   modal.showModal();

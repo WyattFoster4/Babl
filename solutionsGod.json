@@ -1,0 +1,98 @@
+{
+  "opt1": {
+    "phrase": "Aha martahraver lezu dzez hamar",
+    "language": "Armenian"
+  },
+"opt2":  {
+    "phrase": "Ak aris enis gamots’veva tkventvis",
+    "language": "Georgian"
+  },
+"opt3":  {
+    "phrase": "Tamārā māṭē ahīṁ ēka bhāṣā paḍakāra",
+    "language": "Gujarati"
+  },
+"opt4":  {
+    "phrase": "Nke a bụ ihe ịma aka asụsụ maka gị",
+    "language": "Igbo"
+  },
+"opt5":  {
+    "phrase": "Iki minangka tantangan basa sampeyan",
+    "language": "Javanese"
+  },
+"opt6":  {
+    "phrase": "Mine, sizge tildik sınaq",
+    "language": "Kazakh"
+  },
+"opt7":  {
+    "phrase": "Nih chea banhhea brachhm pheasaea",
+    "language": "Khmer"
+  },
+"opt8":  {
+    "phrase": "Niaemn singthathai danphasa soalab than",
+    "language": "Lao"
+  },
+"opt9":  {
+    "phrase": "Šeit ir valodas izaicinājums jums",
+    "language": "Latvian"
+  },
+"opt10":  {
+    "phrase": "Štai jums kalbos iššūkis",
+    "language": "Lithuanian"
+  },
+"opt11":  {
+    "phrase": "Eve eden jazičen predizvik za vas",
+    "language": "Macedonian"
+  },
+"opt12":  {
+    "phrase": "Ity misy fanamby amin'ny fiteny anao",
+    "language": "Malagasy"
+  },
+"opt13":  {
+    "phrase": "Yahām̐ tapā'īkō lāgi bhāṣā cunautī cha",
+    "language": "Nepali"
+  },
+"opt14":  {
+    "phrase": "Iha tuhāḍē la'ī cuṇautī vālī bhāśā",
+    "language": "Punjabi"
+  },
+"opt15":  {
+    "phrase": "Ole gagana lu'i lea mo oe",
+    "language": "Samoan"
+  },
+"opt16":  {
+    "phrase": "Waa kuwan luqad adiga kugu adag",
+    "language": "Somali"
+  },
+"opt17":  {
+    "phrase": "Inak jak zaʙoni duşvor ʙaroi şumo",
+    "language": "Tajik"
+  },
+"opt18":  {
+    "phrase": "Uṅkaḷukkāṉa cavāl moḻi itō",
+    "language": "Tamil"
+  },
+"opt19":  {
+    "phrase": "Nī̀ khụ̄x p̣hās̄ʹā thī̀ tĥāthāy s̄ảh̄rạb khuṇ",
+    "language": "Thai"
+  },
+"opt20":  {
+    "phrase": "Ine, häzir size kyn dil",
+    "language": "Turkmen"
+  },
+"opt21":  {
+    "phrase": "Yahan op ke laye aik challenges zaban",
+    "language": "Urdu"
+  },
+"opt22":  {
+    "phrase": "Mana siz uchun sinov tili",
+    "language": "Uzbek"
+  },
+"opt23":  {
+    "phrase": "Do s a aroysrufn shprakh far ir",
+    "language": "Yiddish"
+  },
+"opt24":  {
+    "phrase": "Eyi ni ede ipenija fun ọ",
+    "language": "Yoruba"
+  },
+}

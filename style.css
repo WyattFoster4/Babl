@@ -140,7 +140,7 @@ body {
   position: absolute;
   top: 445px;
   right: 41%;
-  background: #2e2d4d;
+  background: #707070;
   border-radius: 0px;
   border-style: solid;
   border-width: 5px;
@@ -273,7 +273,7 @@ body {
 }
  
 ::-webkit-scrollbar-thumb {
-  background: #221551; 
+  background: #707070; 
   border-radius: 10px;
 }
 

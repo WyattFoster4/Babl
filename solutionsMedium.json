@@ -1,20 +1,522 @@
-"opt21":  {
+{
+"opt1":  {
     "phrase": "Eleftheróste ton enkéfaló sas",
     "language": "Greek"
   },
-"opt22":  {
+"opt2":  {
     "phrase": "Ta varélia eínai droserá",
     "language": "Greek"
   },
-"opt23":  {
+"opt3":  {
     "phrase": "To lamperó fos eínai dynató",
     "language": "Greek"
   },
-"opt24":  {
+"opt4":  {
     "phrase": "Néa fantachterá grámmata",
     "language": "Greek"
   },
-"opt25":  {
+"opt5":  {
     "phrase": "Tréxte grígora makriá",
     "language": "Greek"
   },
+"opt6":  {
+    "phrase": "Hem de treure el sostre",
+    "language": "Catalan"
+  },
+"opt7":  {
+    "phrase": "Hi ha moltes banderes al voltant",
+    "language": "Catalan"
+  },
+"opt8":  {
+    "phrase": "Els anells grocs són pocs",
+    "language": "Catalan"
+  },
+"opt9":  {
+    "phrase": "Hi ha tres ports de plàstic",
+    "language": "Catalan"
+  },
+"opt10":  {
+    "phrase": "Per a què serveixen aquests",
+    "language": "Catalan"
+  },
+"opt11":  {
+    "phrase": "Waarvoor is dit alles",
+    "language": "Afrikaans"
+  },
+"opt12":  {
+    "phrase": "Hierdie lyk te eenders",
+    "language": "Afrikaans"
+  },
+"opt13":  {
+    "phrase": "Afskeur tale in werklikheid",
+    "language": "Afrikaans"
+  },
+"opt14":  {
+    "phrase": "Speel hierdie speletjie daagliks",
+    "language": "Afrikaans"
+  },
+"opt15":  {
+    "phrase": "Skryf vandag stadig inhoud",
+    "language": "Afrikaans"
+  },
+"opt16":  {
+    "phrase": "Danas polako pišem sadržaj",
+    "language": "Croatian"
+  },
+"opt17":  {
+    "phrase": "Generiranje podataka je teško",
+    "language": "Croatian"
+  },
+"opt18":  {
+    "phrase": "Praznici su sada česti",
+    "language": "Croatian"
+  },
+"opt19":  {
+    "phrase": "Ljepilo za veliki plavi pravokutnik",
+    "language": "Croatian"
+  },
+"opt20":  {
+    "phrase": "Vodeno čudovište vreba",
+    "language": "Croatian"
+  },
+"opt21":  {
+    "phrase": "Nejednoznačné jazyky",
+    "language": "Czech"
+  },
+"opt22":  {
+    "phrase": "Krátcí a arogantní lidé",
+    "language": "Czech"
+  },
+"opt23":  {
+    "phrase": "Velké lodě se svíčkami",
+    "language": "Czech"
+  },
+"opt24":  {
+    "phrase": "Udělejte vikingský pohřeb",
+    "language": "Czech"
+  },
+"opt25":  {
+    "phrase": "Procházka podél hranice",
+    "language": "Czech"
+  },
+"opt26":  {
+    "phrase": "Vandretur langs grænsen",
+    "language": "Danish"
+  },
+"opt27":  {
+    "phrase": "Ned til græsmarkerne i går",
+    "language": "Danish"
+  },
+"opt28":  {
+    "phrase": "Tværs over dalen om morgenen",
+    "language": "Danish"
+  },
+"opt29":  {
+    "phrase": "Op ad bjerget af træer",
+    "language": "Danish"
+  },
+"opt30":  {
+    "phrase": "Undslippe den fjerne ild",
+    "language": "Danish"
+  },
+"opt31":  {
+    "phrase": "Het zeewier is altijd groener",
+    "language": "Dutch"
+  },
+"opt32":  {
+    "phrase": "Dat is een grote fout",
+    "language": "Dutch"
+  },
+"opt33":  {
+    "phrase": "Neem het van mij aan",
+    "language": "Dutch"
+  },
+"opt34":  {
+    "phrase": "Aan de wal zijn ze de hele dag",
+    "language": "Dutch"
+  },
+"opt35":  {
+    "phrase": "De vissen op het land",
+    "language": "Dutch"
+  },
+"opt36":  {
+    "phrase": "Lugu sama vana kui aeg",
+    "language": "Estonian"
+  },
+"opt37":  {
+    "phrase": "Muidugi ainult väike muutus",
+    "language": "Estonian"
+  },
+"opt38":  {
+    "phrase": "Kumbki polnud valmistunud",
+    "language": "Estonian"
+  },
+"opt39":  {
+    "phrase": "Nagu päike jälle tõuseb",
+    "language": "Estonian"
+  },
+"opt40":  {
+    "phrase": "Buum läheb dünamiiti vau",
+    "language": "Estonian"
+  },
+"opt41":  {
+    "phrase": "Outo hanhi on täällä",
+    "language": "Finnish"
+  },
+"opt42":  {
+    "phrase": "Tässä on todellinen haaste",
+    "language": "Finnish"
+  },
+"opt43":  {
+    "phrase": "Koodaan myöhään illalla",
+    "language": "Finnish"
+  },
+"opt44":  {
+    "phrase": "Matematiikka on kiehtovaa",
+    "language": "Finnish"
+  },
+"opt45":  {
+    "phrase": "Voinko sekoittaa tämän",
+    "language": "Finnish"
+  },
+"opt46":  {
+    "phrase": "Megérkezett a zűrzavar",
+    "language": "Hungarian"
+  },
+"opt47":  {
+    "phrase": "Srácok itt az ideje a fizikának",
+    "language": "Hungarian"
+  },
+"opt48":  {
+    "phrase": "Nézd meg a sárga papírt",
+    "language": "Hungarian"
+  },
+"opt49":  {
+    "phrase": "Van egy lila tűzgyújtó dolog",
+    "language": "Hungarian"
+  },
+"opt50":  {
+    "phrase": "A végzet temploma magas",
+    "language": "Hungarian"
+  },
+"opt51":  {
+    "phrase": "Horfðu á ofurháa turnvélina",
+    "language": "Icelandic"
+  },
+"opt52":  {
+    "phrase": "Járnbrautin liggur langt aftur",
+    "language": "Icelandic"
+  },
+"opt53":  {
+    "phrase": "Plastið festist ekki við plötuna",
+    "language": "Icelandic"
+  },
+"opt54":  {
+  "phrase": "Svarti þráðurinn er þykkari en blár",
+  "language": "Icelandic"
+  },
+"opt55":  {
+    "phrase": "Liðin keppa niður fjörðinn",
+    "language": "Icelandic"
+  },
+"opt56":  {
+    "phrase": "Tim berlomba menuruni gunung",
+    "language": "Indonesian"
+  },
+"opt57":  {
+    "phrase": "Coba baca orang bodoh ini",
+    "language": "Indonesian"
+  },
+"opt58":  {
+    "phrase": "Apakah anda buta huruf atau tidak",
+    "language": "Indonesian"
+  },
+"opt59":  {
+    "phrase": "Dapatkah anda melihat logamnya",
+    "language": "Indonesian"
+  },
+"opt60":  {
+    "phrase": "Saksikan roketnya meledak besar",
+    "language": "Indonesian"
+  },
+"opt61":  {
+    "phrase": "Féach ar an roicéad pléascadh mór",
+    "language": "Irish"
+  },
+"opt62":  {
+    "phrase": "Próca clog an-mhaisiúil",
+    "language": "Irish"
+  },
+"opt63":  {
+    "phrase": "Faigh an stuif seo déanta",
+    "language": "Irish"
+  },
+"opt64":  {
+    "phrase": "Is amhrán iontach é seo",
+    "language": "Irish"
+  },
+"opt65":  {
+    "phrase": "Sean druma iontach é seo",
+    "language": "Irish"
+  },
+"opt66":  {
+    "phrase": "He pahu tawhito nui tenei",
+    "language": "Maori"
+  },
+"opt67":  {
+    "phrase": "Titiro ki te mata rama",
+    "language": "Maori"
+  },
+"opt68":  {
+    "phrase": "Mena ka ngaro koe i roto i to konae",
+    "language": "Maori"
+  },
+"opt69":  {
+    "phrase": "Katahi ka kata kua ngaro koe",
+    "language": "Maori"
+  },
+"opt70":  {
+    "phrase": "He poti moana nui tera",
+    "language": "Maori"
+  },
+"opt71":  {
+    "phrase": "Ene bol dalai tengisiin asar zavi",
+    "language": "Mongolian"
+  },
+"opt72":  {
+    "phrase": "Ter möchid khovor üür baisan",
+    "language": "Mongolian"
+  },
+"opt73":  {
+    "phrase": "Ikh khurlyn dain bol tom yum",
+    "language": "Mongolian"
+  },
+"opt74":  {
+    "phrase": "Khöndii dekh namag kho",
+    "language": "Mongolian"
+  },
+"opt75":  {
+    "phrase": "Khovor böös deer shajignakh khachig",
+    "language": "Mongolian"
+  },
+"opt76":  {
+    "phrase": "Ain yak rah ahan basyar tolani st",
+    "language": "Persian"
+  },
+"opt77":  {
+    "phrase": "Hala hameh ro bay ham zadan",
+    "language": "Persian"
+  },
+"opt78":  {
+    "phrase": "Amroz bay tanhai bay samat rast",
+    "language": "Persian"
+  },
+"opt79":  {
+    "phrase": "Ain bastagi bay zaman ziyadi dard",
+    "language": "Persian"
+  },
+"opt80":  {
+    "phrase": "Deckel az balay sar ma bala mirood",
+    "language": "Persian"
+  },
+"opt81":  {
+    "phrase": "Spójrz na te rzadkie litery",
+    "language": "Polish"
+  },
+"opt82":  {
+    "phrase": "Zbitki spółgłosek to moje życie",
+    "language": "Polish"
+  },
+"opt83":  {
+    "phrase": "Rozwiń tutaj swój umysł",
+    "language": "Polish"
+  },
+"opt84":  {
+    "phrase": "Czy potrafisz wykryć tę mowę",
+    "language": "Polish"
+  },
+"opt85":  {
+    "phrase": "Ludzie tu nie ma interpunkcji",
+    "language": "Polish"
+  },
+"opt86":  {
+    "phrase": "Dobro pozhalovat' v moyu derevnyu",
+    "language": "Russian"
+  },
+"opt87":  {
+    "phrase": "Ya khochu poyti spat'",
+    "language": "Russian"
+  },
+"opt88":  {
+    "phrase": "Kodirovaniye — eto ochen' slozhno",
+    "language": "Russian"
+  },
+"opt89":  {
+    "phrase": "Pochemu programmisty lyubyat kofye",
+    "language": "Russian"
+  },
+"opt90":  {
+    "phrase": "Vyuchite kirillitsu pryamo seychas",
+    "language": "Russian"
+  },
+"opt91":  {
+    "phrase": "Naučite druge alfabete sada",
+    "language": "Serbian"
+  },
+"opt92":  {
+    "phrase": "Kapelan je dobro obrazovan",
+    "language": "Serbian"
+  },
+"opt93":  {
+    "phrase": "Pogledajte one bakterije tamo",
+    "language": "Serbian"
+  },
+"opt94":  {
+    "phrase": "To je veliki plakat zelene mape",
+    "language": "Serbian"
+  },
+"opt95":  {
+    "phrase": "Imam puno praznih staklenih flaša",
+    "language": "Serbian"
+  },
+"opt96":  {
+    "phrase": "Mám veľa prázdnych sklenených fliaš",
+    "language": "Slovak"
+  },
+"opt97":  {
+    "phrase": "Správy sú početné a dlhé",
+    "language": "Slovak"
+  },
+"opt98":  {
+    "phrase": "Dnes večer musím dokončiť knihu",
+    "language": "Slovak"
+  },
+"opt99":  {
+    "phrase": "Kalkulačky môžu dokonca vytvárať grafy",
+    "language": "Slovak"
+  },
+"opt100":  {
+    "phrase": "Hazardné hry sú veľmi zlý zvyk",
+    "language": "Slovak"
+  },
+"opt101":  {
+    "phrase": "Igre na srečo so zelo slaba navada",
+    "language": "Slovenian"
+  },
+"opt102":  {
+    "phrase": "Okno je odprto in hladno",
+    "language": "Slovenian"
+  },
+"opt103":  {
+    "phrase": "Prekleto pomanjkanje spanja",
+    "language": "Slovenian"
+  },
+"opt104":  {
+    "phrase": "Magneti so tako kul vi vsi",
+    "language": "Slovenian"
+  },
+"opt105":  {
+    "phrase": "Oglejte si moj okrogli globus",
+    "language": "Slovenian"
+  },
+"opt106":  {
+    "phrase": "Kolla in min runda jordklot",
+    "language": "Swedish"
+  },
+"opt107":  {
+    "phrase": "Rita tavlan och getterna nu",
+    "language": "Swedish"
+  },
+"opt108":  {
+    "phrase": "Fira den nya dagen igen",
+    "language": "Swedish"
+  },
+"opt109":  {
+    "phrase": "Låt oss få det här överstökat",
+    "language": "Swedish"
+  },
+"opt110":  {
+    "phrase": "Arbetet måste fortsätta nu",
+    "language": "Swedish"
+  },
+"opt111":  {
+    "phrase": "Artık çalışmalar devam etmeli",
+    "language": "Turkish"
+  },
+"opt112":  {
+    "phrase": "Meydan okuyanlar birleşiyor",
+    "language": "Turkish"
+  },
+"opt113":  {
+    "phrase": "Bu yine kazara geçti",
+    "language": "Turkish"
+  },
+"opt114":  {
+    "phrase": "Bugünün son ev cümleleri",
+    "language": "Turkish"
+  },
+"opt115":  {
+    "phrase": "Bu krepler için sonuncusu",
+    "language": "Turkish"
+  },
+"opt116":  {
+    "phrase": "Ya dumayu meni potribno zrobyty povtor",
+    "language": "Ukrainian"
+  },
+"opt117":  {
+    "phrase": "Ya znovu yim dva yabluka",
+    "language": "Ukrainian"
+  },
+"opt118":  {
+    "phrase": "Vy zhyvete bilya univermahu",
+    "language": "Ukrainian"
+  },
+"opt119":  {
+    "phrase": "Shvydkistʹ zapusku tsʹoho koduvannya",
+    "language": "Ukrainian"
+  },
+"opt120":  {
+    "phrase": "Ya khochu zaraz vidpochyty budʹ laska",
+    "language": "Ukrainian"
+  },
+"opt121":  {
+    "phrase": "Dw i eisiau gorffwys nawr",
+    "language": "Welsh"
+  },
+"opt122":  {
+    "phrase": "Ga i gysgu os gwelwch yn dda",
+    "language": "Welsh"
+  },
+"opt123":  {
+    "phrase": "Mae'r glaw yn parhau",
+    "language": "Welsh"
+  },
+"opt124":  {
+    "phrase": "Mae'r golau hwn yn llachar iawn",
+    "language": "Welsh"
+  },
+"opt125":  {
+    "phrase": "Mae fy lawnt yn fflat",
+    "language": "Welsh"
+  },
+"opt126":  {
+    "phrase": "Ukukhetha ulimi namuhla",
+    "language": "Zulu"
+  },
+"opt127":  {
+    "phrase": "Singakubekela inselelo manje",
+    "language": "Zulu"
+  },
+"opt128":  {
+    "phrase": "Sengicishe ngaqeda ngalokhu",
+    "language": "Zulu"
+  },
+"opt129":  {
+    "phrase": "Lelo imephu egcwele kakhulu",
+    "language": "Zulu"
+  },
+"opt130":  {
+    "phrase": "Ngiphusha ngale kancane",
+    "language": "Zulu"
+  },
+}
