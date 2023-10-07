@@ -71,7 +71,8 @@ body {
   z-index: 100;
   font-family: 'Noto Sans', sans-serif;
   font-weight: 800;
-  border-radius: 5px;
+  border-radius: 0px;
+  border-width: 5px;
   transition: transform 0.25s, opacity 0.15s;
 }
 
@@ -187,8 +188,9 @@ body {
 }
 
 .input-button:hover {
-  background: #2e2d4d;
+  background: #707070;
   border-color: #1a1919;
+  color: black;
   border-width: 5px;
   cursor: pointer;
 }
@@ -339,37 +341,41 @@ body {
   line-height: 58px;
   font-family: 'Noto Sans', sans-serif;
   font-weight: 500;
+    color: #ffd369;
+
 }
 
 .ex-guess3 {
   width: 32%;
   height: 58px;
-  background: #828282;
+  background: #292929;
   position: absolute;
   top: 700px;
   right: 41%;
-  border-radius: 5px;
+  border-radius: 0px;
   border-style: solid;
-  border-width: 2px;
+  border-width: 5px;
   border-color: #1a1919;
   font-size: 30px;
   text-align: center;
   line-height: 58px;
   font-family: 'Noto Sans', sans-serif;
   font-weight: 500;
+    color: #ffd369;
+
 }
 
 .wrong2 {
   width: 14.5%;
   height: 58px;
-  background: gray;
+  background: #292929;
   position: absolute;
   top: 700px;
   right: 26.3%;
-  border-radius: 5px;
+ border-radius: 0px;
   border-style: solid;
-  border-width: 2px;
-  border-color: #ffd369;
+  border-width: 5px;
+  border-color: #1a1919;
   font-size: 30px;
   text-align: center;
   line-height: 58px;
@@ -380,32 +386,34 @@ body {
 .ex-guess4 {
   width: 32%;
   height: 58px;
-  background: #828282;
+  background: #292929;
   position: absolute;
   top: 780px;
   right: 41%;
-  border-radius: 5px;
+  border-radius: 0px;
   border-style: solid;
-  border-width: 2px;
-  border-color: #ffd369;
+  border-width: 5px;
+  border-color: #1a1919;
   font-size: 30px;
   text-align: center;
   line-height: 58px;
   font-family: 'Noto Sans', sans-serif;
   font-weight: 500;
+    color: #ffd369;
+
 }
 
 .wrong3 {
   width: 14.5%;
   height: 58px;
-  background: gray;
+  background: #292929;
   position: absolute;
   top: 780px;
   right: 26.3%;
-  border-radius: 5px;
+ border-radius: 0px;
   border-style: solid;
-  border-width: 2px;
-  border-color: black;
+  border-width: 5px;
+  border-color: #1a1919;
   font-size: 30px;
   text-align: center;
   line-height: 58px;
@@ -416,69 +424,75 @@ body {
 .ex-guess5 {
   width: 32%;
   height: 58px;
-  background: #828282;
+  background: #292929;
   position: absolute;
   top: 860px;
   right: 41%;
-  border-radius: 5px;
+  border-radius: 0px;
   border-style: solid;
-  border-width: 2px;
-  border-color: black;
+  border-width: 5px;
+  border-color: #1a1919;
   font-size: 30px;
   text-align: center;
   line-height: 58px;
   font-family: 'Noto Sans', sans-serif;
   font-weight: 500;
+    color: #ffd369;
+
 }
 
 .wrong4 {
   width: 14.5%;
   height: 58px;
-  background: gray;
+  background: #292929;
   position: absolute;
   top: 860px;
   right: 26.3%;
-  border-radius: 5px;
+ border-radius: 0px;
   border-style: solid;
-  border-width: 2px;
-  border-color: black;
+  border-width: 5px;
+  border-color: #1a1919;
   font-size: 30px;
   text-align: center;
   line-height: 58px;
   font-family: 'Noto Sans', sans-serif;
   font-weight: 500;
+    color: #ffd369;
+
 }
 
 .ex-guess6 {
   width: 32%;
   height: 58px;
-  background: #828282;
+  background: #292929;
   position: absolute;
   top: 940px;
   right: 41%;
-  border-radius: 5px;
+  border-radius: 0px;
   border-style: solid;
-  border-width: 2px;
-  border-color: black;
+  border-width: 5px;
+  border-color: #1a1919;
   font-size: 30px;
   text-align: center;
   line-height: 58px;
   font-family: 'Noto Sans', sans-serif;
   font-weight: 500;
   margin-bottom: 40px;
+    color: #ffd369;
+
 }
 
 .wrong5 {
   width: 14.5%;
   height: 58px;
-  background: gray;
+  background: #292929;
   position: absolute;
   top: 940px;
   right: 26.3%;
-  border-radius: 5px;
+ border-radius: 0px;
   border-style: solid;
-  border-width: 2px;
-  border-color: black;
+  border-width: 5px;
+  border-color: #1a1919;
   font-size: 30px;
   text-align: center;
   line-height: 58px;
@@ -490,14 +504,14 @@ body {
 .right {
   width: 14.5%;
   height: 58px;
-  background: gray;
+  background: #292929;
   position: absolute;
   top: 620px;
   right: 26.3%;
-  border-radius: 5px;
+ border-radius: 0px;
   border-style: solid;
-  border-width: 2px;
-  border-color: black;
+  border-width: 5px;
+  border-color: #1a1919;
   font-size: 30px;
   text-align: center;
   line-height: 58px;
@@ -630,7 +644,7 @@ body {
     right: 25px;
     top: 0.3%;
     color: black;
-    background-color: #a8a800;
+    background-color: #ffd369;
     padding-top: 0px;
     margin-top: 22px;
     font-size: 55px;
@@ -657,14 +671,9 @@ body {
   .ex-guess {
     width: 46.6%;
     height: 70px;
-    background: #828282;
     position: absolute;
     top: 560px;
     right: 38.5%;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
     font-size: 35px;
     text-align: center;
     line-height: 70px;
@@ -675,14 +684,9 @@ body {
   .wrong {
     width: 23.7%;
     height: 70px;
-    background: #828282;
     position: absolute;
     top: 560px;
     right: 14.6%;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
     font-size: 35px;
     text-align: center;
     line-height: 70px;
@@ -693,14 +697,9 @@ body {
   .ex-guess2 {
     width: 46.6%;
     height: 70px;
-    background: #828282;
     position: absolute;
     top: 650px;
     right: 38.5%;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
     font-size: 35px;
     text-align: center;
     line-height: 70px;
@@ -711,14 +710,9 @@ body {
   .right {
     width: 23.7%;
     height: 70px;
-    background: #828282;
     position: absolute;
     top: 650px;
     right: 14.6%;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
     font-size: 35px;
     text-align: center;
     line-height: 70px;
@@ -729,14 +723,9 @@ body {
   .ex-guess3 {
     width: 46.6%;
     height: 70px;
-    background: #828282;
     position: absolute;
     top: 740px;
     right: 38.5%;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
     font-size: 35px;
     text-align: center;
     line-height: 70px;
@@ -747,14 +736,9 @@ body {
   .wrong2 {
     width: 23.7%;
     height: 70px;
-    background: #828282;
     position: absolute;
     top: 740px;
     right: 14.6%;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
     font-size: 35px;
     text-align: center;
     line-height: 70px;
@@ -765,14 +749,9 @@ body {
   .ex-guess4 {
     width: 46.6%;
     height: 70px;
-    background: #828282;
     position: absolute;
     top: 830px;
     right: 38.5%;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
     font-size: 35px;
     text-align: center;
     line-height: 70px;
@@ -783,14 +762,9 @@ body {
   .wrong3 {
     width: 23.7%;
     height: 70px;
-    background: #828282;
     position: absolute;
     top: 830px;
     right: 14.6%;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
     font-size: 35px;
     text-align: center;
     line-height: 70px;
@@ -801,14 +775,10 @@ body {
   .ex-guess5 {
     width: 46.6%;
     height: 70px;
-    background: #828282;
     position: absolute;
     top: 920px;
     right: 38.5%;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
+    
     font-size: 35px;
     text-align: center;
     line-height: 70px;
@@ -819,14 +789,9 @@ body {
   .wrong4 {
     width: 23.7%;
     height: 70px;
-    background: #828282;
     position: absolute;
     top: 920px;
     right: 14.6%;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
     font-size: 35px;
     text-align: center;
     line-height: 70px;
@@ -837,14 +802,9 @@ body {
   .ex-guess6 {
     width: 46.6%;
     height: 70px;
-    background: #828282;
     position: absolute;
     top: 1010px;
     right: 38.5%;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
     font-size: 35px;
     text-align: center;
     line-height: 70px;
@@ -855,14 +815,9 @@ body {
   .wrong5 {
     width: 23.7%;
     height: 70px;
-    background: #828282;
     position: absolute;
     top: 1010px;
     right: 14.6%;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
     font-size: 35px;
     text-align: center;
     line-height: 70px;
@@ -876,17 +831,18 @@ body {
     position: absolute;
     top: 465px;
     right: 37.5%;
-    background: #292929;
-    border-radius: 5px;
+    background: #808080;
+    border-radius: 0px;
     border-style: solid;
-    border-width: 2px;
-    border-color: black;
+    border-width: 5px;
+    border-color: #1a1919;
     font-size: 36px;
     text-align: center;
     font-family: 'Noto Sans', sans-serif;
     font-weight: 500;
     padding-top: 0px;
     padding-bottom: 0px;
+    color: #1a1919;
   }
 
   .solution {
@@ -895,11 +851,11 @@ body {
     position: absolute;
     top: 465px;
     right: 37.5%;
-    background: #a1a1a1;
-    border-radius: 5px;
+    background: #808080;
+    border-radius: 0px;
     border-style: solid;
-    border-width: 2px;
-    border-color: black;
+    border-width: 5px;
+    border-color: #1a1919;
     font-size: 36px;
     text-align: center;
     font-family: 'Noto Sans', sans-serif;
@@ -915,7 +871,7 @@ body {
   
   .input-button {
     width: 26.8%;
-    height: 77px;
+    height: 83px;
     position: absolute;
     top: 463px;
     right: 10.7%;
@@ -923,7 +879,7 @@ body {
     text-align: center;
     background: #1a1919;
     color: white;
-    border-radius: 5px;
+    border-radius: 0px;
     border-style: solid;
     border-width: 5px;
     border-color: #1a1919;
@@ -991,7 +947,7 @@ body {
     background: #2b2b2b;
     border-style: solid;
     border-width: 5px;
-    border-color: #a8a800;
+    border-color: #ffd369;
     border-radius: 5px;
     position: absolute;
     top: 140px;
