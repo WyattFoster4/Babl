@@ -1,282 +1,282 @@
 {
   "opt1": {
-    "phrase": "'Ahlan wasahlan bik fi manzili",
-    "language": "Arabic"
-  },
-"opt2":  {
-    "phrase": "Rasaam alkharayit marid alyawm",
-    "language": "Arabic"
-  },
-"opt3":  {
-    "phrase": "Althaeabin laha 'asnan",
-    "language": "Arabic"
-  },
-"opt4":  {
-    "phrase": "Altaayirat muthirat liliahtimam",
-    "language": "Arabic"
-  },
-"opt5":  {
-    "phrase": "Alwaraqat qadimat waraqiqa",
-    "language": "Arabic"
-  },
-"opt6":  {
-    "phrase": "Zhǐzhāng yòu jiù yòu báo",
-    "language": "Mandarin"
-  },
-"opt7":  {
-    "phrase": "Hùliánwǎng hěn dà",
-    "language": "Mandarin"
-  },
-"opt8":  {
-    "phrase": "Gòngchǎn zhǔyì cúnzài",
-    "language": "Mandarin"
-  },
-"opt9":  {
-    "phrase": "Miànshí shì mǐsè de",
-    "language": "Mandarin"
-  },
-"opt10":  {
-    "phrase": "Fójiào guǎngfàn chuánbò",
-    "language": "Mandarin"
-  },
-"opt11":  {
-    "phrase": "Le bouddhisme est répandu",
-    "language": "France"
-  },
-"opt12":  {
-    "phrase": "Les plages sont rocheuses",
-    "language": "French"
-  },
-"opt13":  {
-    "phrase": "L'Inde était une île",
-    "language": "French"
-  },
-"opt14":  {
-    "phrase": "Gagnez du premier coup",
-    "language": "French"
-  },
-"opt15":  {
-    "phrase": "Les couleurs sont chères",
-    "language": "French"
-  },
-"opt16":  {
-    "phrase": "Farben sind jetzt teuer",
-    "language": "German"
-  },
-"opt17":  {
-    "phrase": "Die Rakete war sehr groß",
-    "language": "German"
-  },
-"opt18":  {
-    "phrase": "Der Geist ist ein Gefängnis",
-    "language": "German"
-  },
-"opt19":  {
-    "phrase": "Von seiner eigenen Schöpfung",
-    "language": "German"
-  },
-"opt20":  {
-    "phrase": "Befreien Sie Ihr Gehirn",
-    "language": "German"
-  },
-"opt21":  {
     "phrase": "Tavniyyot pelastik zeh magniv",
     "language": "Hebrew"
   },
-"opt22":  {
-    "phrase": "Etzim delilim kan",
-    "language": "Hebrew"
-  },
-"opt23":  {
-    "phrase": "Marak hu be'al erech rav",
-    "language": "Hebrew"
-  },
-"opt24":  {
-    "phrase": "Ha'iyyim rechavim baddarom",
-    "language": "Hebrew"
-  },
-"opt25":  {
-    "phrase": "V'eshehattehom tihyeh gedullah",
-    "language": "Hebrew"
-  },
-"opt26":  {
-    "phrase": "Aur khaee mahaan ho",
-    "language": "Hindi"
-  },
-"opt27":  {
-    "phrase": "Ham shaanti kee aasha karate hain",
-    "language": "Hindi"
-  },
-"opt28":  {
-    "phrase": "Havaee jahaaj bade paimaane hain",
-    "language": "Hindi"
-  },
-"opt29":  {
-    "phrase": "Ravaanda bahut thanda hai",
-    "language": "Hindi"
-  },
-"opt30":  {
-    "phrase": "Main shukravaar se pyaar hai",
-    "language": "Hindi"
-  },
-"opt31":  {
-    "phrase": "Il documento è aggiornato",
-    "language": "Italian"
-  },
-"opt32":  {
-    "phrase": "Ci sono molti libri",
-    "language": "Italian"
-  },
-"opt33":  {
-    "phrase": "I pappagalli sono costosi",
-    "language": "Italian"
-  },
-"opt34":  {
-    "phrase": "Il caffè è difficile da scrivere",
-    "language": "Italian"
-  },
-"opt35":  {
-    "phrase": "Il serpente si disintegrò",
-    "language": "Italian"
-  },
-"opt36":  {
-    "phrase": "Kyō hebi ga shinda",
-    "language": "Japanese"
-  },
-"opt37":  {
-    "phrase": "Watashinoie ga moete imasu",
-    "language": "Japanese"
-  },
-"opt38":  {
-    "phrase": "Taiyō wa totemo akaruidesu",
-    "language": "Japanese"
-  },
-"opt39":  {
-    "phrase": "Ramu no kanshoku ga wakarimasu",
-    "language": "Japanese"
-  },
-"opt40":  {
-    "phrase": "Watashinochichi wa nan-saidesu",
-    "language": "Japanese"
-  },
-"opt41":  {
-    "phrase": "Uli abeojineun myeoch sal-iseyo",
-    "language": "Korean"
-  },
-"opt42":  {
-    "phrase": "Igeos-eul ppalli insighala",
-    "language": "Korean"
-  },
-"opt43":  {
-    "phrase": "Meongcheonghamyeon domangchyeo",
-    "language": "Korean"
-  },
-"opt44":  {
-    "phrase": "Sigyeeneun heunjeog-i manhda",
-    "language": "Korean"
-  },
-"opt45":  {
-    "phrase": "I seukeulibteuleul sicheonghaseyo",
-    "language": "Korean"
-  },
-"opt46":  {
-    "phrase": "Letras romanas são chatas",
-    "language": "Portuguese"
-  },
-"opt47":  {
-    "phrase": "Confira a pontuação acima",
-    "language": "Portuguese"
-  },
-"opt48":  {
-    "phrase": "O melhor lado da Ibérica",
-    "language": "Portuguese"
-  },
-"opt49":  {
-    "phrase": "Espanhol fora da marca",
-    "language": "Portuguese"
-  },
-"opt50":  {
-    "phrase": "Um pedaço do novo mundo",
-    "language": "Portuguese"
-  },
-"opt51":  {
-    "phrase": "Nosotras ganamos el tratado",
-    "language": "Spanish"
-  },
-"opt52":  {
-    "phrase": "Bolsas de lona para café",
-    "language": "Spanish"
-  },
-"opt53":  {
-    "phrase": "Reconoce esto o eres tonto",
-    "language": "Spanish"
-  },
-"opt54":  {
-  "phrase": "Tienes que saber este",
-  "language": "Spanish"
-  },
-"opt55":  {
-    "phrase": "Lo siento olvidé cómo contar",
-    "language": "Spanish"
-  },
-"opt56":  {
-    "phrase": "Đồng hồ cát của tôi cao",
-    "language": "Vietnamese"
-  },
-"opt57":  {
-    "phrase": "Bánh xe sắt thì rộng",
-    "language": "Vietnamese"
-  },
-"opt58":  {
-    "phrase": "Cục quản lý hàng không liên bang",
-    "language": "Vietnamese"
-  },
-"opt59":  {
-    "phrase": "Dòng sông lạnh và chảy xiết",
-    "language": "Vietnamese"
-  },
-"opt60":  {
+  "opt2": {
     "phrase": "Chúng ta cần phải dỡ bỏ mái nhà",
     "language": "Vietnamese"
   },
-"opt61":  {
-    "phrase": "Pataas at sa ibabaw ng tagaytay",
-    "language": "Tagalog"
+  "opt3": {
+    "phrase": "Bolsas de lona para café",
+    "language": "Spanish"
   },
-"opt62":  {
-    "phrase": "Malayo sa nagbabagang apoy",
-    "language": "Tagalog"
+  "opt4": {
+    "phrase": "Uli abeojineun myeoch sal-iseyo",
+    "language": "Korean"
   },
-"opt63":  {
-    "phrase": "Sa lambak sa madilim na gabi",
-    "language": "Tagalog"
+  "opt5": {
+    "phrase": "Befreien Sie Ihr Gehirn",
+    "language": "German"
   },
-"opt64":  {
-    "phrase": "Panganib sa lumang bahay",
-    "language": "Tagalog"
+  "opt6": {
+    "phrase": "Rasaam alkharayit marid alyawm",
+    "language": "Arabic"
   },
-"opt65":  {
-    "phrase": "Malayo sa pwesto namin",
-    "language": "Tagalog"
+  "opt7": {
+    "phrase": "Il documento è aggiornato",
+    "language": "Italian"
   },
-"opt66":  {
+  "opt8": {
+    "phrase": "Les plages sont rocheuses",
+    "language": "French"
+  },
+  "opt9": {
+    "phrase": "Gòngchǎn zhǔyì cúnzài",
+    "language": "Mandarin"
+  },
+  "opt10": {
+    "phrase": "Lo siento olvidé cómo contar",
+    "language": "Spanish"
+  },
+  "opt11": {
+    "phrase": "Ham shaanti kee aasha karate hain",
+    "language": "Hindi"
+  },
+  "opt12": {
+    "phrase": "Farben sind jetzt teuer",
+    "language": "German"
+  },
+  "opt13": {
     "phrase": "Lugha nyingi zisizo za kawaida",
     "language": "Swahili"
   },
-"opt67":  {
-    "phrase": "Tazama vokali hapa leo",
-    "language": "Swahili"
+  "opt14": {
+    "phrase": "Espanhol fora da marca",
+    "language": "Portuguese"
   },
-"opt68":  {
-    "phrase": "Hizi ni suluhisho rahisi",
-    "language": "Swahili"
+  "opt15": {
+    "phrase": "Panganib sa lumang bahay",
+    "language": "Tagalog"
   },
-"opt69":  {
-    "phrase": "Uwekaji usimbaji lazima uendelee",
-    "language": "Swahili"
+  "opt16": {
+    "phrase": "Sigyeeneun heunjeog-i manhda",
+    "language": "Korean"
   },
-"opt70":  {
+  "opt17": {
+    "phrase": "Ahlan wasahlan bik fi manzili",
+    "language": "Arabic"
+  },
+  "opt18": {
     "phrase": "Mbio za waandaaji programu",
     "language": "Swahili"
   },
+  "opt19": {
+    "phrase": "Cục quản lý hàng không liên bang",
+    "language": "Vietnamese"
+  },
+  "opt20": {
+    "phrase": "Tazama vokali hapa leo",
+    "language": "Swahili"
+  },
+  "opt21": {
+    "phrase": "Les couleurs sont chères",
+    "language": "French"
+  },
+  "opt22": {
+    "phrase": "Hizi ni suluhisho rahisi",
+    "language": "Swahili"
+  },
+  "opt23": {
+    "phrase": "Tienes que saber este",
+    "language": "Spanish"
+  },
+  "opt24": {
+    "phrase": "Gagnez du premier coup",
+    "language": "French"
+  },
+  "opt25": {
+    "phrase": "Ramu no kanshoku ga wakarimasu",
+    "language": "Japanese"
+  },
+  "opt26": {
+    "phrase": "Reconoce esto o eres tonto",
+    "language": "Spanish"
+  },
+  "opt27": {
+    "phrase": "Havaee jahaaj bade paimaane hain",
+    "language": "Hindi"
+  },
+  "opt28": {
+    "phrase": "Pataas at sa ibabaw ng tagaytay",
+    "language": "Tagalog"
+  },
+  "opt29": {
+    "phrase": "Kyō hebi ga shinda",
+    "language": "Japanese"
+  },
+  "opt30": {
+    "phrase": "Fójiào guǎngfàn chuánbò",
+    "language": "Mandarin"
+  },
+  "opt31": {
+    "phrase": "Miànshí shì mǐsè de",
+    "language": "Mandarin"
+  },
+  "opt32": {
+    "phrase": "Marak hu be'al erech rav",
+    "language": "Hebrew"
+  },
+  "opt33": {
+    "phrase": "Tavniyyot pelastik zeh magniv",
+    "language": "Hebrew"
+  },
+  "opt34": {
+    "phrase": "Tazama vokali hapa leo",
+    "language": "Swahili"
+  },
+  "opt35": {
+    "phrase": "Farben sind jetzt teuer",
+    "language": "German"
+  },
+  "opt36": {
+    "phrase": "Panganib sa lumang bahay",
+    "language": "Tagalog"
+  },
+  "opt37": {
+    "phrase": "Il documento è aggiornato",
+    "language": "Italian"
+  },
+  "opt38": {
+    "phrase": "Espanhol fora da marca",
+    "language": "Portuguese"
+  },
+  "opt39": {
+    "phrase": "Gagnez du premier coup",
+    "language": "French"
+  },
+  "opt40": {
+    "phrase": "Reconoce esto o eres tonto",
+    "language": "Spanish"
+  },
+  "opt41": {
+    "phrase": "Confira a pontuação acima",
+    "language": "Portuguese"
+  },
+  "opt42": {
+    "phrase": "Befreien Sie Ihr Gehirn",
+    "language": "German"
+  },
+  "opt43": {
+    "phrase": "Cục quản lý hàng không liên bang",
+    "language": "Vietnamese"
+  },
+  "opt44": {
+    "phrase": "Hizi ni suluhisho rahisi",
+    "language": "Swahili"
+  },
+  "opt45": {
+    "phrase": "Nosotras ganamos el tratado",
+    "language": "Spanish"
+  },
+  "opt46": {
+    "phrase": "Sigyeeneun heunjeog-i manhda",
+    "language": "Korean"
+  },
+  "opt47": {
+    "phrase": "Tavniyyot pelastik zeh magniv",
+    "language": "Hebrew"
+  },
+  "opt48": {
+    "phrase": "Tazama vokali hapa leo",
+    "language": "Swahili"
+  },
+  "opt49": {
+    "phrase": "Farben sind jetzt teuer",
+    "language": "German"
+  },
+  "opt50": {
+    "phrase": "Panganib sa lumang bahay",
+    "language": "Tagalog"
+  },
+  "opt51": {
+    "phrase": "Il documento è aggiornato",
+    "language": "Italian"
+  },
+  "opt52": {
+    "phrase": "Espanhol fora da marca",
+    "language": "Portuguese"
+  },
+  "opt53": {
+    "phrase": "Gagnez du premier coup",
+    "language": "French"
+  },
+  "opt54": {
+    "phrase": "Reconoce esto o eres tonto",
+    "language": "Spanish"
+  },
+  "opt55": {
+    "phrase": "Tienes que saber este",
+    "language": "Spanish"
+  },
+  "opt56": {
+    "phrase": "Bolsas de lona para café",
+    "language": "Spanish"
+  },
+  "opt57": {
+    "phrase": "Đồng hồ cát của tôi cao",
+    "language": "Vietnamese"
+  },
+  "opt58": {
+    "phrase": "Bánh xe sắt thì rộng",
+    "language": "Vietnamese"
+  },
+  "opt59": {
+    "phrase": "Cục quản lý hàng không liên bang",
+    "language": "Vietnamese"
+  },
+  "opt60": {
+    "phrase": "Dòng sông lạnh và chảy xiết",
+    "language": "Vietnamese"
+  },
+  "opt61": {
+    "phrase": "Chúng ta cần phải dỡ bỏ mái nhà",
+    "language": "Vietnamese"
+  },
+  "opt62": {
+    "phrase": "Lugha nyingi zisizo za kawaida",
+    "language": "Swahili"
+  },
+  "opt63": {
+    "phrase": "Tazama vokali hapa leo",
+    "language": "Swahili"
+  },
+  "opt64": {
+    "phrase": "Hizi ni suluhisho rahisi",
+    "language": "Swahili"
+  },
+  "opt65": {
+    "phrase": "Pataas at sa ibabaw ng tagaytay",
+    "language": "Tagalog"
+  },
+  "opt66": {
+    "phrase": "Malayo sa nagbabagang apoy",
+    "language": "Tagalog"
+  },
+  "opt67": {
+    "phrase": "Sa lambak sa madilim na gabi",
+    "language": "Tagalog"
+  },
+  "opt68": {
+    "phrase": "Panganib sa lumang bahay",
+    "language": "Tagalog"
+  },
+  "opt69": {
+    "phrase": "Malayo sa pwesto namin",
+    "language": "Tagalog"
+  },
+  "opt70": {
+    "phrase": "Lugha nyingi zisizo za kawaida",
+    "language": "Swahili"
+  }
 }
