@@ -103,13 +103,29 @@ async function compareLanguages(guess, correct) {
 }
 
 async function getSolution() {
-  let data = await fetch("./solutionsmanualOldII.json", { method: 'GET' }).then(response => response.json(response));
+  const d = new Date();
+  let weekday = d.getDay();
+  if (weekday = 0) {
+    let data = await fetch("./solutionsGod.json", { method: 'GET' }).then(response => response.json(response));
+  } else if (weekday > 0 && weekday < 4) {
+    let data = await fetch("./solutionsEasy.json", { method: 'GET' }).then(response => response.json(response));
+  } else {
+    let data = await fetch("./solutionsMedium.json", { method: 'GET' }).then(response => response.json(response));
+  }
   var num;
-  var originDateII = new Date("05/15/2023"); // change back to 14
+  var originDateII = new Date("10/06/2023"); // change back to 14
   var currentDateII = new Date();
   var num = Math.floor((currentDateII.getTime() - originDateII.getTime())/86400000);
-  num = num % 167;
-  console.log("num", num)
+  let data = await fetch("./solutionsGod.json", { method: 'GET' }).then(response => response.json(response)); // TEMP
+  var num = 0; // TEMP
+  // if (weekday = 0) {
+  //   num = num - (6 * (num % 5)); // Take out all non-Sundays
+  // } else if (weekday > 0 && weekday < 4) {
+  //   num = num - (4 * (num % 3)*3); // Take out all non-Monday/Wednesday/Tuesdays
+  // } else {
+  //   num = num - (4 * (num % 6)*3); // Take out all non-Thursday/Friday/Saturdays
+  // }
+  console.log("num", num);
   return data[String("opt" + num)]
   // if (dayOfWeek == 1 || dayOfWeek == 2) {
   //   num = parseInt(String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear())) ** 7 % 35 + 1;
