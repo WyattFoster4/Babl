@@ -17,7 +17,7 @@ var response
 var originDate = new Date("02/01/2023");
 var currentDate = new Date();
 var timeDifference = currentDate.getTime() - originDate.getTime();
-var bablNumber = Math.ceil(timeDifference / (1000 * 3600 * 24));
+var bablNumber = Math.floor(timeDifference / (1000 * 3600 * 24)); //Was ceil, danica thought was stupid, may change back
 
 //sets gray background for the one box that didn't have the right color (idk why)
 document.getElementById("percent-1").style.background = "#292929";
@@ -104,20 +104,34 @@ async function compareLanguages(guess, correct) {
 
 async function getSolution() {
   const d = new Date();
+  const origDate = new Date("11/19/23"); //It's jank, but this code ONLY WORKS IF IT STARTS ON A SUNDAY
+  let timePassed = Math.floor(Math.abs(d-origDate) / 1000 / 60 / 60 / 24) //time elapsed in days
   let weekday = d.getDay();
-  if (weekday = 0) {
-    let data = await fetch("./solutionsGod.json", { method: 'GET' }).then(response => response.json(response));
-  } else if (weekday > 0 && weekday < 4) {
-    let data = await fetch("./solutionsEasy.json", { method: 'GET' }).then(response => response.json(response));
-  } else {
-    let data = await fetch("./solutionsMedium.json", { method: 'GET' }).then(response => response.json(response));
+  let num = 1;
+  //let data = await fetch("./solutionsGod.json", { method: 'GET' }).then(response => response.json(response));
+  if (weekday == 0) { //Sun
+    num = Math.floor(timePassed/7);
+  } else if (weekday > 0 && weekday < 4) { //Mon, Tues, Wed
+    num = Math.floor(timePassed/7) * 3 + (timePassed - Math.floor(timePassed/7)*7);
+  } else { //Thurs, Fri, Sat
+    num = Math.floor(timePassed/7) * 3 + (timePassed - Math.floor(timePassed/7)*7) - 3;
+    //console.log(data)
   }
-  var num;
-  var originDateII = new Date("10/06/2023"); // change back to 14
-  var currentDateII = new Date();
-  var num = Math.floor((currentDateII.getTime() - originDateII.getTime())/86400000);
-  let data = await fetch("./solutionsGod.json", { method: 'GET' }).then(response => response.json(response)); // TEMP
-  var num = 0; // TEMP
+  
+
+  let data = await fetch(weekday == 0? "./solutionsGod.json" : weekday > 0 && weekday < 4? "./solutionsEasy.json" : "./solutionsMedium.json", { method: 'GET' }).then(response => response.json(response));
+  console.log("num", num);
+  console.log("time passed: " + timePassed);
+  console.log(weekday);
+  return data[String("opt" + num)]
+
+  // timepassed / 7 for sunday
+  // var num;
+  // var originDateII = new Date("10/06/2023"); // change back to 14
+  // var currentDateII = new Date();
+  // var num = Math.floor((currentDateII.getTime() - originDateII.getTime())/86400000);
+  // // let data = await fetch("./solutionsGod.json", { method: 'GET' }).then(response => response.json(response)); // TEMP
+  // var num = 0; // TEMP
   // if (weekday = 0) {
   //   num = num - (6 * (num % 5)); // Take out all non-Sundays
   // } else if (weekday > 0 && weekday < 4) {
@@ -125,8 +139,6 @@ async function getSolution() {
   // } else {
   //   num = num - (4 * (num % 6)*3); // Take out all non-Thursday/Friday/Saturdays
   // }
-  console.log("num", num);
-  return data[String("opt" + num)]
   // if (dayOfWeek == 1 || dayOfWeek == 2) {
   //   num = parseInt(String(date.getDay()) + String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear())) ** 7 % 35 + 1;
   //   return data.Week.EarlyWeek[String("opt" + num)]
