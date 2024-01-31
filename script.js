@@ -355,12 +355,12 @@ function emojiGrid(proxList, bablNumber) {
 // EVENT LISTENER SETUP
 
 // Technical not an EL, opens modal
-if (bablNumber % 50 < 6) {
+if (bablNumber % 50 < 6 || bablNumber % 365 == 0) {
   document.getElementById("popHeading").innerHTML = "Welcome to Babl! BABL " + bablNumber + " HYPE!!!";
 } else {
   document.getElementById("popHeading").innerHTML = "Welcome to Babl!";
 }
-document.getElementById("popText").innerHTML = "Here's how to play: Every day, a new phrase in a foreign language will appear on Babl. You have to guess what language the phrase is written in (it doesn't matter what the phrase actually says). If your guess is right, you'll win! If your guess is wrong, we'll tell you how close you got. You only get 6 tries. Good luck!";
+document.getElementById("popText").innerHTML = "Here's how to play: \n - Every day, a new phrase in a foreign language will appear on Babl \n - You have to guess what language the phrase is written in \n - It doesn't matter what the phrase actually says \n - If your guess is right, you'll win! If your guess is wrong, we'll tell you how close you got \n - You only get 6 tries. \n - Foreign scripts are transliterated to Latin text \n Good luck!";
 modal.showModal();
 
 // Adds button to close modal
@@ -370,12 +370,12 @@ closeModal.addEventListener('click', () => {
 
 // Opens modal when the help button is clicked
 helpButton.addEventListener('click', () => {
-  if (bablNumber % 50 < 6) {
+  if (bablNumber % 50 < 6 || bablNumber % 365 == 0) {
     document.getElementById("popHeading").innerHTML = "Welcome to Babl! BABL " + bablNumber + " HYPE!!!";
   } else {
     document.getElementById("popHeading").innerHTML = "Welcome to Babl!";
   }
-  document.getElementById("popText").innerHTML = "Here's how to play: Every day, a new phrase in a foreign language will appear on Babl. You have to guess what language the phrase is written in (it doesn't matter what the phrase actually says). If your guess is right, you'll win! If your guess is wrong, we'll tell you how close you got. You only get 6 tries. Good luck!";
+  document.getElementById("popText").innerHTML = "Here's how to play: \n - Every day, a new phrase in a foreign language will appear on Babl \n - You have to guess what language the phrase is written in \n - It doesn't matter what the phrase actually says \n - If your guess is right, you'll win! If your guess is wrong, we'll tell you how close you got \n - You only get 6 tries. \n - Foreign scripts are transliterated to Latin text \n Good luck!";
   document.getElementById("emojiGridText").innerHTML = " ";
   modal.showModal();
 });
