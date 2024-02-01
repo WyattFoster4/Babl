@@ -360,7 +360,7 @@ if (bablNumber % 50 < 6 || bablNumber % 365 == 0) {
 } else {
   document.getElementById("popHeading").innerHTML = "Welcome to Babl!";
 }
-document.getElementById("popText").innerHTML = "Here's how to play: \n - Every day, a new phrase in a foreign language will appear on Babl \n - You have to guess what language the phrase is written in \n - It doesn't matter what the phrase actually says \n - If your guess is right, you'll win! If your guess is wrong, we'll tell you how close you got \n - You only get 6 tries. \n - Foreign scripts are transliterated to Latin text \n Good luck!";
+document.getElementById("popText").innerHTML = "Here's how to play: <br> - Every day, a new phrase in a foreign language will appear on Babl <br> - You have to guess what language the phrase is written in <br> - It doesn't matter what the phrase actually says <br> - If your guess is right, you'll win! If your guess is wrong, we'll tell you how close you got <br> - You only get 6 tries. <br> - Foreign scripts are transliterated to Latin text <br> Good luck!";
 modal.showModal();
 
 // Adds button to close modal
@@ -375,7 +375,7 @@ helpButton.addEventListener('click', () => {
   } else {
     document.getElementById("popHeading").innerHTML = "Welcome to Babl!";
   }
-  document.getElementById("popText").innerHTML = "Here's how to play: \n - Every day, a new phrase in a foreign language will appear on Babl \n - You have to guess what language the phrase is written in \n - It doesn't matter what the phrase actually says \n - If your guess is right, you'll win! If your guess is wrong, we'll tell you how close you got \n - You only get 6 tries. \n - Foreign scripts are transliterated to Latin text \n Good luck!";
+  document.getElementById("popText").innerHTML = "Here's how to play: <br> - Every day, a new phrase in a foreign language will appear on Babl <br> - You have to guess what language the phrase is written in <br> - It doesn't matter what the phrase actually says <br> - If your guess is right, you'll win! If your guess is wrong, we'll tell you how close you got <br> - You only get 6 tries. <br> - Foreign scripts are transliterated to Latin text <br> Good luck!";
   document.getElementById("emojiGridText").innerHTML = " ";
   modal.showModal();
 });
