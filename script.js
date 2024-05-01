@@ -298,7 +298,7 @@ async function guessingFunction() {
     printGuess(guesses);
     printPercent(await compareLanguages(arrInput, lang));
     if (bablNumber % 50 < 6) {
-      document.getElementById("popHeading").innerHTML = "You won! BABL " + bablNumber + " HYPE!!!";
+      document.getElementById("popHeading").innerHTML = "You won! BABL " + bablNumber + " HYPE!!! \n Danica fixed babl :)";
     } else {
       document.getElementById("popHeading").innerHTML = "You won!";
     }
