@@ -104,7 +104,7 @@ async function compareLanguages(guess, correct) {
 
 async function getSolution() {
   const d = new Date();
-  const origDate = new Date("04/28/24"); //It's jank, but this code ONLY WORKS IF IT STARTS ON A SUNDAY
+  const origDate = new Date("07/07/24"); //It's jank, but this code ONLY WORKS IF IT STARTS ON A SUNDAY
   let timePassed = Math.floor(Math.abs(d-origDate) / 1000 / 60 / 60 / 24) //time elapsed in days
   let weekday = d.getDay();
   let num = 1;
